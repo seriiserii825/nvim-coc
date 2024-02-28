@@ -1,4 +1,6 @@
 lua << EOF
-require("notify")("My super important message")
+require("notify").setup({
+  background_colour = "#000000",
+})
 vim.notify = require("notify")
 EOF

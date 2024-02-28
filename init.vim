@@ -1,3 +1,4 @@
+set termguicolors
 " let g:polyglot_disabled = ['vue']
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 " Startify
@@ -32,6 +33,8 @@ source $HOME/.config/nvim/modules/ulti-snippets.vim
 " source $HOME/.config/nvim/modules/easy-motion.vim
 source $HOME/.config/nvim/modules/copylot.vim
 source $HOME/.config/nvim/modules/nvim-notify.vim
+source $HOME/.config/nvim/modules/nvim-noice.vim
+" source $HOME/.config/nvim/modules/flash.vim
 
 "Map
 source $HOME/.config/nvim/keys/map-nvim.vim
