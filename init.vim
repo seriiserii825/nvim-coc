@@ -16,7 +16,7 @@ source $HOME/.config/nvim/modules/macross/bash-macros.vim
 source $HOME/.config/nvim/modules/coc.vim
 source $HOME/.config/nvim/modules/fzf.vim
 source $HOME/.config/nvim/modules/coc-explorer.vim
-" source $HOME/.config/nvim/modules/which-key.vim
+source $HOME/.config/nvim/modules/which-key.vim
 source $HOME/.config/nvim/modules/gitgutter.vim
 source $HOME/.config/nvim/modules/emmet.vim
 source $HOME/.config/nvim/modules/multiple-cursors.vim
@@ -33,8 +33,8 @@ source $HOME/.config/nvim/modules/ulti-snippets.vim
 " source $HOME/.config/nvim/modules/easy-motion.vim
 source $HOME/.config/nvim/modules/copylot.vim
 source $HOME/.config/nvim/modules/nvim-notify.vim
-source $HOME/.config/nvim/modules/nvim-noice.vim
-" source $HOME/.config/nvim/modules/flash.vim
+" source $HOME/.config/nvim/modules/nvim-noice.vim
+source $HOME/.config/nvim/modules/flash.vim
 
 "Map
 source $HOME/.config/nvim/keys/map-nvim.vim

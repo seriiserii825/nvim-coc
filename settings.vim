@@ -11,14 +11,14 @@ autocmd FocusLost * silent! wall
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 set spellfile=~/.config/nvim/spell/en.utf-8.add
 
-let g:sneak#label = 1
+" let g:sneak#label = 1
 
 " set leader key
 let g:mapleader = "\<Space>"
 let g:indent_guides_enable_on_vim_startup = 1
-" let g:node_client_debug = 1
-"
-" set spell
+
+" let g:config.health.checker = 0
+" set nolazyredraw 
 set noswapfile
 set foldmethod=indent
 set foldnestmax=20
