@@ -20,6 +20,7 @@ let g:coc_global_extensions=[
       \'coc-sh',
       \'coc-html',
       \'coc-highlight',
+      \'@yaegassy/coc-volar'
       \]
 
 nnoremap <silent> K :call CocAction('doHover')<CR>

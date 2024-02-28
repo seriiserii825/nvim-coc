@@ -13,7 +13,3 @@ nmap <leader>fg :GFiles?<CR>
 nmap <leader>fc :Commits<CR>
 nmap <leader>fd :Gdiff<CR>
 nmap <leader>ft :BCommits<CR>
-
-"       \ 'c' : [':Commits'      , 'commits'],
-"       \ 'C' : [':BCommits'     , 'buffer commits'],
-
