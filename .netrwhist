@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='ftp://ftp14.hostland.ru/wp-content/themes/bs-base/'
+let g:netrw_dirhist_4='ftp://ftp14.hostland.ru/wp-content/themes/'
+let g:netrw_dirhist_3='ftp://ftp14.hostland.ru/wp-content/'
+let g:netrw_dirhist_2='ftp://ftp14.hostland.ru/'
+let g:netrw_dirhist_1='scp://ftp14.hostland.ru/'

@@ -1,0 +1,60 @@
+snippet cnsl "console.log('')" i
+	console.log($1, "$1");
+endsnippet
+	
+snippet dqs "dqs" i 
+	document.querySelector('$1');
+endsnippet
+
+snippet sqref "sqref" i 
+	references: {
+		model: {
+			tableName: "$1",
+		},
+		key: "id",
+	}
+endsnippet
+
+snippet sqv "sqv" i 
+	validate: {
+		notEmpty: true,
+		minLength: 3,
+	},
+endsnippet
+
+snippet tst "tst" i 
+	defaultValue: Sequelize.literal('CURRENT_TIMESTAMP')
+endsnippet
+
+snippet dqsa "dqsa" i 
+	document.querySelectorAll('$1');
+endsnippet
+
+snippet impv "impv" i
+@import "~assets/scss/partials/variables";
+@import "~assets/scss/partials/mixins";
+endsnippet
+
+snippet jqr "jqr" b
+jQuery(document).ready(function($) {
+	$1
+});
+endsnippet
+
+snippet trycatch "trycatch"
+try {
+	$1
+} catch (error) {
+	$2
+}
+endsnippet
+
+snippet log_array "log_array" i
+$1.forEach(item => {
+	console.log(JSON.stringify(item, null, 4));
+});
+endsnippet
+
+snippet logjs "logjs" i
+	console.log(JSON.stringify($1, null, 4));
+endsnippet

@@ -1,0 +1,56 @@
+{
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": true,
+  "explorer.keyMappings.global": {
+    "<cr>": [
+      "expandable?",
+      "expand",
+      "open"
+    ],
+    "v": "open:vsplit"
+  },
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
+  "intelephense.files.exclude": [
+    "**/.git/**",
+    "**/.svn/**",
+    "**/.hg/**",
+    "**/CVS/**",
+    "**/.DS_Store/**",
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**/{Tests,tests}/**",
+    "**/.history/**",
+    "**/vendor/**/vendor/**"
+  ],
+  "intelephense.environment.includePaths": [
+    "/home/serii/Sites/wordpress",
+    "/home/serii/Sites/advanced-custom-fields-pro",
+    "/home/serii/Sites/woocommerce"
+  ],
+  "intelephense.files.associations": [
+    "*.php",
+    "*.phtml"
+  ],
+  "intelephense.format.enable": true,
+  "intelephense.diagnostics.typeErrors": true,
+  "intelephense.diagnostics.unusedSymbols": true,
+  "suggest.noselect": false,
+  "suggest.triggerCompletionWait": 50,
+  "eslint.enable": false,
+  "javascript.suggestionActions.enabled": false,
+  "snippets.ultisnips.pythonPrompt": false,
+  "sh.enable": true,
+  "prettier.enable": false,
+  "prettier.disableLanguages": [
+    "vue"
+  ],
+  "prettier.proseWrap": "never",
+  "prettier.printWidth": 200000,
+  "emmet.includeLanguages": {
+    "php": "html",
+    "markdown": "html"
+  },
+}

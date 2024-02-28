@@ -1,0 +1,88 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+
+
+snippet cnsl "console.log('')" i
+	console.log($1, "$1");
+endsnippet
+	
+snippet dqs "dqs" i 
+	document.querySelector('$1');
+endsnippet
+
+snippet sqref "sqref" i 
+	references: {
+		model: {
+			tableName: "$1",
+		},
+		key: "id",
+	}
+endsnippet
+
+snippet sqv "sqv" i 
+	validate: {
+		notEmpty: true,
+		minLength: 3,
+	},
+endsnippet
+
+snippet tst "tst" i 
+	defaultValue: Sequelize.literal('CURRENT_TIMESTAMP')
+endsnippet
+
+snippet dqsa "dqsa" i 
+	document.querySelectorAll('$1');
+endsnippet
+
+snippet impv "impv" i
+@import "~assets/scss/partials/variables";
+@import "~assets/scss/partials/mixins";
+endsnippet
+
+snippet jqr "jqr" b
+jQuery(document).ready(function($) {
+	$1
+});
+endsnippet
+
+snippet trycatch "trycatch"
+try {
+	$1
+} catch (error) {
+	$2
+}
+endsnippet
+
+snippet log_array "log_array" i
+$1.forEach(item => {
+	console.log(JSON.stringify(item, null, 4));
+});
+endsnippet
+
+snippet logjs "logjs" i
+	console.log(JSON.stringify($1, null, 4));
+endsnippet
+

@@ -1,0 +1,5 @@
+let g:UltiSnipsExpandTrigger='<Tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<S-b>'
+let g:coc_snippet_next = '<tab>'
+let g:coc_snippet_prev = '<S-tab>'

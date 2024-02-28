@@ -1,0 +1,13 @@
+snippet arg "bash check args" b
+if [ ! $# -gt 0 ]; then
+    echo "Insert argument"
+    exit 1
+fi
+endsnippet
+	
+snippet help "Help statement" b
+if [ "\$1" == "-help" ] || [ "\$1" == "--help" ]; then
+    echo "$1"
+    exit 0;
+fi
+endsnippet
