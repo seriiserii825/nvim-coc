@@ -67,8 +67,8 @@ nnoremap gp `[v`]
 
 " Sneak
 " nnoremap m b
-nmap b S
-xnoremap p "_dP
+" nmap b S
+" xnoremap p "_dP
 
 " duplicate line in normal mode:
 " nnoremap <C-d> Yp
