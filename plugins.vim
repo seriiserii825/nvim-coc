@@ -45,6 +45,7 @@ Plug 'junegunn/fzf.vim'
 "Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'f-person/git-blame.nvim'
 Plug 'jwalton512/vim-blade'
 Plug 'liuchengxu/vim-which-key'
 "Vim
