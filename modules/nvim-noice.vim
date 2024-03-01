@@ -1,1 +1,12 @@
-lua require("noice").setup()
+
+lua << EOF
+require("noice").setup({
+  routes = {
+    {
+        view = "notify",
+        filter = { event = "msg_showmode" },
+    },
+  }
+})
+
+EOF
