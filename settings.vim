@@ -19,6 +19,7 @@ let g:indent_guides_enable_on_vim_startup = 1
 
 " let g:config.health.checker = 0
 " set nolazyredraw 
+set textwidth=0 wrapmargin=0
 set noswapfile
 set foldmethod=indent
 set foldnestmax=20
