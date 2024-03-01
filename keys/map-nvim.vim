@@ -11,7 +11,7 @@ nnoremap <Leader>z :%s/\s\{2,}/ /g<CR>
 nmap <leader>yc :RunCode<CR>
 nmap <leader>yl :RunFile<CR>
 nmap , :RunFile float<CR>
-" nnoremap <silent><space>fw :Fmodules/which-key.vimiles <C-R><C-W><cr>  
+" nnoremap <silent><space>fw :Fmodules/which-key.vimiles <C-R><C-W><cr> 
 " map to find word under cursor with fzf
 " map <Leader>fw :call fzf#vim#files(expand('<cword>'))<kEnter>
 " nnoremap <silent> <Leader>fw :Files <C-R><C-W><CR>
@@ -32,7 +32,7 @@ nmap <leader>mp <Plug>MarkdownPreview<CR>
 " nmap <C-s> <Plug>MarkdownPreview
 " nmap <leader>ms :CocCommand markdown-preview-enhanced.syncPreview<CR>
 let b:surround_{char2nr('c')} = "```\r```"
-" xnoremap  <C-t>let @+ = wordcount().visual_words<CR>
+" xnoremap <C-t>let @+ = wordcount().visual_words<CR>
 "nmap <M-l> :wall<CR>
 " File paths
 " relative
@@ -79,19 +79,19 @@ nnoremap gp `[v`]
 " nnoremap <Leader>z :'[,']call HtmlEscape()<CR>
 " vnoremap <Leader>z :call HtmlEscape()<CR>
 " function HtmlEscape()
-"   silent s/&/\&amp;/eg
-"   silent s/</\&lt;/eg
-"   silent s/>/\&gt;/eg
+" silent s/&/\&amp;/eg
+" silent s/</\&lt;/eg
+" silent s/>/\&gt;/eg
 " endfunction
 
 " Reset highlight
 nnoremap <leader>nh :nohl<CR>
 
 " Use alt + hjkl to resize windows
-nnoremap <C-Down>    :resize -2<CR>
-nnoremap <C-Up>    :resize +2<CR>
-nnoremap <C-Left>    :vertical resize -2<CR>
-nnoremap <C-Right>    :vertical resize +2<CR>
+nnoremap <C-Down> :resize -2<CR>
+nnoremap <C-Up> :resize +2<CR>
+nnoremap <C-Left> :vertical resize -2<CR>
+nnoremap <C-Right> :vertical resize +2<CR>
 
 " I hate escape more than anything else
 imap jj <esc>
@@ -105,20 +105,20 @@ nnoremap <C-l> <C-w>l
 " nnoremap <Leader>O O<Esc>^Da
 
 fu! Incremental_yank(type, ...) abort
-    if a:type ==# 'char'
-        norm! `[v`]y
-    elseif a:type ==# 'line'
-        norm! '[V']y
-    elseif a:0
-        norm! gvy
-    endif
+ if a:type ==# 'char'
+ norm! `[v`]y
+ elseif a:type ==# 'line'
+ norm! '[V']y
+ elseif a:0
+ norm! gvy
+ endif
 
-    call setreg('z', @".(a:type ==# 'char' ? ' ' : ''), 'a' . getregtype('"'))
-    call setreg('"', @z, getregtype('z'))
+ call setreg('z', @".(a:type ==# 'char' ? ' ' : ''), 'a' . getregtype('"'))
+ call setreg('"', @z, getregtype('z'))
 endfu
 
-nno <silent> zy  :<C-U>set opfunc=Incremental_yank<CR>g@
-xno <silent> zy  :<C-U>call Incremental_yank(visualmode(), 1)<CR>
+nno <silent> zy :<C-U>set opfunc=Incremental_yank<CR>g@
+xno <silent> zy :<C-U>call Incremental_yank(visualmode(), 1)<CR>
 nno <silent> zyy :<C-U>set opfunc=Incremental_yank<Bar>exe 'norm! '.v:count1.'g@_'<CR>
 nno <silent> zyc :<C-U>let [@", @z] = ['', '']<CR>p
 
