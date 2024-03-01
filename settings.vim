@@ -11,7 +11,7 @@ autocmd FocusLost * silent! wall
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 set spellfile=~/.config/nvim/spell/en.utf-8.add
 
-" let g:sneak#label = 1
+let g:sneak#label = 1
 
 " set leader key
 let g:mapleader = "\<Space>"
