@@ -59,8 +59,8 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Plug 'airblade/vim-tailwind'
 
 Plug 'rcarriga/nvim-notify'
-Plug 'folke/noice.nvim'
-Plug 'MunifTanjim/nui.nvim'
+" Plug 'folke/noice.nvim'
+" Plug 'MunifTanjim/nui.nvim'
 " Plug 'folke/flash.nvim'
 
 "Buffers
