@@ -48,6 +48,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'f-person/git-blame.nvim'
 Plug 'jwalton512/vim-blade'
 Plug 'liuchengxu/vim-which-key'
+Plug 'mbbill/undotree'
 "Vim
 Plug 'airblade/vim-rooter'
 Plug 'tpope/vim-surround'

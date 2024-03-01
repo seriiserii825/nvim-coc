@@ -18,3 +18,4 @@ if has("persistent_undo")
     set undofile
 endif
 
+nnoremap <F5> :UndotreeToggle<CR>
