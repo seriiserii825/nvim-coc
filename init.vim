@@ -33,7 +33,7 @@ source $HOME/.config/nvim/modules/copylot.vim
 source $HOME/.config/nvim/modules/nvim-notify.vim
 source $HOME/.config/nvim/modules/nvim-noice.vim
 source $HOME/.config/nvim/modules/undotree.vim
-" source $HOME/.config/nvim/modules/flash.vim
+source $HOME/.config/nvim/modules/flash.vim
 
 "Map
 source $HOME/.config/nvim/keys/map-nvim.vim
