@@ -7,7 +7,7 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
-Plug 'justinmk/vim-sneak'
+" Plug 'justinmk/vim-sneak'
 " Plug 'posva/vim-vue'
 Plug 'leafOfTree/vim-vue-plugin'
 Plug 'junegunn/vim-easy-align'
@@ -64,7 +64,7 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'rcarriga/nvim-notify'
 Plug 'folke/noice.nvim'
 Plug 'MunifTanjim/nui.nvim'
-" Plug 'folke/flash.nvim'
+Plug 'folke/flash.nvim'
 
 "Buffers
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
