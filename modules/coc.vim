@@ -16,8 +16,8 @@ let g:coc_global_extensions=[
       \'coc-stylelint',
       \'coc-snippets',
       \'coc-tsserver',
-      \'coc-emmet',
       \'coc-sh',
+      \'coc-emmet',
       \'coc-html',
       \'coc-highlight',
       \'@yaegassy/coc-volar'

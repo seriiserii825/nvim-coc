@@ -11,13 +11,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " Plug 'posva/vim-vue'
 Plug 'leafOfTree/vim-vue-plugin'
 Plug 'junegunn/vim-easy-align'
-Plug 'mattn/emmet-vim'
+" Plug 'mattn/emmet-vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'github/copilot.vim'
 Plug 'digitaltoad/vim-pug'
-Plug 'rbong/vim-flog'
+" Plug 'rbong/vim-flog'
 " Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
-Plug 'yaegassy/coc-tailwindcss3', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'yaegassy/coc-tailwindcss3', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'Pocco81/HighStr.nvim'
 "Coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -46,14 +46,17 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'f-person/git-blame.nvim'
-Plug 'jwalton512/vim-blade'
+
+
+" Plug 'jwalton512/vim-blade'
 Plug 'liuchengxu/vim-which-key'
 Plug 'mbbill/undotree'
+
 "Vim
 Plug 'airblade/vim-rooter'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
-Plug 'alvan/vim-closetag'
+" Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-commentary'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Plug 'airblade/vim-tailwind'

@@ -5,6 +5,8 @@ nmap <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 nmap <leader>w :wa<CR>
 nnoremap <Leader>x :g/^\s*$/d<CR>
 nnoremap <Leader>z :%s/\s\{2,}/ /g<CR>
+nnoremap <Leader>pc :w <bar> :source % <bar> :PlugClean<CR>
+nnoremap <Leader>pi :w <bar> :source % <bar> :PlugInstall<CR>
 
 " nmap <C-t> :let @+ = len(@+)<CR> 
 "
