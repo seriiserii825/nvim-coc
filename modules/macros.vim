@@ -7,6 +7,7 @@ let @h='k^f:wvfph"xyj^f:wvfph"yyvf;hc=str2float()€kl@x€kr/str2float()€kl@x€kl€k
 " copy class from html to scss
 " let @s='^f_llvf"hy€üLGko&__pa {'
 
+let @s='^f_€ýalhvt"€ýay€üLGko&pa {'
 
 " =========== html
 let @l='I<li>jjA</li>jjj' " li
@@ -46,11 +47,4 @@ let @i="gg^/it nhddGp"
 " let @f="^C$pa = get_field();hi'pl,a, 'optionj"
 " let @t="/_it nhD^C$pa = get_field();hi'pla,€kb.get_lang(), 'optionj"
 
-"==== words in line add new line after each
-let @n='^s;:s/ /\r/gdd'
-" let @s='I"lx$pj^'
-let @s='^/classf"€ýaf_€ýavf"€ýah"ay€üLGko&=@a {:nohl'
-" let @f="magg=G'a"
-
-let @e='F$€ýavf}€ýaxf$€ýavf}€ýaxF"€ýal'
 
