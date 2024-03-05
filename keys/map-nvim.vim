@@ -25,7 +25,7 @@ nmap <leader>fh :set filetype=html<CR>
 nmap <leader>fp :set filetype=php<CR>
 
 "rename word
-nmap <C-s> :%s/\<<C-r><C-w>\>/
+" nmap <C-s> :%s/\<<C-r><C-w>\>/
 " nmap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 
 nmap <C-c> :Colortils<CR>
