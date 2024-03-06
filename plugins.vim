@@ -39,6 +39,7 @@ Plug 'rcarriga/nvim-notify'
 Plug 'folke/noice.nvim'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'folke/flash.nvim'
+Plug 'alvan/vim-closetag'
 
 
 "Coc
@@ -83,7 +84,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' 
 
 "Vim
 " Plug 'airblade/vim-tailwind'
-Plug 'alvan/vim-closetag'
 
 " Plug 'iamcco/mathjax-support-for-mkdp'
 " Plug 'iamcco/markdown-preview.vim'
