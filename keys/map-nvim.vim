@@ -1,5 +1,3 @@
-" Buffers
-nmap <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 " nnoremap <leader>a :w <bar> %bd <bar> e# <bar> bd# <CR>
 "save all
 nmap <leader>w :wa<CR>

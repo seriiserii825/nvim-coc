@@ -45,13 +45,9 @@ nnoremap <silent><S-h> :BufferLineCyclePrev<CR>
 "
 nnoremap <silent><M-S-l> :BufferLineMoveNext<CR>
 nnoremap <silent><M-S-h> :BufferLineMovePrev<CR>
-
-" These commands will sort buffers by directory, language, or a custom criteria
-" nnoremap <silent>be :BufferLineSortByExtension<CR>
-" nnoremap <silent>bd :BufferLineSortByDirectory<CR>
-nnoremap <leader>cr :BufferLineCloseRight<CR>
-nnoremap <leader>a :BufferLineCloseOther<CR>
-
+nnoremap <leader>qr :BufferLineCloseRight<CR>
+nnoremap <leader>qa :BufferLineCloseOther<CR>
+nmap <leader>qo :bp<bar>sp<bar>bn<bar>bd<CR>
 
 nnoremap <leader>1 :BufferLineGoToBuffer 1<CR>
 nnoremap <leader>2 :BufferLineGoToBuffer 2<CR>
