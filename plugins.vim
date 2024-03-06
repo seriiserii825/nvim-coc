@@ -6,37 +6,44 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
+" Automatically run :Plug Clean and :Plug Install when saving plugins.vim
+augroup AutoPlug
+    autocmd!
+    autocmd BufWritePost plugins.vim silent! source %
+    autocmd BufWritePost plugins.vim silent! PlugClean 
+    autocmd BufWritePost plugins.vim silent! PlugInstall 
+augroup END
+
 call plug#begin('~/.config/nvim/autoload/plugged')
-" Plug 'justinmk/vim-sneak'
-" Plug 'posva/vim-vue'
-Plug 'leafOfTree/vim-vue-plugin'
-Plug 'junegunn/vim-easy-align'
-" Plug 'mattn/emmet-vim'
-Plug 'voldikss/vim-floaterm'
-Plug 'github/copilot.vim'
-Plug 'digitaltoad/vim-pug'
-" Plug 'rbong/vim-flog'
-" Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
-" Plug 'yaegassy/coc-tailwindcss3', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'Pocco81/HighStr.nvim'
-"Coc
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
-
-" Javscript
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
-" Plug 'leafgarland/typescript-vim'
-" Plug 'peitalin/vim-jsx-typescript' 
-
-" Themes
-" Plug 'tanvirtin/monokai.nvim'
-" Plug 'mhartington/oceanic-next'
+"Appearance
 Plug 'phanviet/vim-monokai-pro'
 Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'frazrepo/vim-rainbow'
+Plug 'junegunn/vim-easy-align'
+
+" Editor
+Plug 'voldikss/vim-floaterm'
+Plug 'github/copilot.vim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'CRAG666/code_runner.nvim'
+Plug 'liuchengxu/vim-which-key'
+Plug 'mbbill/undotree'
+Plug 'airblade/vim-rooter'
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-commentary'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'rcarriga/nvim-notify'
+Plug 'folke/noice.nvim'
+Plug 'MunifTanjim/nui.nvim'
+Plug 'folke/flash.nvim'
+
+
+"Coc
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
 
 "Fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -47,25 +54,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'f-person/git-blame.nvim'
 
-
-" Plug 'jwalton512/vim-blade'
-Plug 'liuchengxu/vim-which-key'
-Plug 'mbbill/undotree'
-
-"Vim
-Plug 'airblade/vim-rooter'
-Plug 'tpope/vim-surround'
-Plug 'jiangmiao/auto-pairs'
-" Plug 'alvan/vim-closetag'
-Plug 'tpope/vim-commentary'
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-" Plug 'airblade/vim-tailwind'
-
-Plug 'rcarriga/nvim-notify'
-Plug 'folke/noice.nvim'
-Plug 'MunifTanjim/nui.nvim'
-Plug 'folke/flash.nvim'
-
 "Buffers
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 Plug 'akinsho/bufferline.nvim'
@@ -75,23 +63,45 @@ Plug 'NvChad/nvim-colorizer.lua'
 Plug 'ziontee113/color-picker.nvim'
 
 "Snippets
-" Track the engine.
 Plug 'SirVer/ultisnips'
-
-" Snippets are separated from the engine. Add this if you want them:
 Plug 'honza/vim-snippets'
+
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+
+
+" Javscript
+" Plug 'mxw/vim-jsx'
+" Plug 'pangloss/vim-javascript'
+" Plug 'leafgarland/typescript-vim'
+" Plug 'peitalin/vim-jsx-typescript' 
+
+" Themes
+" Plug 'tanvirtin/monokai.nvim'
+" Plug 'mhartington/oceanic-next'
+
+" Plug 'jwalton512/vim-blade'
+
+"Vim
+" Plug 'airblade/vim-tailwind'
+" Plug 'alvan/vim-closetag'
 
 " Plug 'iamcco/mathjax-support-for-mkdp'
 " Plug 'iamcco/markdown-preview.vim'
 " Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 
 " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 " Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 " Plug 'ixru/nvim-markdown'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-Plug 'CRAG666/code_runner.nvim'
+" Plug 'justinmk/vim-sneak'
+" Plug 'posva/vim-vue'
+" Plug 'leafOfTree/vim-vue-plugin'
+" Plug 'mattn/emmet-vim'
+" Plug 'digitaltoad/vim-pug'
+" Plug 'rbong/vim-flog'
+" Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
+" Plug 'yaegassy/coc-tailwindcss3', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'Pocco81/HighStr.nvim'
 call plug#end()
 
