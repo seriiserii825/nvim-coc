@@ -2,6 +2,7 @@
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": true,
+  "explorer.openAction.relativePath": true,
   "explorer.keyMappings.global": {
     "<cr>": [
       "expandable?",
