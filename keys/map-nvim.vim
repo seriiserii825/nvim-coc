@@ -8,6 +8,9 @@ nnoremap <Leader>z :%s/\s\{2,}/ /g<CR>
 nnoremap <Leader>pc :w <bar> :source % <bar> :PlugClean<CR>
 nnoremap <Leader>pi :w <bar> :source % <bar> :PlugInstall<CR>
 
+"source init.vim
+nnoremap <silent> <Leader>sn :source ~/.config/nvim/init.vim<CR>
+
 " nmap <C-t> :let @+ = len(@+)<CR> 
 "
 nmap <leader>yc :RunCode<CR>

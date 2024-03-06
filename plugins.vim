@@ -83,7 +83,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' 
 
 "Vim
 " Plug 'airblade/vim-tailwind'
-" Plug 'alvan/vim-closetag'
+Plug 'alvan/vim-closetag'
 
 " Plug 'iamcco/mathjax-support-for-mkdp'
 " Plug 'iamcco/markdown-preview.vim'
