@@ -1,4 +1,3 @@
-
 lua << EOF
 require("noice").setup({
   routes = {
@@ -8,5 +7,4 @@ require("noice").setup({
     },
   }
 })
-
 EOF

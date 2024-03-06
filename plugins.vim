@@ -40,8 +40,9 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'rcarriga/nvim-notify'
 Plug 'folke/noice.nvim'
 Plug 'MunifTanjim/nui.nvim'
-Plug 'folke/flash.nvim'
+" Plug 'folke/flash.nvim'
 Plug 'alvan/vim-closetag'
+Plug 'justinmk/vim-sneak'
 
 
 "Coc
@@ -96,7 +97,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' 
 " Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 " Plug 'ixru/nvim-markdown'
 
-" Plug 'justinmk/vim-sneak'
 " Plug 'posva/vim-vue'
 " Plug 'leafOfTree/vim-vue-plugin'
 " Plug 'mattn/emmet-vim'
