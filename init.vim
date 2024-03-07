@@ -25,7 +25,7 @@ source $HOME/.config/nvim/modules/floaterm.vim
 source $HOME/.config/nvim/modules/rainbow.vim
 source $HOME/.config/nvim/modules/indent-guides.vim
 source $HOME/.config/nvim/modules/easy-align.vim
-source $HOME/.config/nvim/modules/close-tag.vim
+" source $HOME/.config/nvim/modules/close-tag.vim
 source $HOME/.config/nvim/modules/ftp.vim
 source $HOME/.config/nvim/modules/markdown-preview.vim
 source $HOME/.config/nvim/modules/ulti-snippets.vim
