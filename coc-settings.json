@@ -44,6 +44,8 @@
   "javascript.suggestionActions.enabled": false,
   "snippets.ultisnips.pythonPrompt": false,
   "sh.enable": true,
+  "bashIde.enableSourceErrorDiagnostics": true,
+  "bashIde.includeAllWorkspaceSymbols": true,
   "prettier.enable": false,
   "prettier.disableLanguages": [
     "vue"
@@ -54,5 +56,11 @@
     "php": "html",
     "markdown": "html"
   },
-  "html.format.wrapLineLength": 0
+  "languageserver": {
+    "bash": {
+      "command": "bash-language-server", 
+      "args": ["start"],
+      "filetypes": ["sh"]
+    }
+  }
 }
