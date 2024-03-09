@@ -7,6 +7,8 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
+
+
 " Automatically run :Plug Clean and :Plug Install when saving plugins.vim
 augroup AutoPlug
     autocmd!
@@ -55,8 +57,9 @@ Plug 'junegunn/fzf.vim'
 
 "Git
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
 Plug 'f-person/git-blame.nvim'
+Plug 'lewis6991/gitsigns.nvim'
 
 "Buffers
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
