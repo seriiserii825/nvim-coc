@@ -17,7 +17,8 @@ source $HOME/.config/nvim/modules/coc.vim
 source $HOME/.config/nvim/modules/fzf.vim
 source $HOME/.config/nvim/modules/coc-explorer.vim
 source $HOME/.config/nvim/modules/which-key.vim
-source $HOME/.config/nvim/modules/gitgutter.vim
+" source $HOME/.config/nvim/modules/gitgutter.vim
+source $HOME/.config/nvim/modules/gitsign.vim
 source $HOME/.config/nvim/modules/emmet.vim
 source $HOME/.config/nvim/modules/multiple-cursors.vim
 source $HOME/.config/nvim/modules/coc-css.vim
