@@ -19,6 +19,7 @@ let g:coc_global_extensions=[
       \'coc-sh',
       \'coc-emmet',
       \'coc-highlight',
+      \'@yaegassy/coc-laravel',
       \'@yaegassy/coc-volar'
       \]
 
