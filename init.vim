@@ -31,8 +31,8 @@ source $HOME/.config/nvim/modules/ftp.vim
 source $HOME/.config/nvim/modules/markdown-preview.vim
 source $HOME/.config/nvim/modules/ulti-snippets.vim
 source $HOME/.config/nvim/modules/copylot.vim
-source $HOME/.config/nvim/modules/nvim-notify.vim
-source $HOME/.config/nvim/modules/nvim-noice.vim
+" source $HOME/.config/nvim/modules/nvim-notify.vim
+" source $HOME/.config/nvim/modules/nvim-noice.vim
 source $HOME/.config/nvim/modules/undotree.vim
 source $HOME/.config/nvim/modules/sneak.vim
  " source $HOME/.config/nvim/modules/flash.vim
