@@ -26,7 +26,7 @@ let @c='f,€ýacljf €ýaijf:€ýala€kbkkkkk@t@p@f@p@f@pkkkkkkO<li>jjjjjjo</li>
 let @z='^f,€ýaxi/Teachingf:€ýaa/Teachnin€kb€kb€kbing languagef:€ýaa nhkkkkk@t@p@f@p@f@pkkkkkkO<li>jjjjjjo</li>j'
 
 "=========== javascript
-" let @c='^wvt yoconsole.log()i""hpla, pla;'
+let @c='^wvt yoconsole.log()i""hpla, pla;'
 let @j='^wvt yoconsole.log9)€kb€kb€kb();hiJSON.stringify()hpa, null, 4' " js logjs Json stringify
 
 "=========== php
