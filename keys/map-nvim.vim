@@ -39,11 +39,11 @@ let b:surround_{char2nr('c')} = "```\r```"
 "nmap <M-l> :wall<CR>
 " File paths
 " relative
-map <leader>yr :let @+=expand("%")<CR> 
+map <silent> <leader>yr :let @+=expand("%")<CR> 
 " absolute
-map <leader>ya :let @+=expand("%:p")<CR>
+map <silent> <leader>ya :let @+=expand("%:p")<CR>
 " Filename
-map <leader>yf :let @+=expand("%:t")<CR>
+map <silent> <leader>yf :let @+=expand("%:t")<CR>
 " Directory
 " map <leader>yd :let @+=expand("%:p:h")<CR>
 
