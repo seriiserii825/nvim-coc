@@ -43,9 +43,9 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Plug 'rcarriga/nvim-notify'
 " Plug 'folke/noice.nvim'
 " Plug 'MunifTanjim/nui.nvim'
-" Plug 'folke/flash.nvim'
+Plug 'folke/flash.nvim'
 " Plug 'alvan/vim-closetag'
-Plug 'justinmk/vim-sneak'
+" Plug 'justinmk/vim-sneak'
 
 
 "Coc
