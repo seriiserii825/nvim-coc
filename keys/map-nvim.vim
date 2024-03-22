@@ -8,6 +8,7 @@ nnoremap <Leader>pi :w <bar> :source % <bar> :PlugInstall<CR>
 
 "source init.vim
 nnoremap <silent> <Leader>sn :source ~/.config/nvim/init.vim<CR>
+nnoremap <silent> <Leader>sf :source %<CR>
 
 " nmap <C-t> :let @+ = len(@+)<CR> 
 "
