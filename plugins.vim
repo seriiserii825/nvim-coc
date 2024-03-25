@@ -1,4 +1,4 @@
-" execute pathogen#infect()
+2 execute pathogen#infect()
 " auto-install vim-plug
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
@@ -40,9 +40,9 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tomtom/tcomment_vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-" Plug 'rcarriga/nvim-notify'
-" Plug 'folke/noice.nvim'
-" Plug 'MunifTanjim/nui.nvim'
+Plug 'rcarriga/nvim-notify'
+Plug 'folke/noice.nvim'
+Plug 'MunifTanjim/nui.nvim'
 Plug 'folke/flash.nvim'
 " Plug 'alvan/vim-closetag'
 " Plug 'justinmk/vim-sneak'
