@@ -5,6 +5,7 @@ nnoremap <Leader>x :g/^\s*$/d<CR>
 nnoremap <Leader>z :%s/\s\{2,}/ /g<CR>
 nnoremap <Leader>pc :w <bar> :source % <bar> :PlugClean<CR>
 nnoremap <Leader>pi :w <bar> :source % <bar> :PlugInstall<CR>
+nmap <silent> <leader>ob :exec 'silent !vivaldi-stable % &'<CR>
 
 "source init.vim
 nnoremap <silent> <Leader>sn :source ~/.config/nvim/init.vim<CR>
