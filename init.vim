@@ -47,6 +47,7 @@ source $HOME/.config/nvim/themes/airline.vim
 
 "Lua
 source $HOME/.config/nvim/modules/bufferline.vim
+source $HOME/.config/nvim/modules/neogit.vim
 " source $HOME/.config/nvim/modules/colortils.vim
 source $HOME/.config/nvim/modules/colorize.vim
 source $HOME/.config/nvim/modules/vim-vue.vim
