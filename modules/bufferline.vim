@@ -57,6 +57,6 @@ nnoremap <leader>5 :BufferLineGoToBuffer 5<CR>
 nnoremap <leader>6 :BufferLineGoToBuffer 6<CR>
 nnoremap <leader>7 :BufferLineGoToBuffer 7<CR>
 nnoremap <leader>8 :BufferLineGoToBuffer 8<CR>
-nnoremap <leader>9 :BufferLineGoToBuffer 9<CR>
-nnoremap <leader>0 :BufferLineGoToBuffer 0<CR>
+-- nnoremap <leader>9 :BufferLineGoToBuffer 9<CR>
+-- nnoremap <leader>0 :BufferLineGoToBuffer 0<CR>
 
