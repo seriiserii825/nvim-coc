@@ -36,13 +36,9 @@ require('bufferline').setup {
 EOF
 
 
-" These commands will navigate through buffers in order regardless of which mode you are using
-" e.g. if you change the order of buffers :bnext and :bprevious will not respect the custom ordering
 nnoremap <silent><S-l> :BufferLineCycleNext<CR>
 nnoremap <silent><S-h> :BufferLineCyclePrev<CR>
 
-" These commands will move the current buffer backwards or forwards in the bufferline
-"
 nnoremap <silent><M-S-l> :BufferLineMoveNext<CR>
 nnoremap <silent><M-S-h> :BufferLineMovePrev<CR>
 nnoremap <leader>qr :BufferLineCloseRight<CR>
@@ -57,6 +53,6 @@ nnoremap <leader>5 :BufferLineGoToBuffer 5<CR>
 nnoremap <leader>6 :BufferLineGoToBuffer 6<CR>
 nnoremap <leader>7 :BufferLineGoToBuffer 7<CR>
 nnoremap <leader>8 :BufferLineGoToBuffer 8<CR>
--- nnoremap <leader>9 :BufferLineGoToBuffer 9<CR>
--- nnoremap <leader>0 :BufferLineGoToBuffer 0<CR>
+nnoremap <leader>9 :BufferLineGoToBuffer 9<CR>
+nnoremap <leader>0 :BufferLineGoToBuffer 0<CR>
 
