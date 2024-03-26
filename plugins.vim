@@ -44,6 +44,7 @@ Plug 'rcarriga/nvim-notify'
 Plug 'folke/noice.nvim'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'folke/flash.nvim'
+Plug 'AndrewRadev/splitjoin.vim'
 " Plug 'alvan/vim-closetag'
 " Plug 'justinmk/vim-sneak'
 
