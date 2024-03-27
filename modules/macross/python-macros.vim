@@ -1,6 +1,6 @@
 " python
-let @r='vf"ýaccolored(pa, "redjj'
-let @g='vf"ýaccolored(pa, "green'
-let @b='vf"ýaccolored(pa, "blue'
-let @y='vf"ýaccolored(pa, "yellow'
+let @r='hvt"lccolored(pa, "red'
+let @g='hvt"lccolored(pa, "green'
+let @b='hvt"lccolored(pa, "blue'
+let @y='hvt"lccolored(pa, "yellow'
 
