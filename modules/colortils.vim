@@ -42,3 +42,5 @@ require("colortils").setup({
     }
 })
 EOF
+
+nmap <C-c> :Colortils<CR>
