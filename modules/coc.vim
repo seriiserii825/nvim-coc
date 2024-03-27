@@ -30,7 +30,7 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> [g <Plug>(coc-diagnostic-next)
 nmap <silent> ]g <Plug>(coc-diagnostic-prev)
-nnoremap <silent> cd :<C-u>CocList diagnostics<cr>
+" nmap <silent><leader> cz <Plug>(coc-list-diagnostic)
 " nmap ca <Plug>(coc-codeaction)
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
@@ -48,7 +48,7 @@ xmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
 nmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
 
 " Run the Code Lens action on the current line
-nmap <leader>cl  <Plug>(coc-codelens-action)
+nmap <leader>cs  <Plug>(coc-codelens-action)
 
 nmap <M-l> <Plug>(coc-format)
 nmap crn <Plug>(coc-rename)

@@ -31,7 +31,7 @@ let @j='^wvt yoconsole.log9)€kb€kb€kb();hiJSON.stringify()hpa, null, 4' " js 
 
 "=========== php
 "vardump
-let @v='I//j'
+let @v='^vt hl"myovardump("mpA;^'
 "php comment
 let @z='^I<--A-->^a!f?f a//j^'
 "php uncomment
