@@ -25,10 +25,14 @@ Plug 'vim-airline/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'frazrepo/vim-rainbow'
 
-" Editor
+"Align
 Plug 'godlygeek/tabular'
-Plug 'junegunn/vim-easy-align'
+" Plug 'junegunn/vim-easy-align'
+
+"Terminal
 Plug 'voldikss/vim-floaterm'
+
+" Editor
 Plug 'github/copilot.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'CRAG666/code_runner.nvim'
@@ -37,7 +41,6 @@ Plug 'mbbill/undotree'
 Plug 'airblade/vim-rooter'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
-Plug 'jiangmiao/auto-pairs'
 Plug 'tomtom/tcomment_vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'rcarriga/nvim-notify'
@@ -45,9 +48,6 @@ Plug 'folke/noice.nvim'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'folke/flash.nvim'
 Plug 'AndrewRadev/splitjoin.vim'
-" Plug 'alvan/vim-closetag'
-" Plug 'justinmk/vim-sneak'
-
 
 "Coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -59,11 +59,11 @@ Plug 'junegunn/fzf.vim'
 
 "Git
 Plug 'tpope/vim-fugitive'
-" Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 Plug 'f-person/git-blame.nvim'
-Plug 'lewis6991/gitsigns.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'NeogitOrg/neogit'
+" Plug 'lewis6991/gitsigns.nvim'
+" Plug 'nvim-lua/plenary.nvim'
+" Plug 'NeogitOrg/neogit'
 
 "Buffers
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
@@ -77,6 +77,7 @@ Plug 'ziontee113/color-picker.nvim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
+"Markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 
 
