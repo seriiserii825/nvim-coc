@@ -42,7 +42,7 @@ nnoremap <silent><S-h> :BufferLineCyclePrev<CR>
 nnoremap <silent><M-S-l> :BufferLineMoveNext<CR>
 nnoremap <silent><M-S-h> :BufferLineMovePrev<CR>
 nnoremap <leader>qr :BufferLineCloseRight<CR>
-nnoremap <leader>qa :BufferLineCloseOther<CR>
+nnoremap <leader>qt :BufferLineCloseOther<CR>
 nmap <leader>qo :bp<bar>sp<bar>bn<bar>bd<CR>
 
 nnoremap <leader>1 :BufferLineGoToBuffer 1<CR>
