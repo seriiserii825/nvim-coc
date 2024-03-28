@@ -20,8 +20,8 @@ let @t='I<h2>A</h2>j' "h2
 " let @k='cs<"f"€ýaa:lvf<€ýahS"f"€ýalC,j^'
 " let @t='^fi€ýadt>€ýapcst}lysw"f=€ýar:€ýaA,j^@k€ýa€ýa€ýa@k€ýa€ýa€ýa@k€ýa€ýa€ýa@k€ýa€ýa€ýaa,j'
 
-" docent li italian
-let @c='f,€ýacljf €ýaijf:€ýala€kbkkkkk@t@p@f@p@f@pkkkkkkO<li>jjjjjjo</li>j^'
+" html class by buffer @b(copy parrent class to buffer @b and after run macro)
+let @c='i<div class=""bpa__la></div>F_lh'
 " docent li english
 let @z='^f,€ýaxi/Teachingf:€ýaa/Teachnin€kb€kb€kbing languagef:€ýaa nhkkkkk@t@p@f@p@f@pkkkkkkO<li>jjjjjjo</li>j'
 
