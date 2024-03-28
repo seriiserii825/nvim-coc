@@ -16,6 +16,30 @@ snippet flc "flex calc"
 flex: 0 0 calc(100% / $1 - $2);
 endsnippet
 
+snippet bf "Before" b
+&::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+endsnippet
+
+snippet af "After" b
+&::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+endsnippet
+
 snippet dfc "dfc"
 display: flex;
 justify-content: center;
