@@ -16,7 +16,7 @@ snippet flc "flex calc"
 flex: 0 0 calc(100% / $1 - $2);
 endsnippet
 
-snippet bf "Before" b
+snippet bf "Description" b
 &::before {
 	content: '';
 	position: absolute;
@@ -161,7 +161,9 @@ snippet trs "trs" i
 transition: all .$1s;
 endsnippet
 
-snippet trf "trf" i
+snippet trfc "trf center" 
+top: 50%;
+left: 50%;
 transform: translate(-50%, -50%);
 endsnippet
 
