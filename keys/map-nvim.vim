@@ -16,7 +16,9 @@ nmap <leader>yc :RunCode<CR>
 nmap <leader>yl :RunFile<CR>
 nmap , :RunFile float<CR>
 "rename word
-nmap <leader>rn :%s/\<<C-r><C-w>\>/
+vnoremap <leader>rn "zy:s/<C-r>z/
+vnoremap <leader>rna "zy:%s/<C-r>z/
+nmap <leader>vs "iyi"
 let b:surround_{char2nr('c')} = "```\r```"
 " File paths
 " relative

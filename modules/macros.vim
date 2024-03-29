@@ -21,7 +21,7 @@ let @t='I<h2>A</h2>j' "h2
 " let @t='^fi€ýadt>€ýapcst}lysw"f=€ýar:€ýaA,j^@k€ýa€ýa€ýa@k€ýa€ýa€ýa@k€ýa€ýa€ýa@k€ýa€ýa€ýaa,j'
 
 " html class by buffer @b(copy parrent class to buffer @b and after run macro)
-let @d='i<div class=""bpa__la></div>F_lh'
+let @d='i<div class=""ipa__la></div>F_lh'
 " docent li english
 let @z='^f,€ýaxi/Teachingf:€ýaa/Teachnin€kb€kb€kbing languagef:€ýaa nhkkkkk@t@p@f@p@f@pkkkkkkO<li>jjjjjjo</li>j'
 
@@ -33,7 +33,7 @@ let @j='^wvt yoconsole.log9)€kb€kb€kb();hiJSON.stringify()hpa, null, 4' " js 
 "vardump
 let @v='^vt hl"myovardump("mpA;^'
 "php comment
-let @z='^I<--A-->^a!f?f a//j^'
+" let @z='^I<--A-->^a!f?f a//j^'
 "php uncomment
 let @u='^vf<hxf/xx/--Dj'
 
@@ -43,7 +43,7 @@ let @u='^vf<hxf/xx/--Dj'
 " let @u='^xxj'
 
 " move all _it to bottom
-let @i="gg^/it nhddGp" 
+" let @i="gg^/it\ nhddGp" 
 " let @f="^C$pa = get_field();hi'pl,a, 'optionj"
 " let @t="/_it nhD^C$pa = get_field();hi'pla,€kb.get_lang(), 'optionj"
 
