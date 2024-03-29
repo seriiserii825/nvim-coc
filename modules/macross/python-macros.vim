@@ -1,6 +1,6 @@
 " python
-let @m='hvt"lccolored(pa, "red'
-let @g='hvt"lccolored(pa, "green'
-let @b='hvt"lccolored(pa, "blue'
-let @y='hvt"lccolored(pa, "yellow'
+let @m='ci(coo€kblored(pa, "red^'
+let @g='ci(coo€kblored(pa, "green^'
+let @b='ci(coo€kblored(pa, "blue^'
+let @y='ci(coo€kblored(pa, "yellow^'
 
