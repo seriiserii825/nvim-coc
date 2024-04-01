@@ -65,3 +65,5 @@ hi Visual  guifg=#000000 guibg=#7FFFD4 gui=none
 " source $HOME/.config/nvim/modules/ftp.vim
 " source $HOME/.config/nvim/modules/sneak.vim
 " source $HOME/.config/nvim/modules/neogit.vim
+"
+let g:python3_host_prog = "/usr/bin/python"
