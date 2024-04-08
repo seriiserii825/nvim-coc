@@ -23,7 +23,7 @@ source $HOME/.config/nvim/modules/coc-explorer.vim
 source $HOME/.config/nvim/modules/coc-css.vim
 
 "Git
-source $HOME/.config/nvim/modules/gitgutter.vim
+" source $HOME/.config/nvim/modules/gitgutter.vim
 
 "Editor
 source $HOME/.config/nvim/modules/which-key.vim
