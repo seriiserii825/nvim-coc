@@ -14,6 +14,7 @@ let @l='I<li>jjA</li>jjj' " li
 let @p='I<p>jjA</p>jj^llllj' "p
 let @t='I<h2>A</h2>j' "h2
 " let @f='I<h3>€kb€kb4>A<h4>j^' "h4
+let @w="^xxxidef $xxxa():"
 
 " ======= xml
 " one tag to json
