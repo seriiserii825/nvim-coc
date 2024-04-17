@@ -8,8 +8,8 @@ autocmd FocusLost * silent! wall
 " nnoremap , :vs <CR> :term python3 % <CR>
 " let g:user_emmet_expandabbr_key='<C-;>'
 
-set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
-set list
+" set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
+" set list
 
 "Disable 
 let g:loaded_perl_provider = 0
