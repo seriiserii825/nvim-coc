@@ -50,7 +50,7 @@ nmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
 " Run the Code Lens action on the current line
 nmap <leader>cs  <Plug>(coc-codelens-action)
 
-nmap <M-l> <Plug>(coc-format)
+nmap <M-j> <Plug>(coc-format)
 nmap crn <Plug>(coc-rename)
 inoremap <silent><expr> <C-n> coc#pum#visible() ? coc#pum#next(1) : "\<C-n>"
 inoremap <silent><expr> <C-p> coc#pum#visible() ? coc#pum#prev(1) : "\<C-p>"
