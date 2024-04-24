@@ -8,6 +8,7 @@ let g:coc_global_extensions=[
       \'coc-svg',
       \'coc-phpls',
       \'coc-css',
+      \'coc-xml',
       \'coc-eslint',
       \'coc-explorer',
       \'coc-fzf-preview',
