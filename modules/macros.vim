@@ -7,7 +7,7 @@ let @h='k^f:wvfph"xyj^f:wvfph"yyvf;hc=str2float()€kl@x€kr/str2float()€kl@x€kl€k
 " copy class from html to scss
 " let @s='^f_llvf"hy€üLGko&__pa {'
 
-let @s='^f_€ýalhvt"€ýay€üLGko&pa {'
+let @s='^/__ nhve"ay€üLGi&=@a {'
 
 " =========== html
 let @l='I<li>jjA</li>jjj' " li
