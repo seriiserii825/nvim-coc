@@ -2,7 +2,7 @@ let g:floaterm_wintype = 'float'
 let g:floaterm_width = 0.96
 let g:floaterm_height = 0.96
 
-let g:floaterm_keymap_toggle = '<C-t>'
+let g:floaterm_keymap_toggle = '<C-b>'
 
 " Files
 nmap <leader>ff :Files<CR>
