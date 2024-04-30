@@ -1,5 +1,6 @@
 "save all
 nmap <leader>w :wa<CR>
+nmap _ i <Esc>
 " remove empty lines
 nnoremap <silent> <Leader>x :g/^\s*$/d<CR>
 " remove trailing spaces
