@@ -9,6 +9,9 @@ let @h='k^f:wvfph"xyj^f:wvfph"yyvf;hc=str2float()€kl@x€kr/str2float()€kl@x€kl€k
 
 let @s='^/__ nhve"ay€üLGi&=@a {'
 
+" html wrap attributes
+let @w='^f"€ýa;a'
+
 " =========== html
 let @l='I<li>jjA</li>jjj' " li
 let @p='I<p>jjA</p>jj^llllj' "p
