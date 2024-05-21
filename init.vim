@@ -35,7 +35,7 @@ source $HOME/.config/nvim/modules/indent-guides.vim
 source $HOME/.config/nvim/modules/easy-align.vim
 source $HOME/.config/nvim/modules/copylot.vim
 source $HOME/.config/nvim/modules/undotree.vim
-source $HOME/.config/nvim/modules/flash.vim
+" source $HOME/.config/nvim/modules/flash.vim
 source $HOME/.config/nvim/modules/tabular.vim
 source $HOME/.config/nvim/modules/colorize.vim
 source $HOME/.config/nvim/modules/code-runner.vim
@@ -63,7 +63,7 @@ source $HOME/.config/nvim/modules/bufferline.vim
 
 hi Visual  guifg=#000000 guibg=#7FFFD4 gui=none
 " source $HOME/.config/nvim/modules/ftp.vim
-" source $HOME/.config/nvim/modules/sneak.vim
+source $HOME/.config/nvim/modules/sneak.vim
 " source $HOME/.config/nvim/modules/neogit.vim
 "
 let g:python3_host_prog = "/usr/bin/python"
