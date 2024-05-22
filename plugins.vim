@@ -43,9 +43,9 @@ Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tomtom/tcomment_vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-" Plug 'folke/flash.nvim'
+Plug 'folke/flash.nvim'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'justinmk/vim-sneak'
+" Plug 'justinmk/vim-sneak'
 
 "Notify
 Plug 'rcarriga/nvim-notify'
