@@ -46,12 +46,6 @@
   "sh.enable": true,
   "bashIde.enableSourceErrorDiagnostics": true,
   "bashIde.includeAllWorkspaceSymbols": true,
-  "prettier.enable": false,
-  "prettier.disableLanguages": [
-    "vue"
-  ],
-  "prettier.proseWrap": "never",
-  "prettier.printWidth": 200000,
   "emmet.includeLanguages": {
     "php": "html",
     "markdown": "html"
