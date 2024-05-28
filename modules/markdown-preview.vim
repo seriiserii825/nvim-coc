@@ -4,8 +4,8 @@ nmap <leader>mp <Plug>MarkdownPreview<CR>
 " nmap <leader>ms :CocCommand markdown-preview-enhanced.syncPreview<CR>
 " set to 1, nvim will open the preview window after entering the markdown buffer
 " default: 0
-let g:mkdp_auto_start = 0
-let g:mkdp_path_to_chrome = "/usr/bin/google-chrome"
+let g:mkdp_auto_start = 1
+let g:mkdp_path_to_chrome = "/usr/bin/vivaldi-stable"
 let g:mkdp_theme = 'light'
 
 " set to 1, the nvim will auto close current preview window when change
