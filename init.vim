@@ -50,8 +50,8 @@ source $HOME/.config/nvim/modules/markdown-preview.vim
 source $HOME/.config/nvim/modules/ulti-snippets.vim
 
 "Notify
-source $HOME/.config/nvim/modules/nvim-notify.vim
-source $HOME/.config/nvim/modules/nvim-noice.vim
+" source $HOME/.config/nvim/modules/nvim-notify.vim
+" source $HOME/.config/nvim/modules/nvim-noice.vim
 
 "Theme
 source $HOME/.config/nvim/themes/colorscheme.vim
