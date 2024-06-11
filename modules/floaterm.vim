@@ -11,6 +11,7 @@ nmap <leader>fs :vs <bar> :Files<CR>
 nmap <leader>fb :Buffers<CR>
 nmap <silent> <expr> <leader>fw ':Files <cr>' . "'" . expand('<cword>')
 nmap <Leader>fg :call fzf#vim#ag(expand('<cword>'))<kEnter>
+nmap <Leader>rg :Rg<CR>
 " Git
 nmap <leader>fr :GFiles?<CR>
 nmap <leader>fc :Commits<CR>
