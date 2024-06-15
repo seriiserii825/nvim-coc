@@ -53,7 +53,8 @@ Plug 'AndrewRadev/splitjoin.vim'
 " Plug 'MunifTanjim/nui.nvim'
 
 "Coc
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
 
 "Fzf
