@@ -24,6 +24,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'frazrepo/vim-rainbow'
+Plug 'mboughaba/i3config.vim'
 
 "Align
 Plug 'godlygeek/tabular'

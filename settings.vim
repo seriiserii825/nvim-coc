@@ -10,7 +10,13 @@ autocmd FocusLost * silent! wall
 
 " set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
 " set list
-
+aug i3config_ft_detection
+  au!
+  au BufNewFile,BufRead /home/serii/xubuntu/i3/i3wm-home/config set filetype=i3config
+  au BufNewFile,BufRead /home/serii/xubuntu/i3/i3wm-office/config set filetype=i3config
+  au BufNewFile,BufRead /home/serii/xubuntu/i3status/config set filetype=i3config
+  au BufNewFile,BufRead /home/serii/xubuntu/i3status/office-config set filetype=i3config
+aug end
 "Disable 
 let g:loaded_perl_provider = 0
 let g:loaded_ruby_provider = 0
