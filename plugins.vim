@@ -73,7 +73,8 @@ Plug 'Almo7aya/openingh.nvim'
 
 "Buffers
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
-Plug 'akinsho/bufferline.nvim'
+" Plug 'akinsho/bufferline.nvim'
+Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
 
 "Colors
 Plug 'NvChad/nvim-colorizer.lua'
