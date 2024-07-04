@@ -2,6 +2,18 @@ snippet php "<?php ?>" ib
 <?php $1 ?>
 endsnippet
 
+snippet dv "div with class" b
+<div class="$1__$2"><?php echo $$2; ?></div>
+endsnippet
+
+snippet dve "div with class" b
+<div class="$1__$2"></div>
+endsnippet
+
+snippet im "img with class" b
+<img src="<?php echo $2;?>" class="$1__img">
+endsnippet
+
 snippet ctr "container" b
 <div class="container">
 	$1

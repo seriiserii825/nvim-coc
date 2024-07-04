@@ -1,7 +1,10 @@
 "save all
 nmap <leader>w :wa<CR>
 nmap _ i <Esc>
+
+inoremap <C-i> <C-r>=@i<CR>
 " remove empty lines
+" 
 nnoremap <silent> <Leader>x :g/^\s*$/d<CR>
 " remove trailing spaces
 nnoremap <silent> <Leader>z :%s/\s\{2,}/ /g<CR>
