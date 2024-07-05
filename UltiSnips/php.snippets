@@ -21,7 +21,7 @@ snippet ctr "container" b
 endsnippet
 
 snippet atel "a tel" ib
-<a href="tel:$2" target="_blank">$1</a>
+<a href="tel:<?php echo clear_phone($$1); ?>" target="_blank"><?php echo $$1; ?>
 endsnippet
 
 snippet amail "a email" ib
