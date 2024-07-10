@@ -12,10 +12,12 @@ autocmd FocusLost * silent! wall
 " set list
 aug i3config_ft_detection
   au!
-  au BufNewFile,BufRead /home/serii/xubuntu/i3/i3wm-home/config set filetype=i3config
-  au BufNewFile,BufRead /home/serii/xubuntu/i3/i3wm-office/config set filetype=i3config
+  au BufNewFile,BufRead /home/serii/xubuntu/i3/config set filetype=i3config
+  au BufNewFile,BufRead /home/serii/xubuntu/i3/autostart set filetype=i3config
+  au BufNewFile,BufRead /home/serii/xubuntu/i3/keyboard set filetype=i3config
+  au BufNewFile,BufRead /home/serii/xubuntu/i3/window-rules set filetype=i3config
+  au BufNewFile,BufRead /home/serii/xubuntu/i3/workspaces set filetype=i3config
   au BufNewFile,BufRead /home/serii/xubuntu/i3status/config set filetype=i3config
-  au BufNewFile,BufRead /home/serii/xubuntu/i3status/office-config set filetype=i3config
 aug end
 "Disable 
 let g:loaded_perl_provider = 0
