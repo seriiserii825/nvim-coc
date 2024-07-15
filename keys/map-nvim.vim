@@ -9,7 +9,7 @@ nnoremap <silent> <Leader>x :g/^\s*$/d<CR>
 " remove trailing spaces
 nnoremap <silent> <Leader>z :%s/\s\{2,}/ /g<CR>
 " open in browser
-nmap <silent> <leader>ob :exec 'silent !google-chrome % &'<CR>
+nmap <silent> <leader>ob :w <Bar> !xdg-open %<CR>
 "source init.vim
 nnoremap <silent> <Leader>sn :source ~/.config/nvim/init.vim<CR>
 nnoremap <silent> <Leader>sf :source %<CR>
