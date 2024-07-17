@@ -2,8 +2,6 @@
 "CocInstall @yaegassy/coc-pug
 
 let g:coc_global_extensions=[
-      \'coc-angular',
-      \'coc-blade',
       \'coc-prettier',
       \'coc-svg',
       \'coc-phpls',
