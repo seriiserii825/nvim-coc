@@ -87,6 +87,7 @@ Plug 'honza/vim-snippets'
 "Markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 
+Plug 'gorillamoe/AutoRemoteSync.nvim'
 
 " Javscript
 " Plug 'mxw/vim-jsx'

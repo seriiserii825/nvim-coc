@@ -42,9 +42,9 @@ nmap <leader>as  <Plug>(coc-codeaction-source)
 nmap <leader>;  <Plug>(coc-fix-current)
 
 " Remap keys for applying refactor code actions
-nmap <silent> <leader>re <Plug>(coc-codeaction-refactor)
-xmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
-nmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
+nmap <silent> <leader>rr <Plug>(coc-codeaction-refactor)
+xmap <silent> <leader>rs  <Plug>(coc-codeaction-refactor-selected)
+nmap <silent> <leader>rs  <Plug>(coc-codeaction-refactor-selected)
 
 " Run the Code Lens action on the current line
 nmap <leader>cs  <Plug>(coc-codelens-action)
