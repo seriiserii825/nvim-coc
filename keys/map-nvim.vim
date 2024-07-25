@@ -35,10 +35,10 @@ map <silent> <leader>yn :let @+=expand("%:t")<CR>
 map <silent><leader>yd :let @+=expand("%:p:h")<CR>
 nnoremap [n :set relativenumber!<CR>
 " Move lines
-nnoremap <M-j> :m .+1<CR>==
-nnoremap <M-k> :m .-2<CR>==
-vnoremap <M-j> :m '>+1<CR>gv=gv
-vnoremap <M-k> :m '<-2<CR>gv=gv
+" nnoremap <M-j> :m .+1<CR>==
+" nnoremap <M-k> :m .-2<CR>==
+" vnoremap <M-j> :m '>+1<CR>gv=gv
+" vnoremap <M-k> :m '<-2<CR>gv=gv
 " reselect pasted text
 nnoremap gp `[v`]
 " Reset highlight
