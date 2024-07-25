@@ -6,12 +6,8 @@ snippet tb "target='_blank'" i
 target="_blank"
 endsnippet
 
-snippet dv "div with class" b
-<div class="$1__$2"><?php echo $$2; ?></div>
-endsnippet
-
-snippet dve "div with class" b
-<div class="$1__$2"></div>
+snippet dv "simple html tag with register i and class" b
+<${1:div} class="`!v eval('getreg("i")')`__$2">$3</${1/(\w+).*/$1/}>
 endsnippet
 
 snippet im "img with class" b
@@ -37,10 +33,6 @@ snippet ablank "a target blank" ib
 endsnippet
 
 snippet pv "<?php echo $1 ?>" i
-<?php echo $1; ?>
-endsnippet
-
-snippet v "<?php ?>" i
 <?php echo $1; ?>
 endsnippet
 

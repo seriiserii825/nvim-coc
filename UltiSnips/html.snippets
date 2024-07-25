@@ -1,0 +1,15 @@
+snippet t "simple html tag"
+<${1:div}>
+  Hello
+</$1>
+endsnippet
+
+snippet divreg "simple html tag"
+<${1:div} class="`!v eval('getreg("i")')`__$2">
+  
+</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet todo "Todo reminder" b
+<!-- TODO: `echo $USER` ${1:desc} `!v strftime('%c')`  -->
+endsnippet
