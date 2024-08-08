@@ -15,6 +15,8 @@ nnoremap <silent> <Leader>sn :source ~/.config/nvim/init.vim<CR>
 nnoremap <silent> <Leader>sf :source %<CR>
 " count symbols in buffer
 nmap <silent> <C-t> :let @+ = len(@+)<CR> 
+
+nmap <leader>cr :CocRestart<CR><CR>
 " code runner
 nmap <leader>yc :RunCode<CR>
 nmap <leader>yl :RunFile<CR>
