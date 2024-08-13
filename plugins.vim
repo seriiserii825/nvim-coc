@@ -12,11 +12,10 @@ augroup auto_install_plugins
   autocmd BufWritePost plugins.vim source ~/.config/nvim/plugins.vim | PlugClean | PlugInstall
 augroup END
 
-" call plug#begin('~/.config/nvim/autoload/plugged')
-call plug#begin()
+call plug#begin('~/.config/nvim/autoload/plugged')
 "Appearance
 Plug 'phanviet/vim-monokai-pro'
-Plug 'joshdick/onedark.vim'
+" Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'frazrepo/vim-rainbow'
