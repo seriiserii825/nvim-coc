@@ -1,3 +1,6 @@
+"Plugins
+source $HOME/.config/nvim/plugins.vim
+
 set termguicolors
 " let g:polyglot_disabled = ['vue']
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
@@ -5,9 +8,6 @@ hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=whi
 "settings
 source $HOME/.config/nvim/settings.vim
 source $HOME/.config/nvim/functions.vim
-
-"Plugins
-source $HOME/.config/nvim/plugins.vim
 
 "Map
 source $HOME/.config/nvim/keys/map-nvim.vim

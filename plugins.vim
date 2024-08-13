@@ -7,17 +7,13 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
-
-
-" Automatically run :Plug Clean and :Plug Install when saving plugins.vim
-augroup AutoPlug
-    autocmd!
-    autocmd BufWritePost plugins.vim silent! source %
-    autocmd BufWritePost plugins.vim silent! PlugClean 
-    autocmd BufWritePost plugins.vim silent! PlugInstall 
+augroup auto_install_plugins
+  autocmd!
+  autocmd BufWritePost plugins.vim source ~/.config/nvim/plugins.vim | PlugClean | PlugInstall
 augroup END
 
-call plug#begin('~/.config/nvim/autoload/plugged')
+" call plug#begin('~/.config/nvim/autoload/plugged')
+call plug#begin()
 "Appearance
 Plug 'phanviet/vim-monokai-pro'
 Plug 'joshdick/onedark.vim'
@@ -28,7 +24,7 @@ Plug 'mboughaba/i3config.vim'
 
 "Align
 Plug 'godlygeek/tabular'
-" Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/vim-easy-align'
 
 "Terminal
 Plug 'voldikss/vim-floaterm'
