@@ -22,7 +22,7 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'mboughaba/i3config.vim'
 
 "Align
-Plug 'godlygeek/tabular'
+" Plug 'godlygeek/tabular'
 Plug 'junegunn/vim-easy-align'
 
 "Terminal
@@ -44,9 +44,9 @@ Plug 'AndrewRadev/splitjoin.vim'
 " Plug 'justinmk/vim-sneak'
 
 "Notify
-" Plug 'rcarriga/nvim-notify'
-" Plug 'folke/noice.nvim'
-" Plug 'MunifTanjim/nui.nvim'
+Plug 'rcarriga/nvim-notify'
+Plug 'folke/noice.nvim'
+Plug 'MunifTanjim/nui.nvim'
 
 "Coc
 " Plug 'neoclide/coc.nvim'
