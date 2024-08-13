@@ -60,7 +60,7 @@ Plug 'junegunn/fzf.vim'
 "Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'Almo7aya/openingh.nvim'
+" Plug 'Almo7ayaopeningh.nvim'
 " Plug 'f-person/git-blame.nvim'
 " Plug 'lewis6991/gitsigns.nvim'
 " Plug 'nvim-lua/plenary.nvim'
