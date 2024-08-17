@@ -14,6 +14,7 @@ augroup END
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 "Appearance
+Plug 'seriiserii825/nvim-git-open'
 Plug 'phanviet/vim-monokai-pro'
 " Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
