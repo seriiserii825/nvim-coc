@@ -9,6 +9,18 @@ position: relative;
 z-index: 2;
 endsnippet
 
+snippet nlt "not last of type" b
+&:not(:last-of-type) {
+	$1
+}
+endsnippet
+
+snippet nft "not first of type" b
+&:not(:first-of-type) {
+	$1
+}
+endsnippet
+
 snippet gr "grid custom"
 &__$1 {
 display: flex;

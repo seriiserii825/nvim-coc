@@ -43,6 +43,9 @@ let @v='^vt hl"myovardump("mpA;^'
 "php uncomment
 let @u='^vf<hxf/xx/--Dj'
 
+" text to table html
+let @t='/>< nha€üLD€üHp€üLdd€üH w'
+
 "============ comment
 " comment js css vue
 " let @c='I//j'
