@@ -45,12 +45,11 @@ Plug 'AndrewRadev/splitjoin.vim'
 " Plug 'justinmk/vim-sneak'
 
 "Notify
-Plug 'rcarriga/nvim-notify'
-Plug 'folke/noice.nvim'
+" Plug 'rcarriga/nvim-notify'
+" Plug 'folke/noice.nvim'
 Plug 'MunifTanjim/nui.nvim'
 
 "Coc
-" Plug 'neoclide/coc.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
 
