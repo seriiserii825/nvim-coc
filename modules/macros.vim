@@ -29,7 +29,7 @@ let @f='gg=G'
 " html class by buffer @b(copy parrent class to buffer @b and after run macro)
 let @d='i<div class=""ipa__la></div>F_lh'
 " docent li english
-let @z='^f,€ýaxi/Teachingf:€ýaa/Teachnin€kb€kb€kbing languagef:€ýaa nhkkkkk@t@p@f@p@f@pkkkkkkO<li>jjjjjjo</li>j'
+let @z='/Aldrichcwvar(--font-2)'
 
 "=========== javascript
 let @c='^wvt yoconsole.log()i""hpla, pla;'
