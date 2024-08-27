@@ -7,6 +7,7 @@ let g:coc_global_extensions=[
       \'coc-phpls',
       \'coc-css',
       \'coc-xml',
+      \'coc-sh',
       \'coc-eslint',
       \'coc-explorer',
       \'coc-fzf-preview',
