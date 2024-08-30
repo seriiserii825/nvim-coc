@@ -21,6 +21,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'frazrepo/vim-rainbow'
 Plug 'mboughaba/i3config.vim'
+"debug
+Plug 'puremourning/vimspector'
 
 "Align
 " Plug 'godlygeek/tabular'
@@ -34,7 +36,7 @@ Plug 'github/copilot.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'CRAG666/code_runner.nvim'
 Plug 'liuchengxu/vim-which-key'
-Plug 'mbbill/undotree'
+" Plug 'mbbill/undotree'
 Plug 'airblade/vim-rooter'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
