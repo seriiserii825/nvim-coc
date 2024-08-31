@@ -11,7 +11,7 @@ let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffse
 
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
 "let $FZF_DEFAULT_COMMAND="rg --files --hidden"
-let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git -o -name autoload -o -name vendor -o -name ranger -o -name venv -o -name __pycache__ \) -prune -o -print'
+let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git -o -name autoload -o -name vendor -o -name ranger -o -name venv -o -name __pycache__ -o -name autoload \) -prune -o -print'
 
 
 " Customize fzf colors to match your color scheme
