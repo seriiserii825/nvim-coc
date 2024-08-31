@@ -17,10 +17,6 @@ nnoremap <silent> <Leader>sf :source %<CR>
 nmap <silent> <C-t> :let @+ = len(@+)<CR> 
 
 nmap <leader>cr :CocRestart<CR><CR>
-" code runner
-nmap <leader>yc :RunCode<CR>
-nmap <leader>yl :RunFile<CR>
-nmap , :RunFile float<CR>
 "rename word
 vnoremap <leader>rn "zy:s/<C-r>z/
 vnoremap <leader>rna "zy:%s/<C-r>z/
