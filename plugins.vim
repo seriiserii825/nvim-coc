@@ -16,7 +16,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 "Appearance
 Plug 'seriiserii825/nvim-git-open'
 " Plug 'phanviet/vim-monokai-pro'
-Plug 'joshdick/onedark.vim'
+" Plug 'navarasu/onedark.nvim'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'vim-airline/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'frazrepo/vim-rainbow'
