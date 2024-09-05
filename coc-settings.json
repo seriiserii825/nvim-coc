@@ -29,7 +29,8 @@
   "intelephense.environment.includePaths": [
     "/home/serii/Documents/plugins-wp/advanced-custom-fields-pro",
     "/home/serii/Documents/wordpress/wordpress",
-    "/home/serii/Documents/wordpress/woocommerce"
+    "/home/serii/Documents/wordpress/woocommerce",
+    "/home/serii/Documents/wordpress/wp-pagenavi"
   ],
   "intelephense.files.associations": [
     "*.php",
