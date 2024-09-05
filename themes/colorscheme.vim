@@ -16,4 +16,5 @@ set termguicolors
 " colorscheme monokai_soda
 " colorscheme monokai_ristretto
 " colorscheme onedark
-colorscheme catppuccin
+" colorscheme catppuccin
+colorscheme nordic
