@@ -30,10 +30,13 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> [g <Plug>(coc-diagnostic-next)
 nmap <silent> ]g <Plug>(coc-diagnostic-prev)
-" nmap <silent><leader> cz <Plug>(coc-list-diagnostic)
+nmap <silent><leader> cl <Plug>(coc-list-diagnostic)
 " nmap ca <Plug>(coc-codeaction)
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+" Highlight the symbol and its references when holding the cursor
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap keys for applying code actions at the cursor position
 nmap <leader>ac  <Plug>(coc-codeaction-cursor)
@@ -48,7 +51,7 @@ xmap <silent> <leader>rs  <Plug>(coc-codeaction-refactor-selected)
 nmap <silent> <leader>rs  <Plug>(coc-codeaction-refactor-selected)
 
 " Run the Code Lens action on the current line
-nmap <leader>cs  <Plug>(coc-codelens-action)
+nmap <leader>cl  <Plug>(coc-codelens-action)
 
 nmap <M-l> <Plug>(coc-format)
 nmap crn <Plug>(coc-rename)
@@ -57,6 +60,7 @@ inoremap <silent><expr> <C-p> coc#pum#visible() ? coc#pum#prev(1) : "\<C-p>"
 inoremap <silent><expr> <down> coc#pum#visible() ? coc#pum#next(0) : "\<down>"
 inoremap <silent><expr> <up> coc#pum#visible() ? coc#pum#prev(0) : "\<up>"
 
+nnoremap <silent><nowait> <space>ci  :<C-u>CocList diagnostics<cr>
 " command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
 
 " Use tab for trigger completion with characters ahead and navigate
