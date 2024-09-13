@@ -55,5 +55,5 @@
   "pyright.inlayHints.functionReturnTypes": false,
   "pyright.inlayHints.variableTypes": false,
   "pyright.inlayHints.parameterTypes": false,
-  "diagnostic.checkCurrentLine": true
+  "diagnostic.checkCurrentLine": false
 }
