@@ -13,3 +13,33 @@ endsnippet
 snippet todo "Todo reminder" b
 <!-- TODO: `echo $USER` ${1:desc} `!v strftime('%c')`  -->
 endsnippet
+
+snippet tb "target='_blank'" i
+target="_blank"
+endsnippet
+
+snippet dvi "simple html tag with register i and class" b
+<${1:div} class="`!v eval('getreg("i")')`__$2">$3</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet dv "simple html tag with register i and class" b
+<${1:div} class="`!v eval('getreg("i")')`__$2">
+	$3
+</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet dvv "simple html tag with register i and class" b
+<${1:div} class="`!v eval('getreg("i")')`__$2">
+	<?php echo $$2; ?>
+</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet im "img with class" b
+<img src="<?php echo $3;?>" class="$1__$2">
+endsnippet
+
+snippet ctr "container" b
+<div class="container">
+	$1
+</div>
+endsnippet
