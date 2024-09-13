@@ -15,10 +15,10 @@ set termguicolors
 " colorscheme monokai-pro-machine
 " colorscheme monokai_soda
 " colorscheme monokai_ristretto
-let g:onedark_config = {
-    \ 'style': 'darker',
-\}
-colorscheme onedark
+" let g:onedark_config = {
+"     \ 'style': 'darker',
+" \}
+" colorscheme onedark
 " colorscheme monokai-pro
 " colorscheme catppuccin
-" colorscheme nordic
+colorscheme nordic
