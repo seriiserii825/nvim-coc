@@ -30,37 +30,36 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> [g <Plug>(coc-diagnostic-next)
 nmap <silent> ]g <Plug>(coc-diagnostic-prev)
-nmap <silent><leader> cl <Plug>(coc-list-diagnostic)
-" nmap ca <Plug>(coc-codeaction)
+nnoremap <silent><nowait> <space>ci  :<C-u>CocList diagnostics<cr>
+" Run the Code Lens action on the current line
+nmap <leader>cl  <Plug>(coc-codelens-action)
 xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
 
 " Highlight the symbol and its references when holding the cursor
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap keys for applying code actions at the cursor position
-nmap <leader>ac  <Plug>(coc-codeaction-cursor)
+nmap <leader>cp  <Plug>(coc-codeaction-cursor)
 " Remap keys for apply code actions affect whole buffer
-nmap <leader>as  <Plug>(coc-codeaction-source)
+nmap <silent> <leader>cb  <Plug>(coc-codeaction-source)<CR>
 " Apply the most preferred quickfix action to fix diagnostic on the current line
 nmap <leader>;  <Plug>(coc-fix-current)
 
 " Remap keys for applying refactor code actions
-nmap <silent> <leader>rr <Plug>(coc-codeaction-refactor)
-xmap <silent> <leader>rs  <Plug>(coc-codeaction-refactor-selected)
-nmap <silent> <leader>rs  <Plug>(coc-codeaction-refactor-selected)
-
-" Run the Code Lens action on the current line
-nmap <leader>cl  <Plug>(coc-codelens-action)
-
+" nmap <silent> <leader>cr <Plug>(coc-codeaction-refactor)
+" xmap <silent> <leader>cr  <Plug>(coc-codeaction-refactor-selected)
+" nmap <silent> <leader>rs  <Plug>(coc-codeaction-refactor-selected)
+"
+nmap <leader>cr :CocRestart<CR><CR>
 nmap <M-l> <Plug>(coc-format)
-nmap crn <Plug>(coc-rename)
+vnoremap <leader>ct "zy:CocSearch <C-r>z/
+" vnoremap <leader>rn "zy:s/<C-r>z/
+nmap cn <Plug>(coc-rename)
 inoremap <silent><expr> <C-n> coc#pum#visible() ? coc#pum#next(1) : "\<C-n>"
 inoremap <silent><expr> <C-p> coc#pum#visible() ? coc#pum#prev(1) : "\<C-p>"
 inoremap <silent><expr> <down> coc#pum#visible() ? coc#pum#next(0) : "\<down>"
 inoremap <silent><expr> <up> coc#pum#visible() ? coc#pum#prev(0) : "\<up>"
 
-nnoremap <silent><nowait> <space>ci  :<C-u>CocList diagnostics<cr>
 " command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
 
 " Use tab for trigger completion with characters ahead and navigate
