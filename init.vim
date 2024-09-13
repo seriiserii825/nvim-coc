@@ -59,6 +59,7 @@ source $HOME/.config/nvim/modules/vimspector.vim
 "Theme
 source $HOME/.config/nvim/themes/colorscheme.vim
 source $HOME/.config/nvim/themes/airline.vim
+" source $HOME/.config/nvim/themes/monokaipro.vim
 source $HOME/.config/nvim/modules/bufferline.vim
 " source $HOME/.config/nvim/modules/openingh.vim
 
