@@ -14,8 +14,8 @@ source $HOME/.config/nvim/keys/map-nvim.vim
 
 "Macros
 source $HOME/.config/nvim/modules/macros.vim
-source $HOME/.config/nvim/modules/macross/python-macros.vim
-" source $HOME/.config/nvim/modules/macross/bash-macros.vim
+" source $HOME/.config/nvim/modules/macross/python-macros.vim
+source $HOME/.config/nvim/modules/macross/bash-macros.vim
 
 "Coc
 source $HOME/.config/nvim/modules/coc.vim
@@ -59,6 +59,7 @@ source $HOME/.config/nvim/modules/vimspector.vim
 "Theme
 source $HOME/.config/nvim/themes/colorscheme.vim
 source $HOME/.config/nvim/themes/airline.vim
+" source $HOME/.config/nvim/themes/monokaipro.vim
 source $HOME/.config/nvim/modules/bufferline.vim
 " source $HOME/.config/nvim/modules/openingh.vim
 
@@ -73,3 +74,4 @@ hi Visual  guifg=#000000 guibg=#7FFFD4 gui=none
 let g:python3_host_prog = "/usr/bin/python"
 
 
+set grepprg=grep\ -R\ --exclude-dir={venv,node_modules,.git}\ -nH\ $*

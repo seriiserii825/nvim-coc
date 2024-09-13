@@ -4,11 +4,7 @@
   "explorer.previewAction.onHover": false,
   "explorer.openAction.relativePath": true,
   "explorer.keyMappings.global": {
-    "<cr>": [
-      "expandable?",
-      "expand",
-      "open"
-    ],
+    "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
   "javascript.suggest.autoImports": true,
@@ -32,10 +28,7 @@
     "/home/serii/Documents/wordpress/woocommerce",
     "/home/serii/Documents/wordpress/wp-pagenavi"
   ],
-  "intelephense.files.associations": [
-    "*.php",
-    "*.phtml"
-  ],
+  "intelephense.files.associations": ["*.php", "*.phtml"],
   "intelephense.format.enable": true,
   "intelephense.diagnostics.typeErrors": true,
   "intelephense.diagnostics.unusedSymbols": true,
@@ -53,7 +46,7 @@
   },
   "languageserver": {
     "bash": {
-      "command": "bash-language-server", 
+      "command": "bash-language-server",
       "args": ["start"],
       "filetypes": ["sh"]
     }
@@ -61,5 +54,6 @@
   "python.analysis.useLibraryCodeForTypes": false,
   "pyright.inlayHints.functionReturnTypes": false,
   "pyright.inlayHints.variableTypes": false,
-  "pyright.inlayHints.parameterTypes": false
+  "pyright.inlayHints.parameterTypes": false,
+  "diagnostic.checkCurrentLine": true
 }
