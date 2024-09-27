@@ -1,0 +1,14 @@
+{
+  "~/Documents/python/python-course": {
+    "name": "Python Course",
+    "description": "Simple python project",
+    "file_name": "main.py",
+    "command": "python -u"
+  },
+  "~/Documents/python/py-higher-lower": {
+    "name": "Higher Lower",
+    "description": "Simple higher lower game",
+    "file_name": "main.py",
+    "command": "python -u"
+  }
+}
