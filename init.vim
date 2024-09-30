@@ -91,12 +91,28 @@ function! LoadProjectConfig()
         let g:ftp_username = ''
         let g:ftp_password = ''
         let g:ftp_remote_path = ''
+        let g:ftp_ignored_paths = []
     endif
+endfunction
+
+" Function to check if the file should be ignored
+function! IsIgnoredFile(filepath)
+    call LoadProjectConfig()
+    for ignore in g:ftp_ignored_paths
+        if match(a:filepath, ignore) >= 0
+            return 1
+        endif
+    endfor
+    return 0
 endfunction
 
 " Function to upload the file using lftp for FTP or SFTP
 function! UploadViaLftp(filepath)
-    call LoadProjectConfig()
+    if IsIgnoredFile(a:filepath)
+        echo "Skipping upload for ignored file: " . a:filepath
+        return
+    endif
+
     if g:ftp_server != '' && g:ftp_password != ''
         let l:filename = fnamemodify(a:filepath, ':t')
         if g:ftp_server_type ==# 'sftp'
@@ -110,6 +126,7 @@ function! UploadViaLftp(filepath)
             return
         endif
         call system(l:cmd)
+        echo "Uploaded: " . a:filepath
     endif
 endfunction
 
