@@ -11,7 +11,7 @@ source $HOME/.config/nvim/functions.vim
 
 "Map
 source $HOME/.config/nvim/keys/map-nvim.vim
-source $HOME/.config/nvim/keys/vim-hard.vim
+" source $HOME/.config/nvim/keys/vim-hard.vim
 
 "Macros
 source $HOME/.config/nvim/modules/macros.vim
