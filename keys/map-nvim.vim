@@ -47,6 +47,15 @@ nnoremap <C-Left> :vertical resize -2<CR>
 nnoremap <C-Right> :vertical resize +2<CR>
 " I hate escape more than anything else
 imap jj <esc>
+nnoremap jj <Nop>
+nnoremap kk <Nop>
+nnoremap jjj <Nop>
+nnoremap kkk <Nop>
+nnoremap jj :echo "Use 2j instead"<CR>
+nnoremap kk :echo "Use 2k instead"<CR>
+nnoremap jjj :echo "Use 3j instead"<CR>
+nnoremap kkk :echo "Use 3k instead"<CR>
+
 " Better window navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
