@@ -54,8 +54,8 @@ source $HOME/.config/nvim/modules/ulti-snippets.vim
 source $HOME/.config/nvim/modules/vimspector.vim
 
 "Notify
-" source $HOME/.config/nvim/modules/nvim-notify.vim
-" source $HOME/.config/nvim/modules/nvim-noice.vim
+source $HOME/.config/nvim/modules/nvim-notify.vim
+source $HOME/.config/nvim/modules/nvim-noice.vim
 
 "Theme
 source $HOME/.config/nvim/themes/colorscheme.vim
@@ -63,6 +63,7 @@ source $HOME/.config/nvim/themes/airline.vim
 " source $HOME/.config/nvim/themes/monokaipro.vim
 source $HOME/.config/nvim/modules/bufferline.vim
 " source $HOME/.config/nvim/modules/openingh.vim
+source $HOME/.config/nvim/modules/treesitter.vim
 
 
 " source $HOME/.config/nvim/modules/colortils.vim

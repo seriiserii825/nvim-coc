@@ -4,3 +4,30 @@ setTimeout(() => {
 }, ${1:1000});
 endsnippet
 	
+snippet gfixed "gsap fixed" b
+import gsap from 'gsap';
+export default function $1() {
+		let tl = gsap.timeline();
+		tl.from('.logo-svg-left svg', {
+			opacity: 0,
+			scale: 300,
+			duration: 1.5,
+			ease: "power4.out"
+		});
+}
+endsnippet
+
+snippet gscroll "gsap scroll" b
+import gsap from 'gsap';
+import ScrollTrigger from "gsap/ScrollTrigger";
+export default function $1() {
+		gsap.registerPlugin(ScrollTrigger);
+		let tl = gsap.timeline();
+		tl.from('.logo-svg-left svg', {
+			opacity: 0,
+			scale: 300,
+			duration: 1.5,
+			ease: "power4.out"
+		});
+}
+endsnippet
