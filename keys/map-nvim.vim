@@ -1,5 +1,8 @@
-"save all
+"save all unsaved
 nmap <leader>w :wa<CR>
+
+"save all saved
+nmap <leader>a :bufdo w<CR>
 nmap _ i <Esc>
 
 inoremap <C-i> <C-r>=@i<CR>
