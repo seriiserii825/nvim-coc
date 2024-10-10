@@ -14,7 +14,7 @@ augroup END
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 "Appearance
-Plug 'seriiserii825/nvim-git-open'
+" Plug 'seriiserii825/nvim-git-open'
 " Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 " Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }
 Plug 'AlexvZyl/nordic.nvim', { 'branch': 'dev' }
@@ -25,7 +25,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'frazrepo/vim-rainbow'
 Plug 'mboughaba/i3config.vim'
 "debug
-Plug 'puremourning/vimspector'
+" Plug 'puremourning/vimspector'
 
 "Align
 " Plug 'godlygeek/tabular'
@@ -46,7 +46,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tomtom/tcomment_vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'folke/flash.nvim'
-Plug 'AndrewRadev/splitjoin.vim'
+" Plug 'AndrewRadev/splitjoin.vim'
 " Plug 'justinmk/vim-sneak'
 
 "Notify
@@ -78,7 +78,7 @@ Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
 
 "Colors
 Plug 'NvChad/nvim-colorizer.lua'
-Plug 'ziontee113/color-picker.nvim'
+" Plug 'ziontee113/color-picker.nvim'
 
 "Snippets
 Plug 'SirVer/ultisnips'
@@ -87,7 +87,7 @@ Plug 'honza/vim-snippets'
 "Markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 
-Plug 'gorillamoe/AutoRemoteSync.nvim'
+" Plug 'gorillamoe/AutoRemoteSync.nvim'
 
 " Javscript
 " Plug 'mxw/vim-jsx'

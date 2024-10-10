@@ -24,7 +24,7 @@ source $HOME/.config/nvim/modules/coc-explorer.vim
 source $HOME/.config/nvim/modules/coc-css.vim
 
 "Sftp
-source $HOME/.config/nvim/modules/auto-remote-sync.vim
+" source $HOME/.config/nvim/modules/auto-remote-sync.vim
 
 " source $HOME/.config/nvim/modules/gitgutter.vim
 
@@ -39,10 +39,10 @@ source $HOME/.config/nvim/modules/easy-align.vim
 source $HOME/.config/nvim/modules/copylot.vim
 " source $HOME/.config/nvim/modules/undotree.vim
 source $HOME/.config/nvim/modules/flash.vim
-source $HOME/.config/nvim/modules/tabular.vim
+" source $HOME/.config/nvim/modules/tabular.vim
 source $HOME/.config/nvim/modules/colorize.vim
 source $HOME/.config/nvim/modules/code-runner.vim
-source $HOME/.config/nvim/modules/color-picker.vim
+" source $HOME/.config/nvim/modules/color-picker.vim
 
 
 "Terminal
@@ -51,7 +51,7 @@ source $HOME/.config/nvim/modules/markdown-preview.vim
 
 "Snippets
 source $HOME/.config/nvim/modules/ulti-snippets.vim
-source $HOME/.config/nvim/modules/vimspector.vim
+" source $HOME/.config/nvim/modules/vimspector.vim
 
 "Notify
 source $HOME/.config/nvim/modules/nvim-notify.vim
@@ -75,65 +75,3 @@ hi Visual  guifg=#000000 guibg=#7FFFD4 gui=none
 "
 let g:python3_host_prog = "/usr/bin/python"
 
-
-set grepprg=grep\ -R\ --exclude-dir={venv,node_modules,.git}\ -nH\ $*
-
-
-" Initialize the global variable to disable auto-upload by default
-let g:auto_upload_enabled = 0
-
-" Function to load the project-specific config file
-function! LoadProjectConfig()
-    let l:config_path = expand('%:p:h') . '/.nvim/config.vim'
-    if filereadable(l:config_path)
-        execute 'source' l:config_path
-    else
-        let g:ftp_server_type = ''
-        let g:ftp_server = ''
-        let g:ftp_username = ''
-        let g:ftp_password = ''
-        let g:ftp_remote_path = ''
-        let g:ftp_ignored_paths = []
-    endif
-endfunction
-
-" Function to check if the file should be ignored
-function! IsIgnoredFile(filepath)
-    call LoadProjectConfig()
-    for ignore in g:ftp_ignored_paths
-        if match(a:filepath, ignore) >= 0
-            return 1
-        endif
-    endfor
-    return 0
-endfunction
-
-" Function to upload the file using lftp for FTP or SFTP
-function! UploadViaLftp(filepath)
-    if IsIgnoredFile(a:filepath)
-        echo "Skipping upload for ignored file: " . a:filepath
-        return
-    endif
-
-    if g:ftp_server != '' && g:ftp_password != ''
-        let l:filename = fnamemodify(a:filepath, ':t')
-        if g:ftp_server_type ==# 'sftp'
-            let l:cmd = printf('lftp -u %s,%s sftp://%s -e "put %s -o %s%s; bye"',
-                \ g:ftp_username, g:ftp_password, g:ftp_server, a:filepath, g:ftp_remote_path, l:filename)
-        elseif g:ftp_server_type ==# 'ftp'
-            let l:cmd = printf('lftp -u %s,%s ftp://%s -e "put %s -o %s%s; bye"',
-                \ g:ftp_username, g:ftp_password, g:ftp_server, a:filepath, g:ftp_remote_path, l:filename)
-        else
-            echo "Invalid server type. Use 'ftp' or 'sftp'."
-            return
-        endif
-        call system(l:cmd)
-        echo "Uploaded: " . a:filepath
-    endif
-endfunction
-
-" Autocommand to upload file on save only if auto-upload is enabled
-autocmd BufWritePost * if g:auto_upload_enabled | call UploadViaLftp(expand('%:p')) | endif
-
-" Command to toggle auto-upload on/off
-command! ToggleAutoUpload if g:auto_upload_enabled == 0 | let g:auto_upload_enabled = 1 | echo "Auto-upload enabled" | else | let g:auto_upload_enabled = 0 | echo "Auto-upload disabled" | endif
