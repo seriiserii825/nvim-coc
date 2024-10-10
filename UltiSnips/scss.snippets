@@ -32,6 +32,12 @@ snippet lt "last of type" b
 }
 endsnippet
 
+snippet nt "nth of type" b
+&:nth-of-type($1) {
+	$2
+}
+endsnippet
+
 snippet nlt "not last of type" b
 &:not(:last-of-type) {
 	$1
