@@ -40,6 +40,10 @@ snippet atel "a tel" ib
 <a href="tel:<?php echo clear_phone($$1); ?>" target="_blank"><?php echo $$1; ?>
 endsnippet
 
+snippet wa "a whatsapp" ib
+<a href="https://wa.me/?text=<?php echo clear_phone($1); ?>" target="_blank"><?php echo $1; ?></a>
+endsnippet
+
 snippet amail "a email" ib
 <a href="mailto:<?php echo $1; ?>" target="_blank"><?php echo $1; ?></a>
 endsnippet
