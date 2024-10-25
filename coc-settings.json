@@ -32,6 +32,7 @@
   "intelephense.format.enable": true,
   "intelephense.diagnostics.typeErrors": true,
   "intelephense.diagnostics.unusedSymbols": true,
+  "intelephense.diagnostics.undefinedVariables": true,
   "suggest.noselect": false,
   "suggest.triggerCompletionWait": 50,
   "eslint.enable": false,
