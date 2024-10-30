@@ -57,6 +57,7 @@ Plug 'folke/flash.nvim'
 "Coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
+Plug 'yaegassy/coc-laravel', {'do': 'yarn install --frozen-lockfile'}
 
 "Fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
