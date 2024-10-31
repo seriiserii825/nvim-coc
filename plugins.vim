@@ -115,7 +115,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' 
 " Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 " Plug 'ixru/nvim-markdown'
 
-" Plug 'posva/vim-vue'
+Plug 'posva/vim-vue'
 " Plug 'leafOfTree/vim-vue-plugin'
 " Plug 'mattn/emmet-vim'
 " Plug 'digitaltoad/vim-pug'
