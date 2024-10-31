@@ -4,9 +4,11 @@
 let g:coc_global_extensions=[
       \'coc-prettier',
       \'coc-svg',
+      \'coc-blade',
       \'coc-phpls',
       \'coc-css',
       \'coc-xml',
+      \'coc-html',
       \'coc-sh',
       \'coc-eslint',
       \'coc-explorer',
