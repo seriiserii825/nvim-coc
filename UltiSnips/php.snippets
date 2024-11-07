@@ -7,7 +7,7 @@ target="_blank"
 endsnippet
 
 snippet dvi "simple html tag with register i and class" b
-<${1:div} class="`!v eval('getreg("i")')`__$2">$3</${1/(\w+).*/$1/}>
+<${1:div} class="`!v eval('getreg("i")')`__$2 $4">$3</${1/(\w+).*/$1/}>
 endsnippet
 
 snippet dv "simple html tag with register i and class" b
@@ -17,7 +17,7 @@ snippet dv "simple html tag with register i and class" b
 endsnippet
 
 snippet dvvi "simple html tag with register i and class" b
-<${1:div} class="`!v eval('getreg("i")')`__$2"><?php echo $$2; ?></${1/(\w+).*/$1/}>
+<${1:div} class="`!v eval('getreg("i")')`__$2 $3"><?php echo $$2; ?></${1/(\w+).*/$1/}>
 endsnippet
 
 snippet dvv "simple html tag with register i and class" b
