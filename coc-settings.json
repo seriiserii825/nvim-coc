@@ -43,14 +43,9 @@
   "bashIde.includeAllWorkspaceSymbols": true,
   "emmet.includeLanguages": {
     "php": "html",
+    "blade": "html",
+    "vue": "html",
     "markdown": "html"
-  },
-  "languageserver": {
-    "bash": {
-      "command": "bash-language-server",
-      "args": ["start"],
-      "filetypes": ["sh"]
-    }
   },
   "python.analysis.useLibraryCodeForTypes": false,
   "pyright.inlayHints.functionReturnTypes": false,

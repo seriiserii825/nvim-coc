@@ -31,7 +31,6 @@ source $HOME/.config/nvim/modules/coc-css.vim
 "Editor
 source $HOME/.config/nvim/modules/which-key.vim
 source $HOME/.config/nvim/modules/fzf.vim
-source $HOME/.config/nvim/modules/emmet.vim
 source $HOME/.config/nvim/modules/multiple-cursors.vim
 source $HOME/.config/nvim/modules/rainbow.vim
 source $HOME/.config/nvim/modules/indent-guides.vim
