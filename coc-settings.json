@@ -51,5 +51,17 @@
   "pyright.inlayHints.functionReturnTypes": false,
   "pyright.inlayHints.variableTypes": false,
   "pyright.inlayHints.parameterTypes": false,
-  "diagnostic.checkCurrentLine": false
+  "diagnostic.checkCurrentLine": false,
+  "html-css-support.styleSheets": [
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css",
+    "/style.css",
+    "style.css"
+  ],
+  "html-css-support.enabledLanguages": [
+    "html",
+    "vue",
+    "blade",
+    "typescriptreact",
+    "javascriptreact"
+  ]
 }

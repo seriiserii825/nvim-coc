@@ -9,7 +9,7 @@ let g:coc_global_extensions=[
       \'coc-css',
       \'coc-xml',
       \'coc-html',
-      \'coc-sh',
+      \'coc-html-css-support',
       \'coc-eslint',
       \'coc-explorer',
       \'coc-fzf-preview',
