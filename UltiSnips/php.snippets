@@ -2,6 +2,19 @@ snippet php "<?php ?>" ib
 <?php $1 ?>
 endsnippet
 
+snippet pf "public function" b
+public function $1($2)
+{
+	$3
+}
+endsnippet
+
+snippet frci "php foreach $items" b
+<?php foreach($items as $item): ?>
+	$1
+<?php endforeach; ?>
+endsnippet
+
 snippet tb "target='_blank'" i
 target="_blank"
 endsnippet
