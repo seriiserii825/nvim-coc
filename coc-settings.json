@@ -20,7 +20,8 @@
     "**/bower_components/**",
     "**/vendor/**/{Tests,tests}/**",
     "**/.history/**",
-    "**/vendor/**/vendor/**"
+    "**/vendor/**/vendor/**",
+    "**/docker/**"
   ],
   "intelephense.environment.includePaths": [
     "/home/serii/Documents/plugins-wp/advanced-custom-fields-pro",
@@ -28,7 +29,7 @@
     "/home/serii/Documents/wordpress/woocommerce",
     "/home/serii/Documents/wordpress/wp-pagenavi"
   ],
-  "intelephense.files.associations": ["*.php", "*.phtml"],
+  "intelephense.files.associations": ["*.php", "*.phtml", "*.blade.php"],
   "intelephense.format.enable": true,
   "intelephense.diagnostics.typeErrors": true,
   "intelephense.diagnostics.unusedSymbols": true,
