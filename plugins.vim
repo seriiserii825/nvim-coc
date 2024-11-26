@@ -31,6 +31,7 @@ Plug 'mboughaba/i3config.vim'
 "Align
 " Plug 'godlygeek/tabular'
 Plug 'junegunn/vim-easy-align'
+Plug 'sQVe/sort.nvim'
 
 "Terminal
 Plug 'voldikss/vim-floaterm'
