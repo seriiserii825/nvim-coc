@@ -19,6 +19,8 @@ nnoremap <silent> <Leader>sf :source %<CR>
 " count symbols in buffer
 nmap <silent> <C-t> :let @+ = len(@+)<CR> 
 
+map <leader>ms :%s/`\(.*\)`/```\r\1\r```/g<CR>
+
 "rename word
 vnoremap <leader>rn "zy:s/<C-r>z/
 vnoremap <leader>rna "zy:%s/<C-r>z/
