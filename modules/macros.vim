@@ -33,6 +33,7 @@ let @p='^f 66^ve^vf h"ayoprint(f""apa: {"ap0'
 let @d='i<div class=""ipa__la></div>F_lh'
 " docent li english
 let @z='/Aldrichcwvar(--font-2)'
+let @t='Iconst f:cl = ref();lDj'
 
 "=========== javascript
 let @c='^wvt yoconsole.log()i""hpla, pla;'
@@ -47,7 +48,7 @@ let @v='^vt hl"myovardump("mpA;^'
 let @u='^vf<hxf/xx/--Dj'
 
 " text to table html
-let @t='/>< nha€üLD€üHp€üLdd€üH w'
+" let @t='/><\ nha€üLD€üHp€üLdd€üH w'
 
 "============ comment
 " comment js css vue
