@@ -29,7 +29,7 @@ Plug 'mboughaba/i3config.vim'
 " Plug 'puremourning/vimspector'
 
 "Align
-" Plug 'godlygeek/tabular'
+Plug 'godlygeek/tabular'
 Plug 'junegunn/vim-easy-align'
 Plug 'sQVe/sort.nvim'
 
