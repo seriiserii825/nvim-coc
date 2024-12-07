@@ -13,6 +13,7 @@ let g:coc_global_extensions=[
       \'coc-explorer',
       \'coc-fzf-preview',
       \'coc-highlight',
+      \'coc-tailwindcss',
       \'coc-json',
       \'coc-pyright',
       \'coc-stylelint',
