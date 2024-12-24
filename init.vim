@@ -42,7 +42,6 @@ source $HOME/.config/nvim/modules/flash.vim
 " source $HOME/.config/nvim/modules/tabular.vim
 source $HOME/.config/nvim/modules/colorize.vim
 " source $HOME/.config/nvim/modules/code-runner.vim
-source $HOME/.config/nvim/modules/emojji.vim
 " source $HOME/.config/nvim/modules/color-picker.vim
 
 
