@@ -28,6 +28,8 @@ Plug 'mboughaba/i3config.vim'
 "debug
 " Plug 'puremourning/vimspector'
 
+Plug 'WilsonOh/emoji_picker-nvim'
+
 "Align
 Plug 'godlygeek/tabular'
 Plug 'junegunn/vim-easy-align'
