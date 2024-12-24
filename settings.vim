@@ -25,6 +25,7 @@ let g:loaded_ruby_provider = 0
 
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 set spellfile=~/.config/nvim/spell/en.utf-8.add
+set splelllang=en-us
 
 let g:sneak#label = 1
 

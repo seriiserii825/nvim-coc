@@ -5,6 +5,8 @@ nmap <leader>w :wa<CR>
 nmap <leader>a :bufdo w<CR>
 nmap _ i <Esc>
 
+nnoremap <silent><leader>ns :set spell!<CR>
+
 inoremap <C-i> <C-r>=@i<CR>
 " remove empty lines
 " 
