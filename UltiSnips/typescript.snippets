@@ -4,23 +4,6 @@ setTimeout(() => {
 		}, ${1:1000});
 endsnippet
 
-snippet gen_func "generate function" b
-const elems = [
-	{
-	el: '$1',
-				functions: [$2],
-	},
-]
-for (const elem of elems) {
-	const el = document.querySelector(elem.el);
-	if (el && elem.functions) {
-		for (const func of elem.functions) {
-			func();
-		}
-	}
-}
-endsnippet
-
 snippet gfixed "gsap fixed" b
 import gsap from 'gsap';
 export default function $1() {
