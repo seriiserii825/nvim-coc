@@ -8,6 +8,7 @@ let g:coc_global_extensions=[
       \'coc-css',
       \'coc-xml',
       \'coc-html',
+      \'coc-blade',
       \'coc-angular',
       \'coc-html-css-support',
       \'coc-eslint',

@@ -45,6 +45,7 @@
   "emmet.includeLanguages": {
     "php": "html",
     "blade": "html",
+    "blade.php": "html",
     "vue": "html",
     "markdown": "html"
   },
