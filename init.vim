@@ -23,6 +23,9 @@ source $HOME/.config/nvim/modules/coc.vim
 source $HOME/.config/nvim/modules/coc-explorer.vim
 source $HOME/.config/nvim/modules/coc-css.vim
 
+" syntax
+source $HOME/.config/nvim/modules/polyglot.vim
+
 "Sftp
 " source $HOME/.config/nvim/modules/auto-remote-sync.vim
 
