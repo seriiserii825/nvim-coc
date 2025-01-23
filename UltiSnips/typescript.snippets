@@ -22,7 +22,12 @@ import gsap from 'gsap';
 import ScrollTrigger from "gsap/ScrollTrigger";
 export default function $1() {
 	gsap.registerPlugin(ScrollTrigger);
-	let tl = gsap.timeline();
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".services",
+      start: "top 80%",
+    },
+  });
 	tl.from('.logo-svg-left svg', {
 opacity: 0,
 scale: 300,
@@ -30,4 +35,22 @@ duration: 1.5,
 ease: "power4.out"
 });
 }
+endsnippet
+
+snippet gtl "gsap timeline" b
+tl.from("$1", {
+	opacity: 0,
+	x: 50,
+	duration: 1.5,
+	ease: "power4.out",
+});
+endsnippet
+
+snippet gtld "gsap timeline with delay" b
+tl.from("$1", {
+	opacity: 0,
+	x: 50,
+	duration: 1.5,
+	ease: "power4.out",
+}, "-=1.5");
 endsnippet
