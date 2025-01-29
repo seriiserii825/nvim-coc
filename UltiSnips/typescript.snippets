@@ -54,3 +54,35 @@ tl.from("$1", {
 	ease: "power4.out",
 }, "-=1.5");
 endsnippet
+
+snippet swp "swiper" b
+import Swiper from "swiper";
+import { Autoplay, Pagination } from "swiper/modules";
+
+export default function customSlider() {
+  const swiper = new Swiper(".swiper", {
+    slidesPerView: 1.6,
+    spaceBetween: 0,
+    loop: true,
+    centeredSlides: true,
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
+    speed: 1500,
+    modules: [Autoplay, Pagination],
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1.6,
+      }
+    }
+  });
+}
+endsnippet
