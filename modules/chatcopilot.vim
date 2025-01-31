@@ -1,7 +1,13 @@
 lua << EOF
 require("CopilotChat").setup {
-  -- See Configuration section for options
+  -- The key to open the chat window
+mappings = {
+      reset = {
+        normal = '<leader>cr',
+        insert = '<C-c>',
+      }
+    }
 }
 EOF
 
-map <leader>co :CopilotChatOpen<CR> 
+nmap <leader>co :CopilotChatOpen<CR> 
