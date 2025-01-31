@@ -38,6 +38,8 @@ Plug 'voldikss/vim-floaterm'
 
 " Editor
 Plug 'github/copilot.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'CopilotC-Nvim/CopilotChat.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'CRAG666/code_runner.nvim'
 Plug 'liuchengxu/vim-which-key'

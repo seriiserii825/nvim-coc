@@ -19,32 +19,32 @@ snippet tb "target='_blank'" i
 target="_blank"
 endsnippet
 
-snippet dvi "simple html tag with register i and class" b
-<${1:div} class="`!v eval('getreg("i")')`__$2">$3</${1/(\w+).*/$1/}>
-endsnippet
-
-snippet dviv "simple html tag with register i and class" b
-<${1:div} class="`!v eval('getreg("i")')`__$2 $4">$3</${1/(\w+).*/$1/}>
-endsnippet
-
 snippet dv "simple html tag with register i and class" b
 <${1:div} class="`!v eval('getreg("i")')`__$2">
 	$3
 </${1/(\w+).*/$1/}>
 endsnippet
 
-snippet dvvi "simple html tag with register i and class" b
-<${1:div} class="`!v eval('getreg("i")')`__$2"><?php echo $$2; ?></${1/(\w+).*/$1/}>
-endsnippet
-
-snippet dvviv "simple html tag with register i and class" b
-<${1:div} class="`!v eval('getreg("i")')`__$2 $3"><?php echo $$2; ?></${1/(\w+).*/$1/}>
-endsnippet
-
 snippet dvv "simple html tag with register i and class" b
 <${1:div} class="`!v eval('getreg("i")')`__$2">
 	<?php echo $$2; ?>
 </${1/(\w+).*/$1/}>
+endsnippet
+
+snippet ic "simple html tag with register i and class" b
+<${1:div} class="`!v eval('getreg("i")')`__$2">$3</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet icv "simple html tag with register i and class" b
+<${1:div} class="`!v eval('getreg("i")')`__$2 $4">$3</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet iv "simple html tag with register i and class" b
+<${1:div} class="`!v eval('getreg("i")')`__$2"><?php echo $$2; ?></${1/(\w+).*/$1/}>
+endsnippet
+
+snippet ivv "simple html tag with register i and class" b
+<${1:div} class="`!v eval('getreg("i")')`__$2 $3"><?php echo $$2; ?></${1/(\w+).*/$1/}>
 endsnippet
 
 snippet im "img with class" b
