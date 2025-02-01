@@ -1,7 +1,6 @@
-" enable when is js
-" autocmd BufLeave,FocusLost * silent! wall
 autocmd FocusLost * silent! wall
-" au BufLeave * silent! wall
+set spell
+" set spelllang=en-us
 
 " exec current python file code in neovim
 " nnoremap <leader>y :exec '!python3' shellescape(@%, 1)<CR>

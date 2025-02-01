@@ -37,3 +37,9 @@ listchars
 nbsp
 eol
 config
+au
+exec
+enable
+spelllang
+nofoldenable
+nolazyredraw
