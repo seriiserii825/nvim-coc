@@ -5,3 +5,12 @@ endsnippet
 snippet bli "blade {{  }}" i
 {{ `!v eval('getreg("i")')`$1 }}
 endsnippet
+
+snippet vo "value with old" i
+:value="old('$2', $$1->$2)" 
+endsnippet
+
+snippet dump "dump" b
+{{ dd($1) }}
+endsnippet
+	
