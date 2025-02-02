@@ -70,3 +70,8 @@ ci
 phpmyadmin
 PMA
 node
+loginView
+loginStore
+registerView
+registerStore
+auth
