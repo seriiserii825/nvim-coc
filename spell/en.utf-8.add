@@ -75,3 +75,8 @@ loginStore
 registerView
 registerStore
 auth
+vue
+streetMap
+scrollToBlock
+DOMContentLoaded
+href
