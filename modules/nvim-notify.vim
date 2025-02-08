@@ -7,4 +7,5 @@ stages = "fade",
 top_down = false,
 })
 vim.notify = require("notify")
+vim.opt.lazyredraw = false
 EOF
