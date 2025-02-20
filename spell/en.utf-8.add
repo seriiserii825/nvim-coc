@@ -113,3 +113,6 @@ setCustomerTopCare
 >>>>>>> c053a301557714985fe44b1ed53478e7f80d1f0e
 woocommerce
 url
+set
+vicmd
+nvim
