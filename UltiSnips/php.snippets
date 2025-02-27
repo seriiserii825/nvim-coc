@@ -48,7 +48,7 @@ snippet ivv "simple html tag with register i and class" b
 endsnippet
 
 snippet im "img with class" b
-<img src="<?php echo $3;?>" class="$1__$2">
+<img src="<?php echo $3['url'];?>" class="$1__$2"  alt="<?php echo $3['alt']; ?>"/>
 endsnippet
 
 snippet ctr "container" b
