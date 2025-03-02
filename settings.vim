@@ -1,5 +1,5 @@
 autocmd FocusLost * silent! wall
-set spell
+" set spell
 " set spelllang=en-us
 
 " exec current python file code in neovim
@@ -23,7 +23,7 @@ let g:loaded_perl_provider = 0
 let g:loaded_ruby_provider = 0
 
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-set spellfile=~/.config/nvim/spell/en.utf-8.add
+" set spellfile=~/.config/nvim/spell/en.utf-8.add
 
 let g:sneak#label = 1
 
