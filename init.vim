@@ -80,4 +80,6 @@ hi Visual  guifg=#000000 guibg=#7FFFD4 gui=none
 let g:python3_host_prog = "/usr/bin/python"
 
 
-nnoremap <leader>kr :w<CR>:!kotlinc % -include-runtime -d main.jar && java -jar main.jar<CR>
+" nnoremap <leader>kr :w<CR>:!kotlinc % -include-runtime -d main.jar && java -jar main.jar<CR>
+
+nnoremap <leader>kr :w<CR>:terminal kotlinc % -include-runtime -d main.jar && java -jar main.jar<CR>
