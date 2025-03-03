@@ -9,6 +9,12 @@ autocmd FocusLost * silent! wall
 
 " set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
 " set list
+
+
+au FileType html let b:coc_root_patterns = ['.git', '.env', 'tailwind.config.js', 'tailwind.config.cjs']
+au FileType php let b:coc_root_patterns = ['.git', '.env', 'tailwind.config.js', 'tailwind.config.cjs']
+au FileType vue let b:coc_root_patterns = ['.git', '.env', 'tailwind.config.js', 'tailwind.config.cjs']
+
 aug i3config_ft_detection
   au!
   au BufNewFile,BufRead /home/serii/xubuntu/i3/config set filetype=i3config
