@@ -82,4 +82,4 @@ let g:python3_host_prog = "/usr/bin/python"
 
 " nnoremap <leader>kr :w<CR>:!kotlinc % -include-runtime -d main.jar && java -jar main.jar<CR>
 
-nnoremap <leader>kr :w<CR>:terminal kotlinc % -include-runtime -d main.jar && java -jar main.jar<CR>
+" nnoremap <leader>kr :w<CR>:terminal kotlinc % -include-runtime -d main.jar && java -jar main.jar<CR>

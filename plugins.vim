@@ -25,7 +25,6 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'frazrepo/vim-rainbow'
 Plug 'mboughaba/i3config.vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'udalov/kotlin-vim'
 "debug
 " Plug 'puremourning/vimspector'
 
