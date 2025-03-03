@@ -124,7 +124,7 @@ Plug 'posva/vim-vue'
 " Plug 'digitaltoad/vim-pug'
 " Plug 'rbong/vim-flog'
 " Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
-" Plug 'yaegassy/coc-tailwindcss3', {'do': 'yarn install --frozen-lockfile'}
+Plug 'yaegassy/coc-tailwindcss3', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'Pocco81/HighStr.nvim'
 call plug#end()
 
