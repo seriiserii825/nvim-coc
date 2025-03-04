@@ -12,6 +12,45 @@ $1
 </style>
 endsnippet
 
+
+snippet dv "simple html tag with register i and class" b
+<${1:div} class="`!v eval('getreg("i")')`__$2">
+	$3
+</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet dvv "simple html tag with register i and class" b
+<${1:div} class="`!v eval('getreg("i")')`__$2">
+	<?php echo $$2; ?>
+</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet ic "simple html tag with register i and class" b
+<${1:div} class="`!v eval('getreg("i")')`__$2">$3</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet icv "simple html tag with register i and class" b
+<${1:div} class="`!v eval('getreg("i")')`__$2 $4">$3</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet iv "simple html tag with register i and class" b
+<${1:div} class="`!v eval('getreg("i")')`__$2"><?php echo $$2; ?></${1/(\w+).*/$1/}>
+endsnippet
+
+snippet ivv "simple html tag with register i and class" b
+<${1:div} class="`!v eval('getreg("i")')`__$2 $3"><?php echo $$2; ?></${1/(\w+).*/$1/}>
+endsnippet
+
+snippet im "img with class" b
+<img src="<?php echo $3['url'];?>" class="$1__$2"  alt="<?php echo $3['alt']; ?>"/>
+endsnippet
+
+snippet ctr "container" b
+<div class="container">
+	$1
+</div>
+endsnippet
+
 snippet de
 const emits = defineEmits(['$1'])
 endsnippet
