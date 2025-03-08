@@ -66,5 +66,17 @@
     "blade",
     "typescriptreact",
     "javascriptreact"
-  ]
+  ],
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "blade": "html",
+    "blade.php": "html",
+    "vue": "html",
+    "markdown": "html",
+    "javascript": "javascript",
+    "typescript": "typescript",
+    "javascriptreact": "javascript",
+    "typescriptreact": "typescript"
+  },
 }
