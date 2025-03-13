@@ -2,6 +2,8 @@
 " convert px to rem
 let @r='^/pxdwi F lvf h"aycw=str2float()€kl@a€kr/str2float()€kl10€krrem'
 
+" let @w='ci"{{ asset('frontend/jp€kb€kbjjpjF"h'
+
 " css var scss to css
 " let @q='f$clvar(--lx$hp wj^'
 

@@ -1,5 +1,5 @@
 "save all unsaved
-nmap <leader>w :wa<CR>
+nmap <leader>w :w<CR>
 nmap zz :wq<CR>
 
 "save all saved
