@@ -67,4 +67,6 @@ let @u='^vf<hxf/xx/--Dj'
 " let @f="^C$pa = get_field();hi'pl,a, 'optionj"
 " let @t="/_it nhD^C$pa = get_field();hi'pla,€kb.get_lang(), 'optionj"
 
+" blade
+let @m='^f"lci"{{ asset(\'frontend/pj^'
 
