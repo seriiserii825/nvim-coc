@@ -15,8 +15,9 @@ source $HOME/.config/nvim/keys/map-nvim.vim
 
 "Macros
 source $HOME/.config/nvim/modules/macros.vim
-" source $HOME/.config/nvim/modules/macross/python-macros.vim
-source $HOME/.config/nvim/modules/macross/bash-macros.vim
+" source $HOME/.config/nvim/modules/macross-dir/python-macros.vim
+" source $HOME/.config/nvim/modules/macross-dir/bash-macros.vim
+source $HOME/.config/nvim/modules/macross-dir/blade.macros.vim
 
 "Coc
 source $HOME/.config/nvim/modules/coc.vim
