@@ -1,6 +1,7 @@
 "save all unsaved
 nmap <leader>w :w<CR>
 nmap zz :wq<CR>
+nnoremap <leader>p vi"p
 
 "save all saved
 nmap <leader>a :bufdo w<CR>
