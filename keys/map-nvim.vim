@@ -2,6 +2,7 @@
 nmap <leader>w :w<CR>
 nmap zz :wq<CR>
 nnoremap <leader>p vi"p
+nnoremap <leader>v vi"
 
 "save all saved
 nmap <leader>a :bufdo w<CR>
