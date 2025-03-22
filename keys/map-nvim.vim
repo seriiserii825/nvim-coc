@@ -1,7 +1,9 @@
 " visual inside quotes
-nnoremap <leader>v vi"
+nnoremap <leader>yv vi"
+" visual inside quotes
+nnoremap <leader>yy vi"y
 " paste inside quotes
-nnoremap <leader>p vi"p
+nnoremap <leader>yp vi"p
 
 "save all saved
 nmap <leader>a :bufdo w<CR>
