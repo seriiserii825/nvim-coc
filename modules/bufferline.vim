@@ -44,6 +44,10 @@ nnoremap <silent><M-S-h> :BufferLineMovePrev<CR>
 nnoremap <silent> <leader>qr :BufferLineCloseRight<CR>
 nnoremap <silent> <leader>qa :BufferLineCloseOther<CR>
 nmap <silent> <leader>qo :bp<bar>sp<bar>bn<bar>bd<CR>
+nmap <leader>w :wa<CR>
+nmap <leader>o :only<CR>
+nmap <leader>qw :wq<CR>
+
 
 nnoremap <leader>1 :BufferLineGoToBuffer 1<CR>
 nnoremap <leader>2 :BufferLineGoToBuffer 2<CR>
