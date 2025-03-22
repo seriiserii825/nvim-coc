@@ -1,8 +1,11 @@
 "save all unsaved
-nmap <leader>w :w<CR>
-nmap zz :wq<CR>
-nnoremap <leader>p vi"p
+nmap <leader>w :wa<CR>
+nmap <leader>o :only<CR>
+
+" visual inside quotes
 nnoremap <leader>v vi"
+" paste inside quotes
+nnoremap <leader>p vi"p
 
 "save all saved
 nmap <leader>a :bufdo w<CR>
