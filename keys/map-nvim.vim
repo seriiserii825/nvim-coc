@@ -1,6 +1,7 @@
 "save all unsaved
 nmap <leader>w :wa<CR>
 nmap <leader>o :only<CR>
+nmap <leader>q :wq<CR>
 
 " visual inside quotes
 nnoremap <leader>v vi"
