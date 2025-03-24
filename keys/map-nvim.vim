@@ -1,5 +1,6 @@
 " visual inside quotes
-nnoremap <leader>v vi"
+nnoremap <leader>vv vi"
+nnoremap <leader>vy vi"y
 " paste inside quotes
 nnoremap <leader>p vi"p
 
