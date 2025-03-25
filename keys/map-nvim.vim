@@ -4,6 +4,10 @@ nnoremap <leader>vy vi"y
 " paste inside quotes
 nnoremap <leader>yp vi"p
 
+" change ' to "
+nmap <leader>" cs'"
+nmap <leader>' cs"'
+
 "save all saved
 nmap <leader>a :bufdo w<CR>
 nmap _ i <Esc>
