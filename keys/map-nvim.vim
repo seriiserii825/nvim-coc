@@ -1,8 +1,11 @@
 " visual inside quotes
-nnoremap <leader>vv vi"
-nnoremap <leader>vy vi"y
+" nnoremap <leader>vv vi"
+" copy in " or in '
+ nnoremap <leader>v" vi"y
+ nnoremap <leader>v' vi'y
 " paste inside quotes
-nnoremap <leader>yp vi"p
+nnoremap <leader>yp" vi"p
+nnoremap <leader>yp' vi'p
 
 " change ' to "
 nmap <leader>" cs'"
