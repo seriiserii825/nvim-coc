@@ -1,8 +1,8 @@
 " visual inside quotes
 " nnoremap <leader>vv vi"
 " copy in " or in '
- nnoremap <leader>y" vi"y
- nnoremap <leader>y' vi'y
+ nnoremap <leader>y" vi"
+ nnoremap <leader>y' vi'
 
  " visual
  nnoremap <leader>v" vi"y
