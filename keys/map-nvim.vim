@@ -4,8 +4,8 @@
  nnoremap <leader>v" vi"y
  nnoremap <leader>v' vi'y
 " paste inside quotes
-nnoremap <leader>yp" vi"p
-nnoremap <leader>yp' vi'p
+nnoremap <leader>p" vi"p
+nnoremap <leader>p' vi'p
 
 " change ' to "
 nmap <leader>" cs'"
