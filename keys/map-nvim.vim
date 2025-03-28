@@ -1,6 +1,10 @@
 " visual inside quotes
 " nnoremap <leader>vv vi"
 " copy in " or in '
+ nnoremap <leader>y" vi"y
+ nnoremap <leader>y' vi'y
+
+ " visual
  nnoremap <leader>v" vi"y
  nnoremap <leader>v' vi'y
 " paste inside quotes
