@@ -52,6 +52,7 @@ source $HOME/.config/nvim/modules/colorize.vim
 
 "Terminal
 source $HOME/.config/nvim/modules/floaterm.vim
+source $HOME/.config/nvim/modules/markdown.vim
 source $HOME/.config/nvim/modules/markdown-preview.vim
 
 "Snippets

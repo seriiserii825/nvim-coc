@@ -92,6 +92,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 "Markdown
+Plug 'tadmccorkle/markdown.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 
 " Plug 'gorillamoe/AutoRemoteSync.nvim'
