@@ -10,7 +10,7 @@ nmap <leader>fs :vs <bar> :Files<CR>
 " nmap <leader>fv :vs<CR><C-w>h
 nmap <leader>fb :Buffers<CR>
 
-nmap <silent> <expr> <leader>fw ':Files <cr>' . "'" . expand('<cword>')
+nmap <silent> <expr> <leader>fw ":Files <cr>" . (exists("g:floaterm_instance") ? substitute(expand('<cword>'), "^'", "", "") : expand('<cword>'))
 
 nmap <Leader>fg :call fzf#vim#ag(expand('<cword>'))<kEnter>
 nmap <Leader>rg :Rg<CR>
