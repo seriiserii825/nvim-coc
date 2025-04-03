@@ -50,6 +50,7 @@
     "vue": "html",
     "markdown": "html"
   },
+  "python.formatting.provider": "autopep8",
   "python.analysis.useLibraryCodeForTypes": false,
   "pyright.inlayHints.functionReturnTypes": false,
   "pyright.inlayHints.variableTypes": false,
@@ -78,5 +79,5 @@
     "typescript": "typescript",
     "javascriptreact": "javascript",
     "typescriptreact": "typescript"
-  },
+  }
 }
