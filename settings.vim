@@ -102,3 +102,16 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 let g:coc_filetype_map = {
   \ 'pug': 'jade',
   \ }
+
+
+function! VisualRelative(start, end)
+  let l1 = line('.') + a:start
+  let l2 = line('.') + a:end
+  if l1 > l2
+    execute l1 . "normal! V" . l2 . "G"
+  else
+    execute l2 . "normal! V" . l1 . "G"
+  endif
+endfunction
+
+command! -nargs=+ VRel call VisualRelative(<f-args>)
