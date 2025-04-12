@@ -79,5 +79,8 @@
     "typescript": "typescript",
     "javascriptreact": "javascript",
     "typescriptreact": "typescript"
-  }
+  },
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "prettier.bracketSameLine": true,
+  "prettier.printWidth": 100
 }
