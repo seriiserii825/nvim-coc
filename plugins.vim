@@ -17,9 +17,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " Plug 'seriiserii825/nvim-git-open'
 " Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 " Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }
-" Plug 'AlexvZyl/nordic.nvim'
+Plug 'AlexvZyl/nordic.nvim'
 " Plug 'navarasu/onedark.nvim'
-Plug 'loctvl842/monokai-pro.nvim'
+" Plug 'loctvl842/monokai-pro.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'frazrepo/vim-rainbow'
