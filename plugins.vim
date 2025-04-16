@@ -19,7 +19,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }
 " Plug 'AlexvZyl/nordic.nvim'
 " Plug 'navarasu/onedark.nvim'
-Plug 'loctvl842/monokai-pro.nvim'
+" Plug 'loctvl842/monokai-pro.nvim'
+Plug 'phanviet/vim-monokai-pro'
 Plug 'vim-airline/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'frazrepo/vim-rainbow'

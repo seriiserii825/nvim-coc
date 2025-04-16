@@ -19,6 +19,7 @@ set termguicolors
 "     \ 'style': 'darker',
 " \}
 " colorscheme onedark
-colorscheme monokai-pro
+" colorscheme monokai-pro
+colorscheme monokai_pro
 " colorscheme catppuccin
 " colorscheme nordic
