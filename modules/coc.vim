@@ -21,6 +21,7 @@ let g:coc_global_extensions=[
       \'coc-snippets',
       \'coc-tsserver',
       \'coc-sh',
+      \'coc-markdown',
       \'coc-emmet',
       \'coc-highlight',
       \'@yaegassy/coc-laravel',
