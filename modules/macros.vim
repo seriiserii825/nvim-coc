@@ -1,6 +1,7 @@
 " =========== scss
 " convert px to rem
 let @r='^/pxdwi F lvf h"aycw=str2float()€kl@a€kr/str2float()€kl10€krrem'
+let @u='/\/\*\*v/\*\/:s//€kb€kb€kbd'
 
 " let @w='ci"{{ asset('frontend/jp€kb€kbjjpjF"h'
 
@@ -8,7 +9,7 @@ let @r='^/pxdwi F lvf h"aycw=str2float()€kl@a€kr/str2float()€kl10€krrem'
 " let @q='f$clvar(--lx$hp wj^'
 
 " sql remove CREATE
-let @q='/CREATEv/;x'
+" let @q='/CREATE\v/;\x'
 
 "line height
 let @h='k^f:wvfph"xyj^f:wvfph"yyvf;hc=str2float()€kl@x€kr/str2float()€kl@x€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kr€kby€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr' 
@@ -52,7 +53,7 @@ let @v='^vt hl"myovardump("mpA;^'
 "php comment
 " let @z='^I<--A-->^a!f?f a//j^'
 "php uncomment
-let @u='^vf<hxf/xx/--Dj'
+" let @u='^vf<hxf/xx/--\Dj'
 
 " text to table html
 " let @t='/><\ nha€üLD€üHp€üLdd€üH w'
