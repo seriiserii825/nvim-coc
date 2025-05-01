@@ -1,5 +1,5 @@
 " uncomment php block code
-let @u='/\/\*\*v/\*\/:s//€kb€kb€kbd'
+let @u='/\/\*\*v/\*\/:s//€kb€kb€kbd@u'
 
 " postamn variables clear
 let @k="^xf'lhxvf'c: Dj^@a"
