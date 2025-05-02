@@ -11,6 +11,7 @@ source $HOME/.config/nvim/functions.vim
 
 " functions
 source $HOME/.config/nvim/modules/functions/delete-lines.vim
+source $HOME/.config/nvim/modules/functions/yank-lines.vim
 
 "Map
 source $HOME/.config/nvim/keys/map-nvim.vim
