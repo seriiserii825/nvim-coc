@@ -24,3 +24,6 @@ let @j='^wvt yoconsole.log9)€kb€kb€kb();hiJSON.stringify()hpa, null, 4' " js 
 
 "vardump
 let @v='^vt hl"myovardump("mpA;^'
+
+" from interface to type
+let @i='/interfacecwtypef{hi ='
