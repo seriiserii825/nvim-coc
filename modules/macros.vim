@@ -13,7 +13,7 @@ let @l='I<li>jjA</li>jjj'
 " p
 let @p='I<p>jjA</p>jj^llllj'
 " h2
-let @t='I<h2>A</h2>j'
+let @h='I<h2>A</h2>j'
 
 " format file
 let @f='gg=G'
@@ -26,4 +26,4 @@ let @j='^wvt yoconsole.log9)€kb€kb€kb();hiJSON.stringify()hpa, null, 4' " js 
 let @v='^vt hl"myovardump("mpA;^'
 
 " from interface to type
-let @i='/interfacecwtypef{hi ='
+let @t='/interfacecwtypef{hi ='
