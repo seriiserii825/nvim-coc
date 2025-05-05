@@ -10,11 +10,8 @@ source $HOME/.config/nvim/settings.vim
 source $HOME/.config/nvim/functions.vim
 
 " functions
-source $HOME/.config/nvim/modules/functions/delete-lines.vim
 source $HOME/.config/nvim/modules/functions/yank-lines.vim
 source $HOME/.config/nvim/modules/functions/visual-lines.vim
-source $HOME/.config/nvim/modules/functions/copy-lines.vim
-source $HOME/.config/nvim/modules/functions/move-lines.vim
 
 "Map
 source $HOME/.config/nvim/keys/map-nvim.vim
