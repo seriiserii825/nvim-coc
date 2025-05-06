@@ -18,7 +18,7 @@ nmap <Leader>rg :Rg<CR>
 nmap <leader>fr :GFiles?<CR>
 nmap <leader>fc :Commits<CR>
 nmap <leader>fd :Gdiff<CR>
-nmap <leader>ft :BCommits<CR>
+nmap <leader>fm :BCommits<CR>
 
 nmap <leader>fv :call CustomMapping()<CR>
 function! CustomMapping()

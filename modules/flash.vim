@@ -3,4 +3,4 @@ require("flash").setup()
 EOF
 
 nmap s <cmd>lua require("flash").jump()<CR>
-nmap <leader>fl <cmd>lua require("flash").toggle()<CR>
+nmap <leader>ft <cmd>lua require("flash").toggle()<CR>

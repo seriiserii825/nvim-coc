@@ -12,6 +12,7 @@ source $HOME/.config/nvim/functions.vim
 " functions
 source $HOME/.config/nvim/modules/functions/yank-lines.vim
 source $HOME/.config/nvim/modules/functions/visual-lines.vim
+source $HOME/.config/nvim/modules/functions/FoldToLevelPrompt.vim
 
 "Map
 source $HOME/.config/nvim/keys/map-nvim.vim
