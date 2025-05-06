@@ -42,11 +42,12 @@ let g:indent_guides_enable_on_vim_startup = 1
 set textwidth=0 wrapmargin=0
 set noswapfile
 set foldmethod=indent
+setlocal foldenable
 set foldnestmax=20
-set foldlevelstart=99
+set foldlevelstart=1
+set foldlevel=1
 filetype plugin on
 " set nofoldenable
-set foldlevel=99
 set lazyredraw " macros repeat
 set encoding=utf-8
 set nobackup
