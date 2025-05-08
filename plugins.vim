@@ -14,7 +14,7 @@ augroup END
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 "Appearance
-" Plug 'seriiserii825/nvim-git-open'
+Plug 'seriiserii825/nvim-git-open'
 " Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 " Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }
 " Plug 'AlexvZyl/nordic.nvim'
@@ -93,6 +93,8 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 "Markdown
+" Plug 'plasticboy/vim-markdown'
+Plug 'gabrielelana/vim-markdown'
 Plug 'tadmccorkle/markdown.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 
