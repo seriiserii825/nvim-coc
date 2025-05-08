@@ -10,6 +10,8 @@ autocmd FocusLost * silent! wall
 " set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
 " set list
 
+" fzf list just files exclude directories
+let $FZF_DEFAULT_COMMAND = 'rg --files --follow --no-ignore-vcs --hidden -g "!{**/node_modules/*,**/.git/*,**/venv/*,**/autoload/*,**/__pycache__/*,**/assets/fonts/*,**/assets/libs/*,**/vendor/*,**/storage/*,**/docker/mysql/*,**/dist/*,**/.angular/*}"'
 
 au FileType html let b:coc_root_patterns = ['.git', '.env', 'tailwind.config.js', 'tailwind.config.cjs']
 au FileType php let b:coc_root_patterns = ['.git', '.env', 'tailwind.config.js', 'tailwind.config.cjs']

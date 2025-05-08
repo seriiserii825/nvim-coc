@@ -94,7 +94,7 @@ Plug 'honza/vim-snippets'
 
 "Markdown
 " Plug 'plasticboy/vim-markdown'
-Plug 'gabrielelana/vim-markdown'
+" Plug 'gabrielelana/vim-markdown'
 Plug 'tadmccorkle/markdown.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 

@@ -5,7 +5,10 @@ let g:floaterm_height = 0.96
 let g:floaterm_keymap_toggle = '<C-;>'
 
 " Files
-nmap <leader>ff :Files<CR>
+"
+command! -nargs=* FilesOnly call fzf#vim#files('.', fzf#vim#with_preview({'source': 'fd --type f'}))
+nmap <leader>ff :FilesOnly<CR>
+" nmap <leader>ff :Files<CR>
 nmap <leader>fs :vs <bar> :Files<CR>
 " nmap <leader>fv :vs<CR><C-w>h
 nmap <leader>fb :Buffers<CR>
