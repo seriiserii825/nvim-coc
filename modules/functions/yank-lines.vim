@@ -32,28 +32,3 @@ command! -nargs=+ YankLines call YankLinesFlexible(<f-args>)
 
 
 nnoremap <leader>lyr :<C-u>call YankLinesPrompt()<CR>
-
-function! YankLinesPrompt()
-  let l:input = input("YankLines (e.g. -4 or -3 5): ")
-  if empty(l:input)
-    echo "Cancelled"
-    return
-  endif
-  execute "YankLines " . l:input
-endfunction
-
-function! YankLineOffset()
-  let l:offset = input("Yank line at relative offset (e.g. -3 or 2): ")
-  if l:offset =~ '^-\=\d\+$'
-    let l:target = line('.') + str2nr(l:offset)
-    if l:target >= 1 && l:target <= line('$')
-      execute l:target . 'yank'
-    else
-      echo "Line out of range"
-    endif
-  else
-    echo "Invalid input"
-  endif
-endfunction
-
-nnoremap <leader>lyo :<C-u>call YankLineOffset()<CR>

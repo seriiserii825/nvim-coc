@@ -37,13 +37,4 @@ endfunction
 command! -nargs=+ CopyLines call CopyLinesRelative(<f-args>)
 
 
-function! CopyLinesPrompt()
-  let l:input = input("CopyLines (e.g. -3 4 or -2 1 -5): ")
-  if empty(l:input)
-    echo "Cancelled"
-    return
-  endif
-  execute "CopyLines " . l:input
-endfunction
-
-nnoremap <leader>lt :<C-u>call CopyLinesPrompt()<CR>
+nnoremap <leader>lr :<C-u>call CopyLinesRelative(input('From: '), input('To: '))<CR>
