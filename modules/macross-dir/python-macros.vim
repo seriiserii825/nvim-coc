@@ -4,5 +4,23 @@ let @g='i[greenl'
 let @b='i[bluel'
 let @y='i[yellowl'
 
-let @P='^f 66^ve^vf h"ayoprint(f""apa: {"ap0'
+let @p='^f 66^ve^vf h"ayoprint(f""apa: {"ap0'
 
+" colored to color
+" search colored /colored
+" disbale highlight :nohl
+" find comma , and find " 
+" visual select "yank it
+" find ( and find " 
+" append [
+" paste?colored
+" disable highlight
+" search back colored
+" disable highlight
+" visual untill (
+" delete
+" find comma
+" visual select untill ")
+" delete
+" quit
+let @d='/colored:nohlf,f"vi"yF(f"a[p?colored:nohlvf(df,vf)d'
