@@ -5,6 +5,7 @@ let @b='i[bluel'
 let @y='i[yellowl'
 
 let @p='^f 66^ve^vf h"ayoprint(f""apa: {"ap0'
+let @d='Idef $xxxa():oa	'
 
 " colored to color
 " search colored /colored
@@ -23,4 +24,4 @@ let @p='^f 66^ve^vf h"ayoprint(f""apa: {"ap0'
 " visual select untill ")
 " delete
 " quit
-let @d='/colored:nohlf,f"vi"yF(f"a[p?colored:nohlvf(df,vf)d'
+let @t='/colored:nohlf,f"vi"yF(f"a[p?colored:nohlvf(df,vf)d'
