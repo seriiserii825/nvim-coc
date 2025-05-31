@@ -20,6 +20,6 @@ set termguicolors
 " \}
 " colorscheme onedark
 " colorscheme monokai-pro
-colorscheme monokai_pro
+" colorscheme monokai_pro
 " colorscheme catppuccin
-" colorscheme nordic
+colorscheme nordic

@@ -14,13 +14,14 @@ augroup END
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 "Appearance
-Plug 'seriiserii825/nvim-git-open'
+" Plug 'seriiserii825/nvim-git-open'
+" theme
 " Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 " Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }
-" Plug 'AlexvZyl/nordic.nvim'
+Plug 'AlexvZyl/nordic.nvim'
 " Plug 'navarasu/onedark.nvim'
 " Plug 'loctvl842/monokai-pro.nvim'
-Plug 'phanviet/vim-monokai-pro'
+" Plug 'phanviet/vim-monokai-pro'
 Plug 'vim-airline/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'frazrepo/vim-rainbow'

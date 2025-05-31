@@ -1,1 +1,3 @@
-lua require('markdown').setup()
+lua << EOF
+require('markdown').setup()
+EOF
