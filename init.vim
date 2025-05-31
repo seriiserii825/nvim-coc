@@ -46,7 +46,7 @@ source $HOME/.config/nvim/modules/rainbow.vim
 source $HOME/.config/nvim/modules/indent-guides.vim
 source $HOME/.config/nvim/modules/easy-align.vim
 source $HOME/.config/nvim/modules/sort.vim
-source $HOME/.config/nvim/modules/copylot.vim
+source $HOME/.config/nvim/modules/copilot.vim
 source $HOME/.config/nvim/modules/chatcopilot.vim
 " source $HOME/.config/nvim/modules/undotree.vim
 source $HOME/.config/nvim/modules/flash.vim
