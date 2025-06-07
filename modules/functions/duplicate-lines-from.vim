@@ -1,4 +1,4 @@
-function! CopyLinesFrom(from)
+function! DuplicateLinesFrom(from)
   let cur = line('.')
   let start = cur + str2nr(a:from)
   let end = cur
@@ -14,6 +14,6 @@ function! CopyLinesFrom(from)
   execute start . "," . end . "t" . cur
 endfunction
 
-command! -nargs=1 CopyFrom call CopyLinesFrom(<f-args>)
+command! -nargs=1 CopyFrom call DuplicateLinesFrom(<f-args>)
 
-nnoremap <leader>lf :<C-u>call CopyLinesFrom(input('Copy from relative line: '))<CR>
+nnoremap <leader>lf :<C-u>call DuplicateLinesFrom(input('Copy from relative line: '))<CR>

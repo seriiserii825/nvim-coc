@@ -38,3 +38,5 @@ function! YankLinesFlexible(from, ...)
 endfunction
 
 command! -nargs=+ YankLines call YankLinesFlexible(<f-args>)
+
+nmap <leader>yl :<C-u>YankLines <c-r>=line('.')<CR> <c-r>=line('v')<CR><CR>
