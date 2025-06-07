@@ -12,7 +12,21 @@ let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffse
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
 "let $FZF_DEFAULT_COMMAND="rg --files --hidden"
 " let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git -o -name autoload -o -name vendor -o -name ranger -o -name venv -o -name __pycache__ -o -name autoload \) -prune -o -print'
-let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git -o -name autoload -o -name vendor -o -name ranger -o -name venv -o -name __pycache__ -o -name autoload -o -name storage -o -name .nuxt -o -name .idea \) -prune -o -type f -print'
+
+let $FZF_DEFAULT_COMMAND = 
+      \ 'find . \( ' .
+      \ '  -name node_modules -o ' .
+      \ '  -name .git -o ' .
+      \ '  -name autoload -o ' .
+      \ '  -name vendor -o ' .
+      \ '  -name ranger -o ' .
+      \ '  -name .mypy_cache -o ' .
+      \ '  -name venv -o ' .
+      \ '  -name __pycache__ -o ' .
+      \ '  -name storage -o ' .
+      \ '  -name .nuxt -o ' .
+      \ '  -name .idea ' .
+      \ '\) -prune -o -type f -print'
 
 
 " Customize fzf colors to match your color scheme
