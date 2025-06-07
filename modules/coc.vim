@@ -56,6 +56,7 @@ nnoremap <silent><nowait> <space>ci  :<C-u>CocList diagnostics<cr>
 " nmap <silent> <leader>rs  <Plug>(coc-codeaction-refactor-selected)
 "
 nmap <leader>cr :CocRestart<CR><CR>
+nmap <leader>kd :CocDiagnostics<CR><CR>
 nmap <M-l> <Plug>(coc-format)
 vnoremap <leader>ct "zy:CocSearch <C-r>z/
 " vnoremap <leader>rn "zy:s/<C-r>z/

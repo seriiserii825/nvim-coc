@@ -50,8 +50,6 @@
     "vue": "html",
     "markdown": "html"
   },
-  "python.formatting.provider": "autopep8",
-  "python.analysis.useLibraryCodeForTypes": false,
   "pyright.inlayHints.functionReturnTypes": false,
   "pyright.inlayHints.variableTypes": false,
   "pyright.inlayHints.parameterTypes": false,
@@ -82,5 +80,11 @@
   },
   "prettier.htmlWhitespaceSensitivity": "ignore",
   "prettier.bracketSameLine": true,
-  "prettier.printWidth": 100
+  "prettier.printWidth": 100,
+  "python.analysis.useLibraryCodeForTypes": false,
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "flake8",
+  "python.formatting.provider": "autopep8",
+  "python.linting.flake8Args": ["--max-line-length=88"]
 }
