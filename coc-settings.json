@@ -37,7 +37,6 @@
   "intelephense.diagnostics.undefinedVariables": true,
   "suggest.noselect": false,
   "suggest.triggerCompletionWait": 50,
-  "eslint.enable": false,
   "javascript.suggestionActions.enabled": false,
   "snippets.ultisnips.pythonPrompt": false,
   "sh.enable": true,
@@ -86,5 +85,5 @@
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Path": "flake8",
   "python.formatting.provider": "autopep8",
-  "python.linting.flake8Args": ["--max-line-length=88"]
+  "python.linting.flake8Args": ["--max-line-length=88"],
 }
