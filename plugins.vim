@@ -26,7 +26,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'frazrepo/vim-rainbow'
 Plug 'mboughaba/i3config.vim'
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 "debug
 " Plug 'puremourning/vimspector'
 
