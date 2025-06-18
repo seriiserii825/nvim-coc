@@ -27,3 +27,6 @@ let @v='^vt hl"myovardump("mpA;^'
 
 " from interface to type
 let @t='/interfacecwtypef{hi ='
+
+" vue class
+@m='f_vf"h"ayGkko&"apa{'
