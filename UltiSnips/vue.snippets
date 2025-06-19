@@ -6,6 +6,20 @@ $1
 });
 endsnippet
 
+snippet dp
+const props = defineProps({
+$1
+});
+endsnippet
+
+snippet pt "prop with type"
+$1: {
+  type: $2 as PropType<$3>,
+  required: true
+}
+endsnippet
+
+
 snippet vst
 <style lang="scss">
 $1

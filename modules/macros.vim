@@ -29,4 +29,4 @@ let @v='^vt hl"myovardump("mpA;^'
 let @t='/interfacecwtypef{hi ='
 
 " vue class
-let @n='f_vf"h"ayGkko&"apa{'
+let @n='^f_vf"h"ayGkko&"apa{'
