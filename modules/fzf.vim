@@ -25,6 +25,7 @@ let $FZF_DEFAULT_COMMAND =
       \ '  -name __pycache__ -o ' .
       \ '  -name storage -o ' .
       \ '  -name .nuxt -o ' .
+      \ '  -name .nuxt' .
       \ '  -name .idea ' .
       \ '\) -prune -o -type f -print'
 
