@@ -15,6 +15,7 @@ augroup END
 call plug#begin('~/.config/nvim/autoload/plugged')
 "Appearance
 Plug 'seriiserii825/nvim-git-open'
+Plug 'mikavilpas/yazi.nvim'
 " theme
 " Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 " Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }

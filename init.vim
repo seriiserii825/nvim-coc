@@ -37,6 +37,8 @@ source $HOME/.config/nvim/modules/polyglot.vim
 " source $HOME/.config/nvim/modules/auto-remote-sync.vim
 
 " source $HOME/.config/nvim/modules/gitgutter.vim
+" file manager
+source $HOME/.config/nvim/modules/yazi.vim
 
 "Editor
 source $HOME/.config/nvim/modules/which-key.vim
