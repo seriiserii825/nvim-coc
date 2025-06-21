@@ -38,7 +38,7 @@ source $HOME/.config/nvim/modules/polyglot.vim
 
 " source $HOME/.config/nvim/modules/gitgutter.vim
 " file manager
-source $HOME/.config/nvim/modules/yazi.vim
+source $HOME/.config/nvim/modules/which-key.vim
 
 "Editor
 source $HOME/.config/nvim/modules/which-key.vim
@@ -68,8 +68,8 @@ source $HOME/.config/nvim/modules/ulti-snippets.vim
 " source $HOME/.config/nvim/modules/vimspector.vim
 
 "Notify
-" source $HOME/.config/nvim/modules/nvim-notify.vim
-" source $HOME/.config/nvim/modules/nvim-noice.vim
+source $HOME/.config/nvim/modules/nvim-notify.vim
+source $HOME/.config/nvim/modules/nvim-noice.vim
 
 "Theme
 source $HOME/.config/nvim/themes/colorscheme.vim
