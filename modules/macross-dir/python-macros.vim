@@ -5,7 +5,7 @@ let @b='i[bluel'
 let @y='i[yellowl'
 
 let @p='^f 66^ve^vf h"ayoprint(f""apa: {"ap0'
-let @d='^f.Da():Idef oa	'
+let @d='^f.xxxa()€ü;€kb:^Idef o'
 
 " colored to color
 " search colored /colored

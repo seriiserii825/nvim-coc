@@ -4,6 +4,7 @@
 let g:coc_global_extensions=[
       \'coc-prettier',
       \'coc-svg',
+      \'coc-toml',
       \'coc-yaml',
       \'coc-phpls',
       \'coc-css',
