@@ -1,51 +1,20 @@
+" Enable true color
 set termguicolors
+
+" Set keymap to open Yazi
 lua << EOF
 vim.keymap.set("n", "<leader>-", function()
-require("yazi").yazi(
----@type LazySpec
-{
-  "mikavilpas/yazi.nvim",
-  event = "VeryLazy",
-  dependencies = {
-    -- check the installation instructions at
-    -- https://github.com/folke/snacks.nvim
-    "folke/snacks.nvim"
+  require("yazi").yazi()
+end, { desc = "Open Yazi at current file" })
+
+vim.keymap.set("n", "<leader>cw", "<cmd>Yazi cwd<cr>", { desc = "Yazi: CWD" })
+vim.keymap.set("n", "<C-Up>", "<cmd>Yazi toggle<cr>", { desc = "Yazi: Toggle last session" })
+
+-- Optional settings
+require("yazi").setup({
+  open_for_directories = false,
+  keymaps = {
+    show_help = "<F1>",
   },
-  keys = {
-    -- 👇 in this section, choose your own keymappings!
-    {
-        "<leader>-",
-        mode = { "n", "v" },
-        "<cmd>Yazi<cr>",
-        desc = "Open yazi at the current file",
-    },
-    {
-        -- Open in the current working directory
-        "<leader>cw",
-        "<cmd>Yazi cwd<cr>",
-        desc = "Open the file manager in nvim's working directory",
-    },
-    {
-        "<c-up>",
-        "<cmd>Yazi toggle<cr>",
-        desc = "Resume the last yazi session",
-    },
-  },
-  ---@type YaziConfig | {}
-  opts = {
-    -- if you want to open yazi instead of netrw, see below for more info
-    open_for_directories = false,
-    keymaps = {
-      show_help = "<f1>",
-    },
-  },
-  -- 👇 if you use `open_for_directories=true`, this is recommended
-  init = function()
-  -- More details: https://github.com/mikavilpas/yazi.nvim/issues/802
-  -- vim.g.loaded_netrw = 1
-  vim.g.loaded_netrwPlugin = 1
-  end,
-}
-)
-end)
+})
 EOF
