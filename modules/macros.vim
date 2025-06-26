@@ -13,7 +13,7 @@ let @l='I<li>jjA</li>jjj'
 " p
 " let @p='I<p>jjA</p>jj^llllj'
 " h2
-let @h='I<h2>A</h2>j'
+let @h='I<h3>A</h3>j'
 
 " format file
 let @f='gg=G'
