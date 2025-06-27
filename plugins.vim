@@ -65,6 +65,7 @@ Plug 'MunifTanjim/nui.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
 Plug 'yaegassy/coc-laravel', {'do': 'yarn install --frozen-lockfile'}
+Plug 'iamcco/coc-diagnostic'
 
 "Fzf
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

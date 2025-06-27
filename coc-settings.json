@@ -86,4 +86,25 @@
   "python.linting.flake8Path": "flake8",
   "python.formatting.provider": "autopep8",
   "python.linting.flake8Args": ["--max-line-length=88"],
+  "diagnostic-languageserver.linters": {
+    "phpstan": {
+      "command": "phpstan",
+      "args": ["analyse", "--error-format=raw", "--no-progress", "--level=5", "."],
+      "rootPatterns": ["phpstan.neon", "composer.json"],
+      "debounce": 200,
+      "sourceName": "phpstan",
+      "formatLines": 1,
+      "formatPattern": [
+        "^.*:(\\d+):(\\d+):\\s+(.*)$",
+        {
+          "line": 1,
+          "column": 2,
+          "message": 3
+        }
+      ]
+    }
+  },
+  "diagnostic-languageserver.filetypes": {
+    "php": ["phpstan"]
+  }
 }
