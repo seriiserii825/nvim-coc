@@ -42,10 +42,10 @@ Plug 'voldikss/vim-floaterm'
 " Editor
 Plug 'github/copilot.vim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'CopilotC-Nvim/CopilotChat.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'CRAG666/code_runner.nvim'
 Plug 'liuchengxu/vim-which-key'
+" Plug 'CRAG666/code_runner.nvim'
+" Plug 'CopilotC-Nvim/CopilotChat.nvim'
 " Plug 'mbbill/undotree'
 Plug 'airblade/vim-rooter'
 Plug 'tpope/vim-surround'
@@ -65,10 +65,8 @@ Plug 'MunifTanjim/nui.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
 Plug 'yaegassy/coc-laravel', {'do': 'yarn install --frozen-lockfile'}
-Plug 'iamcco/coc-diagnostic'
 
 "Fzf
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 "Git
@@ -80,8 +78,6 @@ Plug 'tpope/vim-rhubarb' " Fugitive dependency GBrowse
 " Plug 'sindrets/diffview.nvim'
 " Plug 'f-person/git-blame.nvim'
 " Plug 'lewis6991/gitsigns.nvim'
-" Plug 'nvim-lua/plenary.nvim'
-" Plug 'NeogitOrg/neogit'
 
 "Buffers
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
