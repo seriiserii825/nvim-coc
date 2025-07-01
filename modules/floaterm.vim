@@ -20,6 +20,18 @@ nmap <leader>fc :Commits<CR>
 nmap <leader>fd :Gdiff<CR>
 nmap <leader>fm :BCommits<CR>
 
+function! GitCommitPrompt()
+  call inputsave()
+  let msg = input('Commit message: ')
+  call inputrestore()
+  if !empty(msg)
+    execute 'Git commit -am "' . msg . '"'
+  endif
+endfunction
+
+nnoremap <leader>gc :call GitCommitPrompt()<CR>
+
+
 nmap <leader>fv :call CustomMapping()<CR>
 function! CustomMapping()
     vs
