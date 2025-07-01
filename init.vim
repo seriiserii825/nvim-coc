@@ -40,6 +40,7 @@ source $HOME/.config/nvim/modules/yazi.vim
 " source $HOME/.config/nvim/modules/gitgutter.vim
 " file manager
 source $HOME/.config/nvim/modules/which-key.vim
+source $HOME/.config/nvim/modules/lazygit.vim
 
 "Editor
 source $HOME/.config/nvim/modules/which-key.vim
