@@ -80,7 +80,7 @@ Plug 'tpope/vim-rhubarb' " Fugitive dependency GBrowse
 " Plug 'f-person/git-blame.nvim'
 " Plug 'lewis6991/gitsigns.nvim'
 " Plug 'nvim-lua/plenary.nvim'
-" Plug 'NeogitOrg/neogit'
+Plug 'NeogitOrg/neogit'
 
 "Buffers
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
