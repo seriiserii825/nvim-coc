@@ -65,6 +65,8 @@ Plug 'MunifTanjim/nui.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
 Plug 'yaegassy/coc-laravel', {'do': 'yarn install --frozen-lockfile'}
+Plug 'yaegassy/coc-ruff', {'do': 'yarn install --frozen-lockfile'}
+Plug 'yaegassy/coc-tailwindcss3', {'do': 'yarn install --frozen-lockfile'}
 
 "Fzf
 Plug 'junegunn/fzf.vim'
@@ -130,7 +132,6 @@ Plug 'posva/vim-vue'
 " Plug 'digitaltoad/vim-pug'
 " Plug 'rbong/vim-flog'
 " Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
-Plug 'yaegassy/coc-tailwindcss3', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'Pocco81/HighStr.nvim'
 call plug#end()
 
