@@ -106,5 +106,6 @@
   },
   "diagnostic-languageserver.filetypes": {
     "php": ["phpstan"]
-  }
+  },
+  "ruff.lint.args": ["--unsafe-fixes"]
 }
