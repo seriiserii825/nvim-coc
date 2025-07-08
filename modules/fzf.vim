@@ -22,11 +22,12 @@ let $FZF_DEFAULT_COMMAND =
       \ '  -name ranger -o ' .
       \ '  -name .mypy_cache -o ' .
       \ '  -name venv -o ' .
+      \ '  -name .venv -o ' .
       \ '  -name __pycache__ -o ' .
       \ '  -name storage -o ' .
       \ '  -name .nuxt -o ' .
-      \ '  -name .venv -o' .
-      \ '  -name .idea -o' .
+      \ '  -name .nuxt' .
+      \ '  -name .idea ' .
       \ '\) -prune -o -type f -print'
 
 
