@@ -9,7 +9,8 @@ let g:fzf_tags_command = 'ctags -R'
 " Border color
 let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
 
-let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
+let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline --bind ctrl-n:down,ctrl-p:up'
+
 "let $FZF_DEFAULT_COMMAND="rg --files --hidden"
 " let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git -o -name autoload -o -name vendor -o -name ranger -o -name venv -o -name __pycache__ -o -name autoload \) -prune -o -print'
 
