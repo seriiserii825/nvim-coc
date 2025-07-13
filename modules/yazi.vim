@@ -3,7 +3,7 @@ set termguicolors
 
 " Set keymap to open Yazi
 lua << EOF
-vim.keymap.set("n", "<leader>-", function()
+vim.keymap.set("n", "<leader>e", function()
   require("yazi").yazi()
 end, { desc = "Open Yazi at current file" })
 
