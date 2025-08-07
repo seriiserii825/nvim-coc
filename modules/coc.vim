@@ -13,6 +13,7 @@ let g:coc_global_extensions=[
       \'coc-blade',
       \'coc-html-css-support',
       \'coc-eslint',
+      \'coc-spell-checker',
       \'coc-explorer',
       \'coc-fzf-preview',
       \'coc-highlight',

@@ -86,5 +86,12 @@
   "python.linting.flake8Path": "flake8",
   "python.formatting.provider": "autopep8",
   "python.linting.flake8Args": ["--max-line-length=88"],
-  "ruff.lint.args": ["--unsafe-fixes"]
+  "ruff.lint.args": [
+    "--unsafe-fixes"
+  ],
+  "cSpell.userWords": [
+    "phpls",
+    "pyright",
+    "yaegassy"
+  ]
 }
