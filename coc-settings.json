@@ -99,12 +99,12 @@
     "serii",
     "yaegassy"
   ],
+  "cSpellExt.enableDictionaries": ["russian"],
   "cSpell.language": "en,ru",
-  "cSpell.dictionaries": ["en-US", "ru-RU"],
   "cSpell.languageSettings": [
     { "languageId": "*", "local": "en", "dictionaries": ["wordsEn"] },
     { "languageId": "*", "local": "en-US", "dictionaries": ["wordsEn"] },
-    { "languageId": "*", "local": "ru-RU", "dictionaries": ["wordsRu"] },
+    { "languageId": "*", "local": "en-GB", "dictionaries": ["wordsEnGb"] },
     { "languageId": "*", "dictionaries": ["companies", "softwareTerms", "misc"] },
     { "languageId": "python", "allowCompoundWords": true, "dictionaries": ["python"] },
     { "languageId": "javascript", "dictionaries": ["typescript", "node"] },
