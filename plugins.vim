@@ -29,7 +29,7 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'mboughaba/i3config.vim'
 " Plug 'sheerun/vim-polyglot'
 "debug
-" Plug 'puremourning/vimspector'
+Plug 'puremourning/vimspector'
 
 "Align
 Plug 'godlygeek/tabular'
