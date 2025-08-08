@@ -86,12 +86,35 @@
   "python.linting.flake8Path": "flake8",
   "python.formatting.provider": "autopep8",
   "python.linting.flake8Args": ["--max-line-length=88"],
-  "ruff.lint.args": [
-    "--unsafe-fixes"
-  ],
+  "ruff.lint.args": ["--unsafe-fixes"],
   "cSpell.userWords": [
+    "Nerdfont",
+    "capsys",
+    "chdir",
+    "debugpy",
+    "nvim",
     "phpls",
     "pyright",
+    "pytest",
+    "serii",
     "yaegassy"
+  ],
+  "cSpell.language": "en,ru",
+  "cSpell.dictionaries": ["en-US", "ru-RU"],
+  "cSpell.languageSettings": [
+    { "languageId": "*", "local": "en", "dictionaries": ["wordsEn"] },
+    { "languageId": "*", "local": "en-US", "dictionaries": ["wordsEn"] },
+    { "languageId": "*", "local": "ru-RU", "dictionaries": ["wordsRu"] },
+    { "languageId": "*", "dictionaries": ["companies", "softwareTerms", "misc"] },
+    { "languageId": "python", "allowCompoundWords": true, "dictionaries": ["python"] },
+    { "languageId": "javascript", "dictionaries": ["typescript", "node"] },
+    { "languageId": "javascriptreact", "dictionaries": ["typescript", "node"] },
+    { "languageId": "typescript", "dictionaries": ["typescript", "node"] },
+    { "languageId": "typescriptreact", "dictionaries": ["typescript", "node"] },
+    { "languageId": "html", "dictionaries": ["html", "fonts", "typescript", "css"] },
+    { "languageId": "php", "dictionaries": ["php", "html", "fonts", "css", "typescript"] },
+    { "languageId": "css", "dictionaries": ["fonts", "css"] },
+    { "languageId": "less", "dictionaries": ["fonts", "css"] },
+    { "languageId": "scss", "dictionaries": ["fonts", "css"] }
   ]
 }

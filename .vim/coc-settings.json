@@ -1,4 +1,12 @@
 {
   "volar.takeOverMode.enabled": true,
-  "tsserver.enable": true
+  "tsserver.enable": true,
+  "cSpell.words": [
+    "autopep",
+    "intelephense",
+    "noselect",
+    "pagenavi",
+    "ultisnips",
+    "vsplit"
+  ]
 }
