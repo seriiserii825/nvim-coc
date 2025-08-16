@@ -47,7 +47,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'liuchengxu/vim-which-key'
 " Plug 'CRAG666/code_runner.nvim'
-" Plug 'CopilotC-Nvim/CopilotChat.nvim'
+Plug 'CopilotC-Nvim/CopilotChat.nvim'
 " Plug 'mbbill/undotree'
 Plug 'airblade/vim-rooter'
 Plug 'tpope/vim-surround'
