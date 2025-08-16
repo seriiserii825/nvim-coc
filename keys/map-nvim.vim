@@ -82,3 +82,6 @@ nnoremap <expr> h (v:count == 0 ? '<Nop>' : 'h')
 nnoremap <expr> j (v:count == 0 ? '<Nop>' : 'j')
 nnoremap <expr> k (v:count == 0 ? '<Nop>' : 'k')
 nnoremap <expr> l (v:count == 0 ? '<Nop>' : 'l')
+
+" Map <leader>af to add the word under the cursor to the folder dictionary
+nmap <leader>df :CocCommand cSpell.addWordToDictionary<Space>folder<CR>
