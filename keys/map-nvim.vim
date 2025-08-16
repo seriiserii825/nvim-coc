@@ -9,10 +9,6 @@
 nnoremap <leader>p" vi"p
 nnoremap <leader>p' vi'p
 
-" change ' to "
-nmap <leader>" cs'"
-nmap <leader>' cs"'
-
 "save all saved
 nmap <leader>a :bufdo w<CR>
 nmap _ i <Esc>
@@ -82,3 +78,8 @@ nnoremap <C-l> <C-w>l
 " endfunction
 
 
+" Disable plain h/j/k/l, but allow counts like 3j, 4k
+nnoremap <expr> h (v:count == 0 ? '<Nop>' : 'h')
+nnoremap <expr> j (v:count == 0 ? '<Nop>' : 'j')
+nnoremap <expr> k (v:count == 0 ? '<Nop>' : 'k')
+nnoremap <expr> l (v:count == 0 ? '<Nop>' : 'l')
