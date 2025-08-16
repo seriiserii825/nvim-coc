@@ -38,7 +38,6 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <silent> [g <Plug>(coc-diagnostic-next)
 nmap <silent> ]g <Plug>(coc-diagnostic-prev)
 " Run the Code Lens action on the current line
-nmap <leader>cl  <Plug>(coc-codelens-action)
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 
 " Highlight the symbol and its references when holding the cursor
@@ -51,7 +50,7 @@ nmap <silent> <leader>cb  <Plug>(coc-codeaction-source)<CR>
 " Apply the most preferred quickfix action to fix diagnostic on the current line
 nmap <leader>;  <Plug>(coc-fix-current)
 nmap <leader>cl  :CocList<CR>
-nnoremap <silent><nowait> <space>ci  :<C-u>CocList diagnostics<cr>
+nnoremap <silent><space>ci  :<C-u>CocList diagnostics<cr>
 
 " Remap keys for applying refactor code actions
 " nmap <silent> <leader>cr <Plug>(coc-codeaction-refactor)
