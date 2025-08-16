@@ -77,9 +77,3 @@ nnoremap <C-l> <C-w>l
 " silent s/>/\&gt;/eg
 " endfunction
 
-
-" Disable plain h/j/k/l, but allow counts like 3j, 4k
-nnoremap <expr> h (v:count == 0 ? '<Nop>' : 'h')
-nnoremap <expr> j (v:count == 0 ? '<Nop>' : 'j')
-nnoremap <expr> k (v:count == 0 ? '<Nop>' : 'k')
-nnoremap <expr> l (v:count == 0 ? '<Nop>' : 'l')
