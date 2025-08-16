@@ -53,7 +53,7 @@ set nobackup
 set nowritebackup
 set updatetime=300
 set signcolumn=yes
-syntax enable                           " Enables syntax highlighing
+syntax enable                           " Enables syntax highlighting
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set scrolloff=4                              " Required to keep multiple buffers open multiple buffers
 set inccommand=nosplit
