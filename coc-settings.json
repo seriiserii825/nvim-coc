@@ -97,6 +97,7 @@
     "pyright",
     "pytest",
     "serii",
+    "wpcf",
     "yaegassy"
   ],
   "cSpellExt.enableDictionaries": ["russian"],
