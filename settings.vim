@@ -53,9 +53,9 @@ set nobackup
 set nowritebackup
 set updatetime=300
 set signcolumn=yes
-syntax enable                           " Enables syntax highlighting
+syntax enable                           " Enables syntax 
 set hidden                              " Required to keep multiple buffers open multiple buffers
-set scrolloff=4                              " Required to keep multiple buffers open multiple buffers
+set scrolloff=20                              " Required to keep multiple buffers open multiple buffers
 set inccommand=nosplit
 set nowrap                              " Display long lines as just one line
 set textwidth=0 
@@ -67,7 +67,7 @@ set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
 set ruler              			            " Show the cursor position all the time
 set cmdheight=1                         " More space for displaying messages
-" set iskeyword+=-                      	" treat dash separated words as a word text object"
+set iskeyword+=-                      	" treat dash separated words as a word text object"
 set mouse=a                             " Enable your mouse
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
