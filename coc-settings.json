@@ -94,9 +94,11 @@
     "debugpy",
     "nvim",
     "phpls",
+    "pyperclip",
     "pyright",
     "pytest",
     "serii",
+    "shortcode",
     "wpcf",
     "yaegassy"
   ],
