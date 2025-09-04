@@ -90,6 +90,7 @@
   "cSpell.userWords": [
     "ABSPATH",
     "Nerdfont",
+    "Nuxt",
     "acfwpcli",
     "bludelego",
     "capsys",
@@ -97,6 +98,7 @@
     "debugpy",
     "nvim",
     "phpls",
+    "prefetch",
     "pyright",
     "pytest",
     "serii",
