@@ -96,6 +96,7 @@
     "capsys",
     "chdir",
     "debugpy",
+    "endfor",
     "nvim",
     "phpls",
     "prefetch",
