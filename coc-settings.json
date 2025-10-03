@@ -98,6 +98,7 @@
     "debugpy",
     "endfor",
     "nvim",
+    "ofetch",
     "phpls",
     "prefetch",
     "pyright",
