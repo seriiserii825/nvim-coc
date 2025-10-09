@@ -15,6 +15,8 @@ let @l='I<li>jjA</li>jjj'
 " h2
 let @h='I<h3>A</h3>j'
 
+let @m='^f=llimy_get_image(id€kb€kb€kb_id(lx$hp'
+
 " format file
 let @f='gg=G'
 
