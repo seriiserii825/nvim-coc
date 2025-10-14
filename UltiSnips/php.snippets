@@ -2,6 +2,13 @@ snippet php "<?php ?>" ib
 <?php $1 ?>
 endsnippet
 
+snippet vid "video" b
+<video autoplay muted loop playsinline>
+	<source src="<?php echo $$1; ?>" type="video/mp4">
+	Your browser does not support the video tag.
+</video>
+endsnippet
+
 snippet mgi "my_get_image_id" b
 $$1 = my_get_image_id($$2['$1']);
 endsnippet
