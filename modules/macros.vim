@@ -12,8 +12,8 @@ let @s='^/__ nhve"ay€üLGi&=@a {'
 let @l='I<li>jjA</li>jjj' 
 " p
 " let @p='I<p>jjA</p>jj^llllj'
-" h2
-let @h='I<h3>A</h3>j'
+" h2 markdown
+let @h='I## o'
 
 let @m='^f=llimy_get_image(id€kb€kb€kb_id(lx$hp'
 
