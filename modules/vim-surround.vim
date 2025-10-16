@@ -1,41 +1,33 @@
-" Surround with Markdown code fences ```lang
+" Markdown code fences for multiple languages
 let g:surround_{char2nr('t')} = "```ts\n\r\n```"
 let g:surround_{char2nr('p')} = "```python\n\r\n```"
 let g:surround_{char2nr('h')} = "```php\n\r\n```"
+let g:surround_{char2nr('b')} = "```bash\n\r\n```"
+let g:surround_{char2nr('y')} = "```yaml\n\r\n```"
+let g:surround_{char2nr('j')} = "```json\n\r\n```"
+let g:surround_{char2nr('g')} = "```graphql\n\r\n```"
 
-" Count = distance down (relative number), not total lines
-function! s:SurroundTsDown(distance) abort
-  let d   = max([0, a:distance])        " 0 = only current line
-  let cur = line('.')
-  let last= line('$')
-  let lim = min([d, last - cur])        " don't go past EOF
-  execute 'normal! V' . lim . 'j'
-  call feedkeys("\<Plug>VSurround" . 't', 'm')
+" --- Generic surround with ```lang fences ---
+function! s:SurroundWith(lang, count) abort
+  let c = max([1, a:count])
+  let steps = c - 1
+  let steps = min([steps, line('$') - line('.')])
+
+  " Start visual line selection
+  normal! V
+  if steps > 0
+    execute 'normal! ' . steps . 'j'
+  endif
+
+  " Use correct surround character
+  call feedkeys("\<Plug>VSurround" . a:lang, 'm')
 endfunction
 
-" Wrapper so <leader>ts defaults to distance=0 (only current line)
-function! s:MapTs() abort
-  let dist = v:count == 0 ? 0 : v:count
-  call <SID>SurroundTsDown(dist)
-endfunction
-
-" Normal-mode mapping: use relative counts (e.g. 1<leader>ts)
-nnoremap <silent> <leader>ts :<C-u>call <SID>MapTs()<CR>
-
-" Command version: :SpaceTs {distance}  (defaults to 0)
-command! -count=0 SpaceTs call <SID>SurroundTsDown(<count>)
-
-" If you're already in Visual mode, just apply 't' surround
-xnoremap <silent> <leader>ts <Plug>VSurroundt
-
-" " ---- Wrap N lines with ```ts ... ```
-" function! s:SurroundTs(count) abort
-"   let l:n = max([1, a:count])
-"   " Make a Visual LINE selection of N lines: current + (n-1) down
-"   execute 'normal! V' . (l:n - 1) . 'j'
-"   " Trigger the *plugin* Visual surround mapping (not built-in S)
-"   call feedkeys("\<Plug>VSurround" . 't', 'm')
-" endfunction
-"
-" " Normal-mode mapping with count: 3<leader>ts -> wrap 3 lines
-" nnoremap <silent> <leader>ts :<C-u>call <SID>SurroundTs(v:count1)<CR>
+" --- Mappings: <leader>m{key}
+nnoremap <silent> ts :<C-u>call <SID>SurroundWith('t', v:count1)<CR>
+nnoremap <silent> py :<C-u>call <SID>SurroundWith('p', v:count1)<CR>
+nnoremap <silent> ph :<C-u>call <SID>SurroundWith('h', v:count1)<CR>
+nnoremap <silent> mb :<C-u>call <SID>SurroundWith('b', v:count1)<CR>
+nnoremap <silent> my :<C-u>call <SID>SurroundWith('y', v:count1)<CR>
+nnoremap <silent> mj :<C-u>call <SID>SurroundWith('j', v:count1)<CR>
+nnoremap <silent> mg :<C-u>call <SID>SurroundWith('g', v:count1)<CR>
