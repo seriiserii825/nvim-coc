@@ -53,6 +53,7 @@ source $HOME/.config/nvim/modules/sort.vim
 source $HOME/.config/nvim/modules/copilot.vim
 source $HOME/.config/nvim/modules/chatcopilot.vim
 source $HOME/.config/nvim/modules/vim-surround.vim
+source $HOME/.config/nvim/modules/calculate.vim
 " source $HOME/.config/nvim/modules/undotree.vim
 source $HOME/.config/nvim/modules/flash.vim
 " source $HOME/.config/nvim/modules/tabular.vim
