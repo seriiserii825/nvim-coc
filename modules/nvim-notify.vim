@@ -1,10 +1,10 @@
 lua << EOF
 require("notify").setup({
-background_colour = "#000000",
-timeout = 3000,
-render = "compact",
-stages = "fade",
-top_down = false,
+  background_colour = "#000000",
+  timeout = 3000,
+  render = "compact",
+  stages = "fade",
+  top_down = true,
 })
 vim.notify = require("notify")
 vim.opt.lazyredraw = false
