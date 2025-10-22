@@ -6,6 +6,7 @@ let g:surround_{char2nr('b')} = "```bash\n\r\n```"
 let g:surround_{char2nr('y')} = "```yaml\n\r\n```"
 let g:surround_{char2nr('j')} = "```json\n\r\n```"
 let g:surround_{char2nr('g')} = "```graphql\n\r\n```"
+let g:surround_{char2nr('v')} = "```vim\n\r\n```"
 
 " --- Generic surround with ```lang fences ---
 function! s:SurroundWith(lang, count) abort
@@ -31,3 +32,4 @@ nnoremap <silent> mb :<C-u>call <SID>SurroundWith('b', v:count1)<CR>
 nnoremap <silent> my :<C-u>call <SID>SurroundWith('y', v:count1)<CR>
 nnoremap <silent> mj :<C-u>call <SID>SurroundWith('j', v:count1)<CR>
 nnoremap <silent> mg :<C-u>call <SID>SurroundWith('g', v:count1)<CR>
+nnoremap <silent> vm :<C-u>call <SID>SurroundWith('v', v:count1)<CR>
