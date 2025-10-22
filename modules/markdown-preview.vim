@@ -6,7 +6,7 @@ nmap <leader>mp <Plug>MarkdownPreview<CR>
 " default: 0
 let g:mkdp_auto_start = 0
 let g:mkdp_path_to_chrome = "/usr/bin/google-chrome-stable"
-let g:mkdp_theme = 'light'
+let g:mkdp_theme = 'dark'
 
 " set to 1, the nvim will auto close current preview window when change
 " from markdown buffer to another buffer
