@@ -15,7 +15,6 @@ let g:coc_global_extensions=[
       \'coc-eslint',
       \'coc-spell-checker',
       \'coc-cspell-dicts',
-      \'coc-explorer',
       \'coc-fzf-preview',
       \'coc-highlight',
       \'coc-json',
