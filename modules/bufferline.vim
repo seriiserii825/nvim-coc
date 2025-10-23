@@ -36,8 +36,8 @@ require('bufferline').setup {
 EOF
 
 
-nnoremap <silent><S-l> :BufferLineCycleNext<CR>
 nnoremap <silent><S-h> :BufferLineCyclePrev<CR>
+nnoremap <silent><S-l> :BufferLineCycleNext<CR>
 
 nnoremap <silent><M-S-l> :BufferLineMoveNext<CR>
 nnoremap <silent><M-S-h> :BufferLineMovePrev<CR>
