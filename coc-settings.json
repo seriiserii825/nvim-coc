@@ -98,6 +98,7 @@
     "debugpy",
     "endfor",
     "instanceof",
+    "mkfile",
     "nvim",
     "ofetch",
     "phpls",
