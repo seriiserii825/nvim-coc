@@ -14,6 +14,8 @@ let @l='I<li>jjA</li>jjj'
 " let @p='I<p>jjA</p>jj^llllj'
 " h2 markdown
 let @h='I## o'
+" h3 markdown
+let @t='I## o'
 
 let @m='^f=llimy_get_image(id€kb€kb€kb_id(lx$hp'
 
@@ -26,9 +28,6 @@ let @j='^wvt yoconsole.log9)€kb€kb€kb();hiJSON.stringify()hpa, null, 4' " js 
 
 "vardump
 let @v='^vt hl"myovardump("mpA;^'
-
-" from interface to type
-let @t='/interfacecwtypef{hi ='
 
 " vue class
 let @n='^f_vf"h"ayGkko&"apa{'
