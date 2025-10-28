@@ -29,7 +29,7 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'mboughaba/i3config.vim'
 Plug 'kana/vim-textobj-user'      " dependency
 Plug 'kana/vim-textobj-entire'    " the extension you want
-" Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot'
 "debug
 Plug 'puremourning/vimspector'
 
