@@ -24,6 +24,7 @@ source $HOME/.config/nvim/modules/macros.vim
 " source $HOME/.config/nvim/modules/macross-dir/python-macros.vim
 source $HOME/.config/nvim/modules/macross-dir/bash-macros.vim
 " source $HOME/.config/nvim/modules/macross-dir/blade.macros.vim
+source $HOME/.config/nvim/modules/emmet.vim
 
 "Coc
 source $HOME/.config/nvim/modules/coc.vim
