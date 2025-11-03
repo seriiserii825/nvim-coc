@@ -97,6 +97,7 @@
     "chdir",
     "debugpy",
     "endfor",
+    "gsap",
     "instanceof",
     "mkfile",
     "nvim",
