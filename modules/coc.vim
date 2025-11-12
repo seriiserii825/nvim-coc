@@ -1,6 +1,6 @@
 "COC
 "CocInstall @yaegassy/coc-pug
-
+let g:airline#extensions#coc#enabled = 1
 let g:coc_global_extensions=[
       \'coc-prettier',
       \'coc-svg',
