@@ -89,6 +89,7 @@
   "ruff.lint.args": ["--unsafe-fixes"],
   "cSpell.userWords": [
     "ABSPATH",
+    "Arbalet",
     "Nerdfont",
     "Nuxt",
     "acfwpcli",

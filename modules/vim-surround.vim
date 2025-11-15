@@ -34,4 +34,4 @@ nnoremap <silent> my :<C-u>call <SID>SurroundWith('y', v:count1)<CR>
 nnoremap <silent> mj :<C-u>call <SID>SurroundWith('j', v:count1)<CR>
 nnoremap <silent> mg :<C-u>call <SID>SurroundWith('g', v:count1)<CR>
 nnoremap <silent> ms :<C-u>call <SID>SurroundWith('s', v:count1)<CR>
-nnoremap <silent> vm :<C-u>call <SID>SurroundWith('v', v:count1)<CR>
+nnoremap <silent> mv :<C-u>call <SID>SurroundWith('v', v:count1)<CR>
