@@ -134,5 +134,8 @@
     { "languageId": "css", "dictionaries": ["fonts", "css"] },
     { "languageId": "less", "dictionaries": ["fonts", "css"] },
     { "languageId": "scss", "dictionaries": ["fonts", "css"] }
-  ]
+  ],
+  "markdownlint.config": {
+    "MD029": false
+  }
 }

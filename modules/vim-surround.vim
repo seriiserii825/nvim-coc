@@ -35,3 +35,8 @@ nnoremap <silent> mj :<C-u>call <SID>SurroundWith('j', v:count1)<CR>
 nnoremap <silent> mg :<C-u>call <SID>SurroundWith('g', v:count1)<CR>
 nnoremap <silent> ms :<C-u>call <SID>SurroundWith('s', v:count1)<CR>
 nnoremap <silent> mv :<C-u>call <SID>SurroundWith('v', v:count1)<CR>
+
+" :12,28Dash
+" или с относительными номерами, например:
+" :.,.+5Dash
+command! -range Dash <line1>,<line2>normal! I- 
