@@ -13,9 +13,7 @@ let @l='I<li>jjA</li>jjj'
 " p
 " let @p='I<p>jjA</p>jj^llllj'
 " h2 markdown
-let @h='I## o'
-" h3 markdown
-let @t='I### o'
+let @h='I### o'
 
 let @m='^f=llimy_get_image(id€kb€kb€kb_id(lx$hp'
 
