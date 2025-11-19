@@ -55,7 +55,7 @@ set updatetime=300
 set signcolumn=yes
 syntax enable                           " Enables syntax 
 set hidden                              " Required to keep multiple buffers open multiple buffers
-set scrolloff=6                              " Required to keep multiple buffers open multiple buffers
+set scrolloff=2                              " Required to keep multiple buffers open multiple buffers
 set inccommand=nosplit
 set nowrap                              " Display long lines as just one line
 set textwidth=0 

@@ -38,3 +38,4 @@ nnoremap <silent> mv :<C-u>call <SID>SurroundWith('v', v:count1)<CR>
 
 " Dash 5
 command! -nargs=1 Dash exec line('.') . ',' . (line('.') + <args>) . 'normal! I- '
+nnoremap <silent> dh :<C-u>execute 'Dash ' . v:count1<CR>
