@@ -11,6 +11,7 @@ source $HOME/.config/nvim/functions.vim
 
 " functions
 source $HOME/.config/nvim/modules/functions/delete-lines.vim
+source $HOME/.config/nvim/modules/functions/delete-empty-lines.vim
 source $HOME/.config/nvim/modules/functions/duplicate-lines-from.vim " unfold
 source $HOME/.config/nvim/modules/functions/copy-lines.vim " unfold
 source $HOME/.config/nvim/modules/functions/visual-lines.vim " unfold
