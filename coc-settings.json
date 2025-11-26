@@ -101,6 +101,7 @@
     "gsap",
     "instanceof",
     "mkfile",
+    "nestjs",
     "nvim",
     "ofetch",
     "phpls",
