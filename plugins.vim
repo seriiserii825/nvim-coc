@@ -80,7 +80,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-rhubarb' " Fugitive dependency GBrowse
 " Plug 'junegunn/gv.vim'
 " Plug 'sindrets/diffview.nvim'
-" Plug 'f-person/git-blame.nvim'
+Plug 'f-person/git-blame.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 
 "Buffers
