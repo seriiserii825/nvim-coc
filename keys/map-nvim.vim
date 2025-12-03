@@ -32,6 +32,7 @@ nnoremap <silent> <Leader>sf :source %<CR>
 nmap <silent> <C-t> :let @+ = len(@+)<CR> 
 
 map <leader>ms :%s/`\(.*\)`/```\r\1\r```/g<CR>
+map <leader>xf :%s/^[ \	]*//<CR>
 
 "rename word
 vnoremap <leader>rn "zy:s/<C-r>z/
