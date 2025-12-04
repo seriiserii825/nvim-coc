@@ -20,7 +20,6 @@ nnoremap <silent><leader>ns :set spell!<CR>
 inoremap <C-i> <C-r>=@i<CR>
 " remove empty lines
 " 
-nnoremap <silent> <Leader>x :g/^\s*$/d<CR>
 " remove trailing spaces
 nnoremap <silent> <Leader>z :%s/\s\{2,}/ /g<CR>
 " open in browser
@@ -32,7 +31,9 @@ nnoremap <silent> <Leader>sf :source %<CR>
 nmap <silent> <C-t> :let @+ = len(@+)<CR> 
 
 map <leader>ms :%s/`\(.*\)`/```\r\1\r```/g<CR>
-map <leader>xf :%s/^[ \	]*//<CR>
+
+nmap <silent> <Leader>xr :g/^\s*$/d<CR>
+nmap <silent> <leader>xl :%s/^[ \	]*//<CR>
 
 "rename word
 vnoremap <leader>rn "zy:s/<C-r>z/
