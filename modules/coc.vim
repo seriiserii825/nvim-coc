@@ -2,6 +2,7 @@
 "CocInstall @yaegassy/coc-pug
 let g:coc_global_extensions=[
       \'coc-prettier',
+      \'coc-prisma',
       \'coc-svg',
       \'coc-toml',
       \'coc-yaml',
