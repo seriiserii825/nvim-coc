@@ -32,6 +32,7 @@ Plug 'kana/vim-textobj-entire'    " the extension you want
 " Plug 'sheerun/vim-polyglot'
 "debug
 Plug 'puremourning/vimspector'
+Plug 'prisma/vim-prisma'
 
 "Align
 Plug 'godlygeek/tabular'
