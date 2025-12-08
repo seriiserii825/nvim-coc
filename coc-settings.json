@@ -141,5 +141,8 @@
   ],
   "markdownlint.config": {
     "MD029": false
+  },
+  "prisma": {
+    "enableDiagnostics": true
   }
 }
