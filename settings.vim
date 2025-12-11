@@ -1,14 +1,4 @@
 autocmd FocusLost * silent! wall
-" set spell
-" set spelllang=en-us
-
-" exec current python file code in neovim
-" nnoremap <leader>y :exec '!python3' shellescape(@%, 1)<CR>
-" nnoremap , :vs <CR> :term python3 % <CR>
-" let g:user_emmet_expandabbr_key='<C-;>'
-
-" set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
-" set list
 
 au FileType html let b:coc_root_patterns = ['.git', '.env', 'tailwind.config.js', 'tailwind.config.cjs']
 au FileType php let b:coc_root_patterns = ['.git', '.env', 'tailwind.config.js', 'tailwind.config.cjs']
