@@ -146,5 +146,6 @@
   },
   "prisma": {
     "enableDiagnostics": true
-  }
+  },
+  "tsserver.maxTsServerMemory": 768
 }
