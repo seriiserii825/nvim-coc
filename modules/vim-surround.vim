@@ -39,3 +39,17 @@ nnoremap <silent> mv :<C-u>call <SID>SurroundWith('v', v:count1)<CR>
 " Dash 5
 command! -nargs=1 Dash exec line('.') . ',' . (line('.') + <args>) . 'normal! I- '
 nnoremap <silent> dh :<C-u>execute 'Dash ' . v:count1<CR>
+
+nnoremap <leader>rt :call RenameCurrentTag()<CR>
+
+function! RenameCurrentTag()
+    let new_tag = input('New tag name: ')
+    if empty(new_tag)
+        return
+    endif
+    
+    normal! vato
+    let old_tag = expand('<cword>')
+    execute '%s/<' . old_tag . '\(\s\|>\)/<' . new_tag . '\1/ge'
+    execute '%s/<\/' . old_tag . '>/<\/' . new_tag . '>/ge'
+endfunction
