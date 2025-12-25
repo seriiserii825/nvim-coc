@@ -147,5 +147,12 @@
   "prisma": {
     "enableDiagnostics": true
   },
-  "tsserver.maxTsServerMemory": 768
+  "tsserver.maxTsServerMemory": 768,
+  "eslint.autoFixOnSave": true,
+  "eslint.probe": ["javascript", "typescript", "vue"],
+  "eslint.validate": ["javascript", "typescript", "vue"],
+  "coc.preferences.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
