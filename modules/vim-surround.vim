@@ -2,6 +2,7 @@
 let g:surround_{char2nr('t')} = "```ts\n\r\n```"
 let g:surround_{char2nr('p')} = "```python\n\r\n```"
 let g:surround_{char2nr('h')} = "```php\n\r\n```"
+let g:surround_{char2nr('z')} = "```prisma\n\r\n```"
 let g:surround_{char2nr('b')} = "```bash\n\r\n```"
 let g:surround_{char2nr('y')} = "```yaml\n\r\n```"
 let g:surround_{char2nr('j')} = "```json\n\r\n```"
@@ -29,6 +30,7 @@ endfunction
 nnoremap <silent> ts :<C-u>call <SID>SurroundWith('t', v:count1)<CR>
 nnoremap <silent> py :<C-u>call <SID>SurroundWith('p', v:count1)<CR>
 nnoremap <silent> ph :<C-u>call <SID>SurroundWith('h', v:count1)<CR>
+nnoremap <silent> mz :<C-u>call <SID>SurroundWith('z', v:count1)<CR>
 nnoremap <silent> mb :<C-u>call <SID>SurroundWith('b', v:count1)<CR>
 nnoremap <silent> my :<C-u>call <SID>SurroundWith('y', v:count1)<CR>
 nnoremap <silent> mj :<C-u>call <SID>SurroundWith('j', v:count1)<CR>
