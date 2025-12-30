@@ -27,11 +27,9 @@ let $FZF_DEFAULT_COMMAND =
       \ '  -name __pycache__ -o ' .
       \ '  -name storage -o ' .
       \ '  -name .nuxt -o ' .
-      \ '  -name .nuxt' .
-      \ '  -name dist' .
+      \ '  -name dist -o' .
       \ '  -name .idea ' .
       \ '\) -prune -o -type f -print'
-
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
