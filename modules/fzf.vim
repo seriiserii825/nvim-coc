@@ -28,6 +28,7 @@ let $FZF_DEFAULT_COMMAND =
       \ '  -name storage -o ' .
       \ '  -name .nuxt -o ' .
       \ '  -name .nuxt' .
+      \ '  -name dist' .
       \ '  -name .idea ' .
       \ '\) -prune -o -type f -print'
 
