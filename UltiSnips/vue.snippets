@@ -4,6 +4,25 @@ snippet tal "text align left" i
 text-align: left;
 endsnippet
 
+snippet use_query "useQuery import"
+const { data: $1, loading } = useQuery<$2>(
+	$3.$4
+)
+endsnippet
+
+snippet use_form "useForm import"
+const { form, send, pending } = useForm<$1, $2>(
+	$3,
+	{
+		$4
+	},
+	() => {
+		useSweetAlert('success', 'Logged in successfully!')
+		navigateTo('/')
+	}
+)
+endsnippet
+
 snippet vif "v-if with data" i
  v-if="data.$1"
 endsnippet
