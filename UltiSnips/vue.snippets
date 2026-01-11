@@ -4,6 +4,10 @@ snippet tal "text align left" i
 text-align: left;
 endsnippet
 
+snippet faw "font awesome icon" i
+<font-awesome-icon :icon="['$1', '$2']" />
+endsnippet
+
 snippet use_query "useQuery import"
 const { data: $1, loading } = useQuery<$2>(
 	$3.$4
