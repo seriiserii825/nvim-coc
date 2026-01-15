@@ -9,6 +9,7 @@ let g:surround_{char2nr('j')} = "```json\n\r\n```"
 let g:surround_{char2nr('g')} = "```graphql\n\r\n```"
 let g:surround_{char2nr('v')} = "```vim\n\r\n```"
 let g:surround_{char2nr('s')} = "```sql\n\r\n```"
+let g:surround_{char2nr('h')} = "```sql\n\r\n```"
 
 " --- Generic surround with ```lang fences ---
 function! s:SurroundWith(lang, count) abort
@@ -37,6 +38,7 @@ nnoremap <silent> mj :<C-u>call <SID>SurroundWith('j', v:count1)<CR>
 nnoremap <silent> mg :<C-u>call <SID>SurroundWith('g', v:count1)<CR>
 nnoremap <silent> ms :<C-u>call <SID>SurroundWith('s', v:count1)<CR>
 nnoremap <silent> mv :<C-u>call <SID>SurroundWith('v', v:count1)<CR>
+nnoremap <silent> mh :<C-u>call <SID>SurroundWith('h', v:count1)<CR>
 
 " Dash 5
 command! -nargs=1 Dash exec line('.') . ',' . (line('.') + <args>) . 'normal! I- '
