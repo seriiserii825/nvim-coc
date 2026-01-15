@@ -23,7 +23,8 @@ inoremap <C-i> <C-r>=@i<CR>
 " remove trailing spaces
 nnoremap <silent> <Leader>z :%s/\s\{2,}/ /g<CR>
 " open in browser
-nmap <silent> <leader>ob :w <Bar> !xdg-open %<CR>
+" nmap <silent> <leader>ob :w <Bar> !xdg-open "%"<CR>
+nmap <silent> <leader>ob :w <Bar> !google-chrome-stable "%"<CR>
 "source init.vim
 nnoremap <silent> <Leader>sn :source ~/.config/nvim/init.vim<CR>
 nnoremap <silent> <Leader>sf :source %<CR>
