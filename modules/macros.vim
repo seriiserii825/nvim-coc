@@ -14,6 +14,8 @@ let @l='I<li>jjA</li>jjj'
 let @p='I<p>jjA</p>jj^llllj'
 " h2 markdown
 let @h='I### o'
+let @t='I<h3>jjA</h3>jj^llllj'
+" let @s='I<strong>jjA</strong>jj^llllj'
 
 let @m='^f=llimy_get_image(id€kb€kb€kb_id(lx$hp'
 
