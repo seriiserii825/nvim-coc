@@ -33,6 +33,7 @@ Plug 'kana/vim-textobj-entire'    " the extension you want
 "debug
 Plug 'puremourning/vimspector'
 Plug 'prisma/vim-prisma'
+Plug 'mistweaverco/kulala.nvim'
 
 "Align
 Plug 'godlygeek/tabular'

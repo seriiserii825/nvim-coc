@@ -7,9 +7,11 @@ vmap <leader>t :'<,'>!trans -b :en<CR>
 " copy in " or in '
  nnoremap <leader>y" vi"y
  nnoremap <leader>y' vi'y
+ nnoremap <leader>y` vi`y
 " paste inside quotes
 nnoremap <leader>p" vi"p
 nnoremap <leader>p' vi'p
+nnoremap <leader>p` vi`p
 
 "save all saved
 nmap <leader>a :bufdo w<CR>
