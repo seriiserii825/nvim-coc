@@ -1,3 +1,5 @@
+autocmd BufNewFile,BufRead *.http setfiletype http
+
 lua << EOF
 require('kulala').setup({
   -- По умолчанию request method (GET, POST, etc.)
