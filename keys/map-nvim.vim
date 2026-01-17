@@ -8,10 +8,11 @@ vmap <leader>t :'<,'>!trans -b :en<CR>
  nnoremap <leader>y" vi"y
  nnoremap <leader>y' vi'y
  nnoremap <leader>y` vi`y
+
 " paste inside quotes
-nnoremap <leader>p" vi"p
-nnoremap <leader>p' vi'p
-nnoremap <leader>p` vi`p
+nnoremap <leader>p" :normal! f"pf"<CR>
+nnoremap <leader>p' :normal! f'pf'<CR>
+nnoremap <leader>p` :normal! f`pf`<CR>
 
 "save all saved
 nmap <leader>a :bufdo w<CR>
