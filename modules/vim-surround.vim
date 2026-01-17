@@ -7,7 +7,8 @@ let g:surround_{char2nr('b')} = "```bash\n\r\n```"
 let g:surround_{char2nr('y')} = "```yaml\n\r\n```"
 let g:surround_{char2nr('j')} = "```json\n\r\n```"
 let g:surround_{char2nr('g')} = "```graphql\n\r\n```"
-let g:surround_{char2nr('v')} = "```vim\n\r\n```"
+let g:surround_{char2nr('m')} = "```vim\n\r\n```"
+let g:surround_{char2nr('v')} = "```vue\n\r\n```"
 let g:surround_{char2nr('s')} = "```sql\n\r\n```"
 let g:surround_{char2nr('h')} = "```sql\n\r\n```"
 
@@ -37,6 +38,7 @@ nnoremap <silent> my :<C-u>call <SID>SurroundWith('y', v:count1)<CR>
 nnoremap <silent> mj :<C-u>call <SID>SurroundWith('j', v:count1)<CR>
 nnoremap <silent> mg :<C-u>call <SID>SurroundWith('g', v:count1)<CR>
 nnoremap <silent> ms :<C-u>call <SID>SurroundWith('s', v:count1)<CR>
+nnoremap <silent> mm :<C-u>call <SID>SurroundWith('m', v:count1)<CR>
 nnoremap <silent> mv :<C-u>call <SID>SurroundWith('v', v:count1)<CR>
 nnoremap <silent> mh :<C-u>call <SID>SurroundWith('h', v:count1)<CR>
 
