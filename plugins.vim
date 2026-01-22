@@ -35,8 +35,8 @@ Plug 'puremourning/vimspector'
 Plug 'prisma/vim-prisma'
 
 "Server HTTP
-Plug 'mistweaverco/kulala.nvim'
-Plug 'https://github.com/nicwest/vim-http'
+" Plug 'mistweaverco/kulala.nvim'
+" Plug 'https://github.com/nicwest/vim-http'
 
 "Align
 Plug 'godlygeek/tabular'
