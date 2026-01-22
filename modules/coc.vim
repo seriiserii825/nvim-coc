@@ -84,3 +84,23 @@ inoremap <expr><C-k> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 " <C-g>u breaks current undo, please make your own choice
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
       \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+function! s:do_code_action(kind)
+  let l:actions = CocAction('codeActions', '', [a:kind])
+  if len(l:actions) > 0
+    call CocAction('doCodeAction', l:actions[0])
+  endif
+endfunction
+
+function! s:fix_all_imports()
+  call s:do_code_action('source.addMissingImports')
+  call timer_start(100, {-> s:do_code_action('source.removeUnused')})
+  call timer_start(200, {-> s:do_code_action('source.organizeImports')})
+endfunction
+
+nmap <leader>ia :call <SID>fix_all_imports()<CR>
+
+" Отдельные команды без попапа
+nmap <leader>io :call <SID>do_code_action('source.organizeImports')<CR>
+nmap <leader>im :call <SID>do_code_action('source.addMissingImports')<CR>
+nmap <leader>id :call <SID>do_code_action('source.removeUnused')<CR>
