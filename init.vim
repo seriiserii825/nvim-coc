@@ -17,7 +17,7 @@ source $HOME/.config/nvim/modules/functions/copy-lines.vim " unfold
 source $HOME/.config/nvim/modules/functions/visual-lines.vim " unfold
 
 "Server
-source $HOME/.config/nvim/modules/kulala.vim " unfold
+" source $HOME/.config/nvim/modules/kulala.vim " unfold
 
 "Map
 source $HOME/.config/nvim/keys/map-nvim.vim
