@@ -33,8 +33,8 @@ set noswapfile
 set foldmethod=indent
 setlocal foldenable
 set foldnestmax=20
-set foldlevelstart=1
-set foldlevel=1
+" set foldlevelstart=1
+" set foldlevel=1
 filetype plugin on
 " set nofoldenable
 set lazyredraw " macros repeat
