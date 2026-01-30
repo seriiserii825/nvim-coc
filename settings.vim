@@ -33,6 +33,7 @@ set noswapfile
 set foldmethod=indent
 setlocal foldenable
 set foldnestmax=20
+set foldlevelstart=99
 " set foldlevelstart=1
 " set foldlevel=1
 filetype plugin on
