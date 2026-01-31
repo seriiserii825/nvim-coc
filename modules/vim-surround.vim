@@ -10,7 +10,7 @@ let g:surround_{char2nr('g')} = "```graphql\n\r\n```"
 let g:surround_{char2nr('m')} = "```vim\n\r\n```"
 let g:surround_{char2nr('v')} = "```vue\n\r\n```"
 let g:surround_{char2nr('s')} = "```sql\n\r\n```"
-let g:surround_{char2nr('h')} = "```sql\n\r\n```"
+let g:surround_{char2nr('h')} = "```html\n\r\n```"
 
 " --- Generic surround with ```lang fences ---
 function! s:SurroundWith(lang, count) abort
