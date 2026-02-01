@@ -31,10 +31,14 @@ snippet vif "v-if with data" i
  v-if="data.$1"
 endsnippet
 
-snippet dp
-const props = defineProps({
-$1
-});
+snippet dpi
+interface Props {
+	$1
+}
+
+withDefaults(defineProps<Props>(), {
+	active: false,
+})
 endsnippet
 
 snippet dp
