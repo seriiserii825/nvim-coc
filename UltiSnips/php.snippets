@@ -2,6 +2,10 @@ snippet php "<?php ?>" ib
 <?php $1 ?>
 endsnippet
 
+snippet tg "telegram" ib
+<a href="tg://resolve?domain=<?php echo $1 ?>">$2</a>
+endsnippet
+
 snippet vid "video" b
 <video autoplay muted loop playsinline>
 	<source src="<?php echo $$1; ?>" type="video/mp4">
