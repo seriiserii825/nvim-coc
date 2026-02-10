@@ -3,7 +3,22 @@ generate to me multiple html classes at once in english in one line, not code, f
 endsnippet
 
 snippet gcommit "generate commit summary"
-upper have commits can you create a few sentences summarizing what i did today?
+You are my daily standup summarizer.
+
+Input: a list of git commit messages (one per line).
+
+Goal: write ONE cohesive paragraph that summarizes what I did today, but it must cover every section/block mentioned in the commits (e.g., Our Products, Reviews, Send Email, Footer, Azienda/Company page, History, Build/Base, etc.).
+
+Strict rules:
+1) Do NOT skip any section/block. Every distinct section/block implied by the commit messages must be mentioned at least once in the paragraph.
+2) Before writing, extract a checklist of unique blocks/sections from the commits (internal step). If the paragraph does not mention all checklist items, rewrite the paragraph until it does.
+3) Keep it factual and specific: mention key actions such as “implemented”, “finished”, “pixel-perfect”, “responsive/mobile”, “alignment”, “animation”, “gallery replacement”, etc., based only on the commits.
+4) Output format: ONLY the final paragraph (no headings, no bullet points, no checklist).
+
+Commit messages:
+PASTE_HERE
+
+Today, I focused on enhancing the Our Products section by implementing a slider and ensuring pixel-perfect design for both desktop and mobile versions. I also worked on text alignment for the titles and descriptions. In addition, I replaced static images with an Earth gallery to create a more dynamic visual experience. For the reviews section, I completed the desktop version and developed a responsive mobile version. I finalized the full image implementation and worked on the Send Email section, making it mobile-friendly as well. In the footer, I added fields and built the main footer, ensuring pixel-perfect design for desktop and a responsive layout for mobile. Lastly, I worked on the Azienda page, creating a pixel-perfect intro block and company block, along with a line block that features an updated logo. I also developed a mobile version of the history section and set the base container to full width for better responsiveness.
 endsnippet
 
 snippet t "simple html tag"
