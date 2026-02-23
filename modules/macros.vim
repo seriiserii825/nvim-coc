@@ -11,7 +11,7 @@ let @s='^/__ nhve"ay€üLGi&=@a {'
 " li
 let @l='I<li>jjA</li>jjj' 
 " p
-let @p='I<p>jjA</p>jj^llllj'
+" let @p='I<p>jjA</p>jj^llllj'
 " h2 markdown
 let @h='I### o'
 let @t='I<h3>jjA</h3>jj^llllj'
