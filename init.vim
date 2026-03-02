@@ -9,6 +9,9 @@ hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=whi
 source $HOME/.config/nvim/settings.vim
 source $HOME/.config/nvim/functions.vim
 
+" format
+source $HOME/.config/nvim/modules/jsx-format.vim
+
 " functions
 source $HOME/.config/nvim/modules/functions/delete-lines.vim
 source $HOME/.config/nvim/modules/functions/delete-empty-lines.vim
