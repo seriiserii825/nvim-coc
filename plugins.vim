@@ -77,7 +77,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
 Plug 'yaegassy/coc-laravel', {'do': 'yarn install --frozen-lockfile'}
 Plug 'yaegassy/coc-ruff', {'do': 'yarn install --frozen-lockfile'}
-Plug 'yaegassy/coc-tailwindcss3', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'yaegassy/coc-tailwindcss3', {'do': 'yarn install --frozen-lockfile'}
 
 "Fzf
 Plug 'junegunn/fzf.vim'

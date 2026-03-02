@@ -69,8 +69,8 @@
     "markdown": "html",
     "javascript": "javascript",
     "typescript": "typescript",
-    "javascriptreact": "javascript",
-    "typescriptreact": "typescript"
+    "javascriptreact": "html",
+    "typescriptreact": "html"
   },
   "prettier.htmlWhitespaceSensitivity": "ignore",
   "prettier.bracketSameLine": true,
