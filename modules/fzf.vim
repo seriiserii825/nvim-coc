@@ -28,6 +28,7 @@ let $FZF_DEFAULT_COMMAND =
       \ '  -name storage -o ' .
       \ '  -name .nuxt -o ' .
       \ '  -name .next -o ' .
+      \ '  -name .angular -o ' .
       \ '  -name dist -o' .
       \ '  -name .output -o' .
       \ '  -name .idea ' .
