@@ -157,6 +157,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "angular.enable": true,
   "css.validate": true,
   "css.lint.unknownAtRules": "ignore",
   "less.lint.unknownAtRules": "ignore",
