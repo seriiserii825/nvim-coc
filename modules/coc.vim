@@ -3,6 +3,7 @@
 let g:coc_global_extensions=[
       \'coc-prettier',
       \'coc-prisma',
+      \'coc-angular',
       \'coc-svg',
       \'coc-toml',
       \'coc-yaml',
