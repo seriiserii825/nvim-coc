@@ -47,7 +47,8 @@
     "blade": "html",
     "blade.php": "html",
     "vue": "html",
-    "markdown": "html"
+    "markdown": "html",
+    "htmlangular": "html"
   },
   "pyright.inlayHints.functionReturnTypes": false,
   "pyright.inlayHints.variableTypes": false,
