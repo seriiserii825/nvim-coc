@@ -11,6 +11,7 @@ let g:surround_{char2nr('m')} = "```vim\n\r\n```"
 let g:surround_{char2nr('v')} = "```vue\n\r\n```"
 let g:surround_{char2nr('s')} = "```sql\n\r\n```"
 let g:surround_{char2nr('h')} = "```html\n\r\n```"
+let g:surround_{char2nr('c')} = "```scss\n\r\n```"
 
 " --- Generic surround with ```lang fences ---
 function! s:SurroundWith(lang, count) abort
@@ -41,6 +42,7 @@ nnoremap <silent> ms :<C-u>call <SID>SurroundWith('s', v:count1)<CR>
 nnoremap <silent> mm :<C-u>call <SID>SurroundWith('m', v:count1)<CR>
 nnoremap <silent> mv :<C-u>call <SID>SurroundWith('v', v:count1)<CR>
 nnoremap <silent> mh :<C-u>call <SID>SurroundWith('h', v:count1)<CR>
+nnoremap <silent> mc :<C-u>call <SID>SurroundWith('c', v:count1)<CR>
 
 " Dash 5
 command! -nargs=1 Dash exec line('.') . ',' . (line('.') + <args>) . 'normal! I- '
