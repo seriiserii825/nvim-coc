@@ -2,6 +2,10 @@
  nnoremap <leader>v" vi"
  nnoremap <leader>v' vi'
 
+
+command! RemToPx %s/\(\d\+\.\?\d*\)rem/\=string(str2float(submatch(1)) * 10) . 'px'/g
+nnoremap <leader>px :RemToPx<CR>
+
 vmap <leader>t :'<,'>!trans -b :en<CR>
 
 " copy in " or in '

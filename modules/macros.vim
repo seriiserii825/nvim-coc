@@ -32,4 +32,3 @@ let @v='^vt hl"myovardump("mpA;^'
 " vue class
 let @n='^f_vf"h"ayGkko&"apa{'
 
-command! RemToPx %s/\(\d\+\.\?\d*\)rem/\=string(str2float(submatch(1)) * 10) . 'px'/g
