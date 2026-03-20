@@ -1,27 +1,28 @@
-function! CalcVw()
-  let l:min = input("Min size (px): ")
-  let l:max = input("Max size (px): ")
+function! CalcSimpleClampVw()
+  let l:range = input("Min,Max (px): ")
+  let l:parts = split(l:range, ',')
 
-  let l:min = str2float(l:min)
-  let l:max = str2float(l:max)
+  if len(l:parts) != 2
+    echo "Invalid input. Use: min,max"
+    return
+  endif
 
+  let l:min = str2float(l:parts[0])
+  let l:max = str2float(l:parts[1])
+
+  " default viewport range 1280–1920
   let l:vw = (l:max - l:min) / (1920.0 - 1280.0) * 100.0
 
-  let l:result = printf("%.4fvw", l:vw)
+  let l:result = printf(
+        \ "clamp(%.2fpx, %.4fvw, %.2fpx)",
+        \ l:min,
+        \ l:vw,
+        \ l:max
+        \ )
+
   echo "\n" . l:result
   execute "normal! a" . l:result
 endfunction
 
-command! Vw call CalcVw()
-
-nmap <leader>cvw :Vw<CR>
-
-" **Usage:**
-" ```
-" :Vw
-" Min size (px): 32
-" Max size (px): 64
-" → font-size: clamp(32px, 5.0000vw, 64px)
-" ```
-"
-" ---
+command! ClampVwSimple call CalcSimpleClampVw()
+nmap <leader>cvw :ClampVwSimple<CR>
