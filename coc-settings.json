@@ -11,6 +11,7 @@
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
   "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
+"intelephense.files.maxMemory": 512,
   "intelephense.files.exclude": [
     "**/.git/**",
     "**/.svn/**",
