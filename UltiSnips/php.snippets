@@ -2,6 +2,12 @@ snippet php "<?php ?>" ib
 <?php $1 ?>
 endsnippet
 
+define('WP_DEBUG', true);
+define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_DISPLAY', false);
+@ini_set('display_errors', 0);
+endsnippet
+
 snippet tg "telegram" ib
 <a href="tg://resolve?domain=<?php echo $1 ?>">$2</a>
 endsnippet
