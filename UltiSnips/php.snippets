@@ -28,6 +28,10 @@ snippet cp "create_picture" b
 <?php create_picture(my_get_image_id($1)) ?>
 endsnippet
 
+snippet cpi "create_picture" b
+<?php create_picture(my_get_image_id($1), '`!v eval('getreg("i")')`__$2') ?>
+endsnippet
+
 snippet wlink "watsapp link" i
 https://wa.me/39<?php echo clear_phone($1); ?>
 endsnippet
