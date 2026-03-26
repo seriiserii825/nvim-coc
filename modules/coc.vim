@@ -62,7 +62,7 @@ nmap <leader>kd :CocDiagnostics<CR><CR>
 nmap <M-l> <Plug>(coc-format)
 vnoremap <leader>ct "zy:CocSearch <C-r>z/
 " vnoremap <leader>rn "zy:s/<C-r>z/
-" nmap <leader>kr <Plug>(coc-rename)
+nmap <leader>rn <Plug>(coc-rename)
 inoremap <silent><expr> <C-n> coc#pum#visible() ? coc#pum#next(1) : "\<C-n>"
 inoremap <silent><expr> <C-p> coc#pum#visible() ? coc#pum#prev(1) : "\<C-p>"
 inoremap <silent><expr> <down> coc#pum#visible() ? coc#pum#next(0) : "\<down>"
