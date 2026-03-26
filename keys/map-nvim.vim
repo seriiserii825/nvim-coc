@@ -6,6 +6,8 @@
 command! RemToPx %s/\(\d\+\.\?\d*\)rem/\=string(str2float(submatch(1)) * 10) . 'px'/g
 nnoremap <leader>px :RemToPx<CR>
 
+nnoremap <leader>ri :%s/export interface \(\w\+\)/export interface I\1/g \| nohlsearch<CR>
+
 vmap <leader>t :'<,'>!trans -b :en<CR>
 
 " copy in " or in '
