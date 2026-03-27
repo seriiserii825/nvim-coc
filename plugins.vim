@@ -54,7 +54,7 @@ Plug 'voldikss/vim-floaterm'
 Plug 'github/copilot.vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'liuchengxu/vim-which-key'
+Plug 'folke/which-key.nvim'
 " Plug 'CRAG666/code_runner.nvim'
 " Plug 'CopilotC-Nvim/CopilotChat.nvim'
 " Plug 'mbbill/undotree'

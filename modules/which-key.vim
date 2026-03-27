@@ -1,20 +1,32 @@
-" Map leader to which_key
-nnoremap <silent> <leader> :silent WhichKey '<Space>'<CR>
-vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
+lua << EOF
+local wk = require("which-key")
 
-" Инициализация пустого словаря
-let g:which_key_map = {}
+wk.setup({
+  preset = "modern",
+  win = {
+    border = "rounded",
+  },
+})
 
-" Настройка маппингов для вызова which-key
-nnoremap <silent> <leader> :silent WhichKey '<Space>'<CR>
-vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
+-- ── Group / key descriptions ─────────────────────────────────────────
+wk.add({
+  { "<leader>x",  group = "cleanup" },
+  { "<leader>xr", desc = "remove empty lines" },
+  { "<leader>xl", desc = "remove leading whitespace" },
+})
+EOF
 
-" Определение групп и команд
-let g:which_key_map.x = {
-      \ 'name': '+cleanup',
-      \ 'r': 'remove empty lines',
-      \ 'l': 'remove leading whitespace',
-      \ }
+" ── Colors (applied on the which_key buffer itself) ──────────────────
+augroup WhichKeyColors
+  autocmd!
+  autocmd FileType which_key call s:WhichKeyColors()
+augroup END
 
-" Регистрация словаря (обязательно в конце)
-call which_key#register('<Space>', "g:which_key_map")
+function! s:WhichKeyColors() abort
+  highlight WhichKey          guifg=#89b4fa gui=bold
+  highlight WhichKeyGroup     guifg=#a6e3a1
+  highlight WhichKeyDesc      guifg=#cdd6f4
+  highlight WhichKeySeparator guifg=#6c7086
+  highlight WhichKeyFloat     guibg=#1e1e2e
+  highlight WhichKeyBorder    guifg=#89dceb
+endfunction
