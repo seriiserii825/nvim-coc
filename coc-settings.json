@@ -53,6 +53,7 @@
     "javascriptreact"
   ],
   "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.experimental.v4": true,
   "prettier.htmlWhitespaceSensitivity": "ignore",
   "prettier.bracketSameLine": true,
   "prettier.printWidth": 100,

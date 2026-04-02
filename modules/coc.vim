@@ -6,7 +6,7 @@ let g:coc_global_extensions=[
       \'coc-svg',
       \'coc-toml',
       \'coc-yaml',
-      \'coc-tailwindcss',
+      \'@yaegassy/coc-tailwindcss3',
       \'coc-phpls',
       \'coc-css',
       \'coc-xml',
