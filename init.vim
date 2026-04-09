@@ -32,10 +32,10 @@ source $HOME/.config/nvim/modules/macros.vim
  "source $HOME/.config/nvim/modules/macross-dir/python-macros.vim
 source $HOME/.config/nvim/modules/macross-dir/bash-macros.vim
 " source $HOME/.config/nvim/modules/macross-dir/blade.macros.vim
-source $HOME/.config/nvim/modules/emmet.vim
+" source $HOME/.config/nvim/modules/emmet.vim
 
 
-source $HOME/.config/nvim/modules/vim-dadbod.vim
+" source $HOME/.config/nvim/modules/vim-dadbod.vim
 
 "Coc
 source $HOME/.config/nvim/modules/coc.vim
@@ -43,7 +43,7 @@ source $HOME/.config/nvim/modules/coc-explorer.vim
 source $HOME/.config/nvim/modules/coc-css.vim
 
 " syntax
-source $HOME/.config/nvim/modules/polyglot.vim
+" source $HOME/.config/nvim/modules/polyglot.vim
 source $HOME/.config/nvim/modules/yazi.vim
 
 " source $HOME/.config/nvim/modules/gitgutter.vim
@@ -55,7 +55,7 @@ source $HOME/.config/nvim/modules/lazygit.vim
 source $HOME/.config/nvim/modules/which-key.vim
 source $HOME/.config/nvim/modules/fzf.vim
 source $HOME/.config/nvim/modules/multiple-cursors.vim
-source $HOME/.config/nvim/modules/rainbow.vim
+" source $HOME/.config/nvim/modules/rainbow.vim
 source $HOME/.config/nvim/modules/indent-guides.vim
 source $HOME/.config/nvim/modules/easy-align.vim
 source $HOME/.config/nvim/modules/sort.vim
@@ -78,7 +78,7 @@ source $HOME/.config/nvim/modules/markdown-preview.vim
 
 "Snippets
 source $HOME/.config/nvim/modules/ulti-snippets.vim
-source $HOME/.config/nvim/modules/vimspector.vim
+" source $HOME/.config/nvim/modules/vimspector.vim
 
 "Notify
 source $HOME/.config/nvim/modules/nvim-notify.vim

@@ -25,25 +25,25 @@ Plug 'AlexvZyl/nordic.nvim'
 " Plug 'phanviet/vim-monokai-pro'
 Plug 'vim-airline/vim-airline'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'frazrepo/vim-rainbow'
+" Plug 'frazrepo/vim-rainbow'
 Plug 'mboughaba/i3config.vim'
-Plug 'kana/vim-textobj-user'      " dependency
-Plug 'kana/vim-textobj-entire'    " the extension you want
+" Plug 'kana/vim-textobj-user'      " dependency
+" Plug 'kana/vim-textobj-entire'    " the extension you want
 " Plug 'sheerun/vim-polyglot'
 "debug
-Plug 'puremourning/vimspector'
+" Plug 'puremourning/vimspector'
 Plug 'prisma/vim-prisma'
 
 " Database
-Plug 'tpope/vim-dadbod'
-Plug 'kristijanhusak/vim-dadbod-ui'
-Plug 'kristijanhusak/vim-dadbod-completion'
+" Plug 'tpope/vim-dadbod'
+" Plug 'kristijanhusak/vim-dadbod-ui'
+" Plug 'kristijanhusak/vim-dadbod-completion'
 "Server HTTP
 " Plug 'mistweaverco/kulala.nvim'
 " Plug 'https://github.com/nicwest/vim-http'
 
 "Align
-Plug 'godlygeek/tabular'
+" Plug 'godlygeek/tabular'
 Plug 'junegunn/vim-easy-align'
 Plug 'sQVe/sort.nvim'
 
@@ -85,7 +85,7 @@ Plug 'junegunn/fzf.vim'
 "Git
 Plug 'kdheepak/lazygit.nvim'
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-rhubarb' " Fugitive dependency GBrowse
 " Plug 'junegunn/gv.vim'
 " Plug 'sindrets/diffview.nvim'
@@ -137,7 +137,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' 
 " Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 " Plug 'ixru/nvim-markdown'
 
-Plug 'posva/vim-vue'
+" Plug 'posva/vim-vue'
 " Plug 'leafOfTree/vim-vue-plugin'
 " Plug 'mattn/emmet-vim'
 " Plug 'digitaltoad/vim-pug'
