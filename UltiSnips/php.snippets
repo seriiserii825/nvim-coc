@@ -2,6 +2,26 @@ snippet php "<?php ?>" ib
 <?php $1 ?>
 endsnippet
 
+snippet rapi "php api" b
+<?php
+if (!defined('ABSPATH')) exit;
+
+function $1()
+{
+  register_rest_route('$2/v1', '/$3', [
+    'methods'             => WP_REST_SERVER::READABLE,
+    'permission_callback' => '__return_true',
+    'callback' => '$4',
+  ]);
+}
+add_action('rest_api_init', '$1');
+
+function $4()
+{
+$5
+}
+endsnippet
+
 snippet wpdebug "wpdebug" b
 define('WP_DEBUG', true);
 define('WP_DEBUG_LOG', true);
