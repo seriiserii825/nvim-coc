@@ -11,27 +11,7 @@ let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffse
 
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline --bind ctrl-n:down,ctrl-p:up'
 
-"let $FZF_DEFAULT_COMMAND="rg --files --hidden"
-" let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git -o -name autoload -o -name vendor -o -name ranger -o -name venv -o -name __pycache__ -o -name autoload \) -prune -o -print'
-
-let $FZF_DEFAULT_COMMAND = 
-      \ 'find . \( ' .
-      \ '  -name node_modules -o ' .
-      \ '  -name .git -o ' .
-      \ '  -name autoload -o ' .
-      \ '  -name vendor -o ' .
-      \ '  -name ranger -o ' .
-      \ '  -name .mypy_cache -o ' .
-      \ '  -name venv -o ' .
-      \ '  -name .venv -o ' .
-      \ '  -name __pycache__ -o ' .
-      \ '  -name storage -o ' .
-      \ '  -name .nuxt -o ' .
-      \ '  -name .next -o ' .
-      \ '  -name dist -o' .
-      \ '  -name .output -o' .
-      \ '  -name .idea ' .
-      \ '\) -prune -o -type f -print'
+let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --glob "!.git" --glob "!node_modules" --glob "!vendor" --glob "!autoload" --glob "!storage" --glob "!dist" --glob "!.nuxt" --glob "!.next" --glob "!.output" --glob "!.idea" --glob "!venv" --glob "!.venv" --glob "!__pycache__" --glob "!.mypy_cache" --glob "!ranger"'
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
