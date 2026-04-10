@@ -6,6 +6,5 @@ require("notify").setup({
   stages = "fade",
   top_down = true,
 })
-vim.notify = require("notify")
 vim.opt.lazyredraw = false
 EOF
