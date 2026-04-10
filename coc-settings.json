@@ -3,6 +3,7 @@
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
   "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
+  "prettier.vueIndentScriptAndStyle": true,
   "intelephense.files.exclude": [
     "**/.git/**",
     "**/.svn/**",
