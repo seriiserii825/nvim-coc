@@ -32,7 +32,7 @@ Plug 'mboughaba/i3config.vim'
 " Plug 'sheerun/vim-polyglot'
 "debug
 " Plug 'puremourning/vimspector'
-Plug 'prisma/vim-prisma'
+" Plug 'prisma/vim-prisma'
 
 " Database
 " Plug 'tpope/vim-dadbod'
