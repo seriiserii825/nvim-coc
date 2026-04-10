@@ -72,7 +72,6 @@ source $HOME/.config/nvim/modules/colorize.vim
 
 "Terminal
 source $HOME/.config/nvim/modules/floaterm.vim
-source $HOME/.config/nvim/modules/markdown.vim
 source $HOME/.config/nvim/modules/markdown-preview.vim
 
 "Snippets
@@ -88,7 +87,7 @@ source $HOME/.config/nvim/themes/colorscheme.vim
 source $HOME/.config/nvim/themes/airline.vim
 " source $HOME/.config/nvim/themes/monokaipro.vim
 source $HOME/.config/nvim/modules/bufferline.vim
-source $HOME/.config/nvim/modules/treesitter.vim
+" source $HOME/.config/nvim/modules/treesitter.vim
 
 
 " source $HOME/.config/nvim/modules/colortils.vim

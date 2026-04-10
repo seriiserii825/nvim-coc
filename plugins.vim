@@ -53,7 +53,7 @@ Plug 'voldikss/vim-floaterm'
 " Editor
 Plug 'github/copilot.vim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'folke/which-key.nvim'
 " Plug 'CRAG666/code_runner.nvim'
 " Plug 'CopilotC-Nvim/CopilotChat.nvim'
@@ -108,7 +108,6 @@ Plug 'SirVer/ultisnips'
 "Markdown
 " Plug 'plasticboy/vim-markdown'
 " Plug 'gabrielelana/vim-markdown'
-Plug 'tadmccorkle/markdown.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 
 " Plug 'gorillamoe/AutoRemoteSync.nvim'
