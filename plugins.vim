@@ -58,7 +58,7 @@ Plug 'folke/which-key.nvim'
 " Plug 'CRAG666/code_runner.nvim'
 " Plug 'CopilotC-Nvim/CopilotChat.nvim'
 " Plug 'mbbill/undotree'
-Plug 'airblade/vim-rooter'
+" Plug 'airblade/vim-rooter'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tomtom/tcomment_vim'
@@ -86,7 +86,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'kdheepak/lazygit.nvim'
 Plug 'tpope/vim-fugitive'
 " Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-rhubarb' " Fugitive dependency GBrowse
+" Plug 'tpope/vim-rhubarb' " Fugitive dependency GBrowse
 " Plug 'junegunn/gv.vim'
 " Plug 'sindrets/diffview.nvim'
 " Plug 'f-person/git-blame.nvim'
@@ -103,7 +103,7 @@ Plug 'NvChad/nvim-colorizer.lua'
 
 "Snippets
 Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+" Plug 'honza/vim-snippets'
 
 "Markdown
 " Plug 'plasticboy/vim-markdown'

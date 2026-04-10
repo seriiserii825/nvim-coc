@@ -17,6 +17,7 @@ source $HOME/.config/nvim/modules/functions/visual-lines.vim " unfold
 source $HOME/.config/nvim/modules/functions/calc-em.vim
 source $HOME/.config/nvim/modules/functions/calc-vw.vim
 
+
 "Server
 " source $HOME/.config/nvim/modules/kulala.vim " unfold
 
@@ -43,6 +44,8 @@ source $HOME/.config/nvim/modules/coc-css.vim
 " source $HOME/.config/nvim/modules/polyglot.vim
 source $HOME/.config/nvim/modules/yazi.vim
 
+" Git
+source $HOME/.config/nvim/modules/gitsign.vim
 " source $HOME/.config/nvim/modules/gitgutter.vim
 " file manager
 source $HOME/.config/nvim/modules/which-key.vim
@@ -85,7 +88,7 @@ source $HOME/.config/nvim/themes/colorscheme.vim
 source $HOME/.config/nvim/themes/airline.vim
 " source $HOME/.config/nvim/themes/monokaipro.vim
 source $HOME/.config/nvim/modules/bufferline.vim
-"source $HOME/.config/nvim/modules/treesitter.vim
+source $HOME/.config/nvim/modules/treesitter.vim
 
 
 " source $HOME/.config/nvim/modules/colortils.vim
