@@ -8,7 +8,7 @@ vim.keymap.set("n", "<leader>e", function()
 end, { desc = "Open Yazi at current file" })
 
 vim.keymap.set("n", "<leader>cw", "<cmd>Yazi cwd<cr>", { desc = "Yazi: CWD" })
-vim.keymap.set("n", "<C-Up>", "<cmd>Yazi toggle<cr>", { desc = "Yazi: Toggle last session" })
+" vim.keymap.set("n", "<C-Up>", "<cmd>Yazi toggle<cr>", { desc = "Yazi: Toggle last session" })
 
 -- Optional settings
 require("yazi").setup({

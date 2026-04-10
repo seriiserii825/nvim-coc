@@ -4,7 +4,9 @@ lua << EOF
       user_default_options = {
         RGB = true, -- #RGB hex codes
         RRGGBB = true, -- #RRGGBB hex codes
-        names = true, -- "Name" codes like Blue or blue
+        names = {
+          filetypes = { css = true, html = true, sass = true, scss = true, less = true, stylus = true },
+          }, -- "Name" codes like Blue or blue
         RRGGBBAA = false, -- #RRGGBBAA hex codes
         AARRGGBB = false, -- 0xAARRGGBB hex codes
         rgb_fn = false, -- CSS rgb() and rgba() functions

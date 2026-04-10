@@ -1,8 +1,5 @@
 "Plugins
 source $HOME/.config/nvim/plugins.vim
-set termguicolors
-" let g:polyglot_disabled = ['vue']
-hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 
 "settings
 source $HOME/.config/nvim/settings.vim
@@ -52,7 +49,6 @@ source $HOME/.config/nvim/modules/which-key.vim
 source $HOME/.config/nvim/modules/lazygit.vim
 
 "Editor
-source $HOME/.config/nvim/modules/which-key.vim
 source $HOME/.config/nvim/modules/fzf.vim
 source $HOME/.config/nvim/modules/multiple-cursors.vim
 " source $HOME/.config/nvim/modules/rainbow.vim
