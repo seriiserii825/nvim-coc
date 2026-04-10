@@ -79,7 +79,7 @@ source $HOME/.config/nvim/modules/ulti-snippets.vim
 " source $HOME/.config/nvim/modules/vimspector.vim
 
 "Notify
-" source $HOME/.config/nvim/modules/nvim-notify.vim
+source $HOME/.config/nvim/modules/nvim-notify.vim
 " source $HOME/.config/nvim/modules/nvim-noice.vim
 
 "Theme
