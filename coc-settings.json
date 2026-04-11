@@ -54,8 +54,6 @@
     "javascriptreact"
   ],
   "tailwindCSS.emmetCompletions": true,
-  "tailwindCSS.experimental.v4": true,
-  "volar.format.enable": false,
   "prettier.resolveGlobalModules": true,
   "prettier.htmlWhitespaceSensitivity": "ignore",
   "prettier.bracketSameLine": true,
