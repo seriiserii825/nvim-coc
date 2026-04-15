@@ -12,8 +12,8 @@ nmap <leader>fb :Buffers<CR>
 
 nmap <silent> <expr> <leader>fw ":Files <cr>" . (exists("g:floaterm_instance") ? substitute(expand('<cword>'), "^'", "", "") : expand('<cword>'))
 
-nmap <Leader>fg :call fzf#vim#ag(expand('<cword>'))<kEnter>
-nmap <Leader>rg :Rg<CR>
+nmap <Leader>fg :RG <C-r><C-w><CR>
+nmap <Leader>rg :RG<CR>
 " Git
 nmap <leader>fr :GFiles?<CR>
 nmap <leader>fc :Commits<CR>
