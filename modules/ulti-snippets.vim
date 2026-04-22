@@ -9,7 +9,7 @@ let g:coc_snippet_prev = '<S-tab>'
 "
 autocmd BufNewFile,BufRead *.blade.php setlocal filetype=php.blade
 
-let g:UltiSnipsSnippetDirectories = ['UltiSnips']
+let g:UltiSnipsSnippetDirectories = ['UltiSnips', $HOME . '/.config/nvim/snips']
 let g:UltiSnipsFiletypeHierarchy = {
 \ 'php.blade': ['php', 'html', 'blade'],
 \}
