@@ -103,7 +103,7 @@ Plug 'NvChad/nvim-colorizer.lua'
 
 "Snippets
 Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
+Plug 'honza/vim-snippets'
 
 "Markdown
 " Plug 'plasticboy/vim-markdown'
