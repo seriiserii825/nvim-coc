@@ -4,6 +4,7 @@
   "typescript.suggest.autoImports": true,
   "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
   "prettier.vueIndentScriptAndStyle": true,
+  "prettier.singleAttributePerLine": false,
   "intelephense.files.exclude": [
     "**/.git/**",
     "**/.svn/**",
