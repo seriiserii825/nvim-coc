@@ -48,7 +48,6 @@ nmap <silent> <leader>xl :%s/^[ \	]*//<CR>
 "rename word
 vnoremap <leader>rn "zy:s/<C-r>z/
 vnoremap <leader>rna "zy:%s/<C-r>z/
-nmap <leader>vs "iyi"
 let b:surround_{char2nr('c')} = "```\r```"
 " File paths
 " relative

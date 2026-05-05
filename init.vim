@@ -17,6 +17,7 @@ source $HOME/.config/nvim/modules/functions/visual-lines.vim " unfold
 source $HOME/.config/nvim/modules/functions/calc-em.vim
 source $HOME/.config/nvim/modules/functions/calc-vw.vim
 source $HOME/.config/nvim/modules/functions/surround-line-tag.vim
+source $HOME/.config/nvim/modules/functions/yank-string-at-line.vim
 
 
 "Server
