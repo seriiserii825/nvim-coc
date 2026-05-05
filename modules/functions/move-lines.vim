@@ -15,17 +15,17 @@ function! MoveLinesRelative(from, to, ...)
   let l:end = min([line('$'), l:end])
 
   " Determine the destination
-  if a:0 >= 1
+  if a:0 >= 1 && type(a:1) == type('') && !empty(a:1)
     let l:raw_dest = a:1
-    if l:raw_dest ==# '0'
-      let l:dest = l:cur " Paste at the cursor position
-    elseif l:raw_dest =~ '^-'
-      let l:dest = l:cur + str2nr(l:raw_dest) " Move relative from current position
+    if l:raw_dest ==# '.' || l:raw_dest ==# '0'
+      let l:dest = l:cur
+    elseif l:raw_dest =~ '^[+-]'
+      let l:dest = l:cur + str2nr(l:raw_dest)
     else
-      let l:dest = str2nr(l:raw_dest) " Absolute destination line
+      let l:dest = str2nr(l:raw_dest)
     endif
   else
-    let l:dest = l:cur " Default: paste at the current line
+    let l:dest = l:cur
   endif
 
   " Ensure destination is within valid bounds
@@ -42,17 +42,25 @@ endfunction
 
 " Prompt function to handle user input correctly
 function! MoveLinesPrompt()
-  let l:input = input("MoveLines (e.g. -3 4 or -2 1 -5): ")
+  let l:input = input("MoveLines (e.g. -3,+4 5 or -2,-6 .): ")
   if empty(l:input)
     echo "Cancelled"
     return
   endif
 
-  " Split the input into separate arguments
-  let l:args = split(l:input, ' ')
+  let l:parts = split(l:input, ' ')
+  let l:range = split(l:parts[0], ',')
 
-  " Call the MoveLines function with the arguments
-  call MoveLinesRelative(l:args[0], l:args[1], l:args[2:])
+  if len(l:range) < 2
+    echo "Invalid format. Use from,to (e.g. -3,+4)"
+    return
+  endif
+
+  if len(l:parts) > 1
+    call MoveLinesRelative(l:range[0], l:range[1], l:parts[1])
+  else
+    call MoveLinesRelative(l:range[0], l:range[1])
+  endif
 endfunction
 
 " Mapping to call the MoveLinesPrompt function
