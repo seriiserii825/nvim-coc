@@ -8,8 +8,10 @@ function! YankStringAtLine()
     let l:target = str2nr(l:input)
   endif
 
+  let l:save_pos = getpos('.')
   execute l:target
   normal! zv"iyi"
+  call setpos('.', l:save_pos)
 endfunction
 
 nmap <leader>vs :call YankStringAtLine()<CR>
