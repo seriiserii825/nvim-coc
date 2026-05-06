@@ -1,42 +1,30 @@
-function! YankLinesFlexible(from, ...)
+function! YankLinesFlexible(range_str)
   let l:cur = line('.')
-
-  " If two arguments, assume absolute line mode and show confirmation
-  if a:0 > 0
-    let l:choice = confirm("Yank absolute lines from ".a:from." to ".a:1."?\nPress 'Yes' to continue.", "&Yes\n&No", 1)
-    if l:choice != 1
-      echo "Yank canceled."
-      return
-    endif
+  let l:parts = split(a:range_str, ',')
+  if len(l:parts) != 2
+    echo "Usage: from,to (e.g. -22,-8 or -10,+22)"
+    return
   endif
 
-  if a:0 == 0
-    " One argument, relative yank from current line
-    let l:from = str2nr(a:from)
-    if l:from > 0
-      let l:start = l:cur
-      let l:end = l:cur + l:from - 1
-    else
-      let l:start = l:cur + l:from
-      let l:end = l:cur
-    endif
-  else
-    " Two arguments, absolute line numbers
-    let l:start = str2nr(a:from)
-    let l:end = str2nr(a:1)
-    if l:start > l:end
-      let [l:start, l:end] = [l:end, l:start]
-    endif
+  let l:start = l:cur + str2nr(l:parts[0])
+  let l:end = l:cur + str2nr(l:parts[1])
+
+  if l:start > l:end
+    let [l:start, l:end] = [l:end, l:start]
   endif
 
-  " Clamp within buffer
   let l:start = max([1, l:start])
   let l:end = min([line('$'), l:end])
 
-  execute l:start . "," . l:end . "yank"
-  echo "Yanked lines " . l:start . " to " . l:end
+  let l:lines = []
+  for l:lnum in range(l:start, l:end)
+    call add(l:lines, getline(l:lnum))
+  endfor
+
+  call setreg('+', join(l:lines, "\n"))
+  echo "Yanked lines " . l:start . " to " . l:end . " with relative numbers"
 endfunction
 
-command! -nargs=+ YankLines call YankLinesFlexible(<f-args>)
+command! -nargs=1 YankLines call YankLinesFlexible(<q-args>)
 
-nmap <leader>yl :<C-u>YankLines <c-r>=line('.')<CR> <c-r>=line('v')<CR><CR>
+nmap <leader>yl :call YankLinesFlexible(input('Yank from,to: '))<CR>
