@@ -1,11 +1,15 @@
-function! YankStringAtLine()
-  let l:input = input('Line: ')
-  if l:input == '' | return | endif
-
-  if l:input =~# '^[+-]\d\+$'
-    let l:target = line('.') + str2nr(l:input)
+function! YankStringAtLine(count)
+  if a:count > 0
+    let l:target = a:count
   else
-    let l:target = str2nr(l:input)
+    let l:input = input('Line: ')
+    if l:input == '' | return | endif
+
+    if l:input =~# '^[+-]\d\+$'
+      let l:target = line('.') + str2nr(l:input)
+    else
+      let l:target = str2nr(l:input)
+    endif
   endif
 
   let l:save_pos = getpos('.')
@@ -14,4 +18,4 @@ function! YankStringAtLine()
   call setpos('.', l:save_pos)
 endfunction
 
-nmap <leader>vs :call YankStringAtLine()<CR>
+nmap <leader>vs :<C-u>call YankStringAtLine(v:count)<CR>
