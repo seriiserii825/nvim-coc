@@ -1,22 +1,31 @@
-function! SelectLinesRelative(from, to)
-  let l:cur = line('.')
-  let l:start = l:cur + str2nr(a:from)
-  let l:end = l:cur + str2nr(a:to)
+function! SelectLinesAbsolute()
+  set norelativenumber
+  redraw
 
-  " Clamp values to file bounds
-  let l:start = max([1, l:start])
-  let l:end = min([line('$'), l:end])
+  let l:input = input('Lines (e.g. 4,8): ')
+  if l:input == ''
+    set relativenumber
+    return
+  endif
 
-  " Normalize so we always go from top to bottom
+  let l:parts = split(l:input, ',')
+  if len(l:parts) != 2
+    echo "Invalid format. Use: 4,8"
+    set relativenumber
+    return
+  endif
+
+  let l:start = max([1, str2nr(l:parts[0])])
+  let l:end = min([line('$'), str2nr(l:parts[1])])
+
   if l:start > l:end
     let [l:start, l:end] = [l:end, l:start]
   endif
 
-  " Jump to start, enter visual mode, then go to end
+  set relativenumber
   call cursor(l:start, 1)
   normal! V
   call cursor(l:end, 1)
 endfunction
 
-
-nnoremap <leader>lv :call SelectLinesRelative(input('Start (rel): '), input('End (rel): '))<CR>
+nnoremap <leader>lv :call SelectLinesAbsolute()<CR>
