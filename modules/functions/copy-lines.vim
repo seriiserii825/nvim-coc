@@ -24,7 +24,7 @@ function! CopyLinesAbsolute()
   endif
 
   execute l:start . "," . l:end . "t" . l:dest
-  echo "Copied lines " . l:start . "-" . l:end . " to " . l:dest
+  " echo "Copied lines " . l:start . "-" . l:end . " to " . l:dest
   set relativenumber
 endfunction
 
