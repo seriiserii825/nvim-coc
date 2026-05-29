@@ -3,20 +3,18 @@ html class in english from text "$1" behind give me examples, just class name, i
 endsnippet
 
 snippet gcommit "generate commit summary"
-You are my daily standup summarizer.
+Using the commit messages above, rewrite them into multiple professional English worklog sentences.
 
-Input: a list of git commit messages (one per line).
+Requirements:
 
-Goal: write ONE cohesive paragraph that summarizes what I did today, Write what was done in the commits, not just empty words 
-
-Strict rules:
-1) Do NOT skip any section/block. Every distinct section/block implied by the commit messages must be mentioned at least once in the paragraph.
-2) Before writing, extract a checklist of unique blocks/sections from the commits (internal step). If the paragraph does not mention all checklist items, rewrite the paragraph until it does.
-3) Keep it factual and specific: mention key actions such as “implemented”, “finished”, “pixel-perfect”, “responsive/mobile”, “alignment”, “animation”, “gallery replacement”, etc., based only on the commits.
-4) Output format: ONLY the final paragraph (no headings, no bullet points, no checklist).
-
-Commit messages:
-PASTE_HERE
+Write multiple separate sentences one after another
+Do not use bullet points
+Do not use numbering
+Each sentence should describe a meaningful completed task, fix, improvement, or feature
+Group related commits together naturally
+Rewrite technical or messy commit messages into clean professional English
+Avoid mentioning git, commits, branches, or merges
+The result should look like a professional daily developer report
 $1
 endsnippet
 
