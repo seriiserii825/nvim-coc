@@ -101,6 +101,9 @@ endfunction
 
 nmap <leader>ia :call <SID>fix_all_imports()<CR>
 
+nnoremap <silent> <leader>cf :call coc#float#jump()<CR>
+nnoremap <silent> <leader>co <C-w>p
+
 " Отдельные команды без попапа
 nmap <leader>io :call <SID>do_code_action('source.organizeImports')<CR>
 nmap <leader>im :call <SID>do_code_action('source.addMissingImports')<CR>

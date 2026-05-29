@@ -2,6 +2,7 @@
  nnoremap <leader>v" vi"
  nnoremap <leader>v' vi'
 
+nnoremap <silent> <leader>cf :call coc#float#jump()<CR>
 
 command! RemToPx %s/\(\d\+\.\?\d*\)rem/\=string(str2float(submatch(1)) * 10) . 'px'/g
 nnoremap <leader>px :RemToPx<CR>
