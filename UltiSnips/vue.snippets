@@ -1,4 +1,9 @@
 extends css, scss
+snippet vdo "video tag" b
+<video class="page-intro__bg" muted loop autoplay playsinline>
+  <source src="<?php echo $video . '?ngsw-bypass=true'; ?>" type="video/mp4" />
+</video>
+endsnippet
 
 snippet tal "text align left" i
 text-align: left;
