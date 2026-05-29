@@ -47,12 +47,10 @@ endsnippet
 
 snippet dpi
 interface Props {
-	$1
+	$1${2:?}: $3;
 }
 
-withDefaults(defineProps<Props>(), {
-	active: false,
-})
+const { $1${4: = "Default title"} } = defineProps<Props>();
 endsnippet
 
 snippet dp
