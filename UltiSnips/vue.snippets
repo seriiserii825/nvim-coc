@@ -137,7 +137,9 @@ snippet vbasec "vue base component script setup ts"
 endsnippet
 
 snippet dem
-const emits = defineEmits(['$1'])
+const emits = defineEmits<{
+	(e: '$1', $2: $3): void;
+}>();
 endsnippet
 
 snippet vtemplate
