@@ -81,13 +81,13 @@ snippet tb "target='_blank'" i
 target="_blank" rel="noopener noreferrer"
 endsnippet
 
-snippet dv "simple html tag with register i and class" b
+snippet dv "block tag i__field [content]" b
 <${1:div} class="`!v eval('getreg("i")')`__$2">
 	$3
 </${1/(\w+).*/$1/}>
 endsnippet
 
-snippet dvv "simple html tag with register i and class" b
+snippet dvv "block tag i__field echo $var" b
 <${1:div} class="`!v eval('getreg("i")')`__$2">
 	<?php echo $$2; ?>
 </${1/(\w+).*/$1/}>
@@ -97,15 +97,15 @@ snippet ic "simple html tag with register i and class" b
 <${1:div} class="`!v eval('getreg("i")')`__$2">$3</${1/(\w+).*/$1/}>
 endsnippet
 
-snippet icv "simple html tag with register i and class" b
+snippet icv "tag i__field extra-class [content]" b
 <${1:div} class="`!v eval('getreg("i")')`__$2 $4">$3</${1/(\w+).*/$1/}>
 endsnippet
 
-snippet iv "simple html tag with register i and class" b
+snippet iv "tag i__field echo $var" b
 <${1:div} class="`!v eval('getreg("i")')`__$2"><?php echo $$2; ?></${1/(\w+).*/$1/}>
 endsnippet
 
-snippet ivv "simple html tag with register i and class" b
+snippet ivv "tag i__field field echo $var" b
 <${1:div} class="`!v eval('getreg("i")')`__$2 $2"><?php echo $$2; ?></${1/(\w+).*/$1/}>
 endsnippet
 
