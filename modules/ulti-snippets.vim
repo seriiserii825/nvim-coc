@@ -9,7 +9,7 @@ let g:coc_snippet_prev = '<S-tab>'
 "
 autocmd BufNewFile,BufRead *.blade.php setlocal filetype=php.blade
 
-let g:UltiSnipsSnippetDirectories = ['UltiSnips', $HOME . '/.config/nvim/snips']
+let g:UltiSnipsSnippetDirectories = ['UltiSnips']
 let g:UltiSnipsFiletypeHierarchy = {
 \ 'php.blade': ['php', 'html', 'blade'],
 \}
@@ -24,7 +24,7 @@ function! s:SnipFtList()
 endfunction
 
 function! s:BrowseSnippets()
-  let dirs = [$HOME . '/.config/nvim/snips/', $HOME . '/.config/nvim/UltiSnips/']
+  let dirs = [$HOME . '/.config/nvim/UltiSnips/']
   let fzf_lines = []
 
   for name in s:SnipFtList()

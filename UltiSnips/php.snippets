@@ -2,6 +2,14 @@ snippet php "<?php ?>" ib
 <?php $1 ?>
 endsnippet
 
+snippet v "<?php echo $1 ?>" i
+<?php echo $1; ?>
+endsnippet
+
+snippet gtd "get_template_directory" ib
+require get_template_directory() . '/$1';
+endsnippet
+
 snippet rapi "php api" b
 <?php
 if (!defined('ABSPATH')) exit;
