@@ -144,5 +144,6 @@
   "css.validate": true,
   "css.lint.unknownAtRules": "ignore",
   "less.lint.unknownAtRules": "ignore",
-  "scss.lint.unknownAtRules": "ignore"
+  "scss.lint.unknownAtRules": "ignore",
+  "prisma.enableDiagnostics": true
 }

@@ -1,4 +1,4 @@
-" 2 execute pathogen#infect()
+"/home/serii/Documents/nestjs/nest-tea-stream/prisma/schema.prisma 2 execute pathogen#infect()
 " auto-install vim-plug
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
