@@ -35,9 +35,9 @@ Plug 'mboughaba/i3config.vim'
 Plug 'prisma/vim-prisma'
 
 " Database
-" Plug 'tpope/vim-dadbod'
-" Plug 'kristijanhusak/vim-dadbod-ui'
-" Plug 'kristijanhusak/vim-dadbod-completion'
+Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'kristijanhusak/vim-dadbod-completion'
 "Server HTTP
 " Plug 'mistweaverco/kulala.nvim'
 " Plug 'https://github.com/nicwest/vim-http'
