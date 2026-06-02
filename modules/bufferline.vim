@@ -45,7 +45,7 @@ nnoremap <silent> <leader>qa :BufferLineCloseOther<CR>
 nmap <silent> <leader>qo :bp<bar>sp<bar>bn<bar>bd<CR>
 nmap <leader>w :wa<CR>
 nmap <leader>bo :only<CR>
-nmap <leader>bz :wq<CR>
+nmap <leader>z :wq<CR>
 
 
 nnoremap <leader>1 :BufferLineGoToBuffer 1<CR>

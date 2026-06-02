@@ -23,7 +23,7 @@ source $HOME/.config/nvim/modules/functions/yank-string-at-line.vim
 
 
 "Server
-" source $HOME/.config/nvim/modules/kulala.vim " unfold
+source $HOME/.config/nvim/modules/kulala.vim " unfold
 
 "Map
 source $HOME/.config/nvim/keys/map-nvim.vim
@@ -96,7 +96,7 @@ source $HOME/.config/nvim/modules/bufferline.vim
 
 " source $HOME/.config/nvim/modules/colortils.vim
 
-hi Visual  guifg=#000000 guibg=#7FFFD4 gui=none
+hi Visual guifg=#000000 guibg=#7FFFD4 gui=none
 " source $HOME/.config/nvim/modules/ftp.vim
 " source $HOME/.config/nvim/modules/sneak.vim
 " source $HOME/.config/nvim/modules/neogit.vim
