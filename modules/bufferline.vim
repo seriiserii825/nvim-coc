@@ -43,9 +43,9 @@ nnoremap <silent><M-S-h> :BufferLineMovePrev<CR>
 nnoremap <silent> <leader>qr :BufferLineCloseRight<CR>
 nnoremap <silent> <leader>qa :BufferLineCloseOther<CR>
 nmap <silent> <leader>qo :bp<bar>sp<bar>bn<bar>bd<CR>
-nmap <leader>w :wa<CR>
-nmap <leader>o :only<CR>
-nmap <leader>z :wq<CR>
+nmap <leader>bw :wa<CR>
+nmap <leader>bo :only<CR>
+nmap <leader>bz :wq<CR>
 
 
 nnoremap <leader>1 :BufferLineGoToBuffer 1<CR>
@@ -59,3 +59,26 @@ nnoremap <leader>8 :BufferLineGoToBuffer 8<CR>
 nnoremap <leader>9 :BufferLineGoToBuffer 9<CR>
 nnoremap <leader>0 :BufferLineGoToBuffer 0<CR>
 
+
+
+function! ReloadCurrentBuffer()
+	let l:file = expand('%:p')
+	let l:line = line('.')
+	let l:col = col('.')
+
+	if empty(l:file)
+		echo 'Current buffer has no file'
+		return
+	endif
+
+	if &modified
+		write
+	endif
+
+	execute 'bdelete! ' . bufnr('%')
+	execute 'edit ' . fnameescape(l:file)
+
+	call cursor(l:line, l:col)
+endfunction
+
+nnoremap <silent> <leader>br :call ReloadCurrentBuffer()<CR>
