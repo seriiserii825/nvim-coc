@@ -1,35 +1,35 @@
 lua << EOF
 require('bufferline').setup {
-  options = {
-    mode = "buffers", -- set to "tabs" to only show tabpages instead
-    numbers = "none",
-    close_command = "bdelete! %d",       -- can be a string | function, see "Mouse actions"
-    modified_icon = '●',
-    close_icon = '',
-    left_trunc_marker = '',
-    right_trunc_marker = '',
-    max_name_length = 18,
-    max_prefix_length = 15, -- prefix used when a buffer is de-duplicated
-    tab_size = 18,
-    diagnostics = "coc",
-    diagnostics_update_in_insert = false,
-    diagnostics_indicator = function(count, level, diagnostics_dict, context)
-      return "("..count..")"
-    end,
-    color_icons = true, -- whether or not to add the filetype icon highlights
-    show_buffer_icons = true, -- disable filetype icons for buffers
-    show_buffer_close_icons = false,
---    show_buffer_default_icon = true, -- whether or not an unrecognised filetype should show a default icon
-    show_close_icon = false,
-    show_tab_indicators = true,
-    persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
-    -- can also be a table containing 2 custom separators
-    -- [focused and unfocused]. eg: { '|', '|' }
-    separator_style = "thick",
-    enforce_regular_tabs = true,
-    always_show_bufferline = true,
-    sort_by = 'insert_after_current'
-    }
+ options = {
+ mode = "buffers", -- set to "tabs" to only show tabpages instead
+ numbers = "none",
+ close_command = "bdelete! %d", -- can be a string | function, see "Mouse actions"
+ modified_icon = '●',
+ close_icon = '',
+ left_trunc_marker = '',
+ right_trunc_marker = '',
+ max_name_length = 18,
+ max_prefix_length = 15, -- prefix used when a buffer is de-duplicated
+ tab_size = 18,
+ diagnostics = "coc",
+ diagnostics_update_in_insert = false,
+ diagnostics_indicator = function(count, level, diagnostics_dict, context)
+ return "("..count..")"
+ end,
+ color_icons = true, -- whether or not to add the filetype icon highlights
+ show_buffer_icons = true, -- disable filetype icons for buffers
+ show_buffer_close_icons = false,
+-- show_buffer_default_icon = true, -- whether or not an unrecognised filetype should show a default icon
+ show_close_icon = false,
+ show_tab_indicators = true,
+ persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
+ -- can also be a table containing 2 custom separators
+ -- [focused and unfocused]. eg: { '|', '|' }
+ separator_style = "thick",
+ enforce_regular_tabs = true,
+ always_show_bufferline = true,
+ sort_by = 'insert_after_current'
+ }
 }
 
 EOF
@@ -43,7 +43,7 @@ nnoremap <silent><M-S-h> :BufferLineMovePrev<CR>
 nnoremap <silent> <leader>qr :BufferLineCloseRight<CR>
 nnoremap <silent> <leader>qa :BufferLineCloseOther<CR>
 nmap <silent> <leader>qo :bp<bar>sp<bar>bn<bar>bd<CR>
-nmap <leader>bw :wa<CR>
+nmap <leader>w :wa<CR>
 nmap <leader>bo :only<CR>
 nmap <leader>bz :wq<CR>
 
@@ -67,12 +67,12 @@ function! ReloadCurrentBuffer()
 	let l:col = col('.')
 
 	if empty(l:file)
-		echo 'Current buffer has no file'
-		return
+ echo 'Current buffer has no file'
+ return
 	endif
 
 	if &modified
-		write
+ write
 	endif
 
 	execute 'bdelete! ' . bufnr('%')
