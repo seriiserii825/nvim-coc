@@ -1,3 +1,5 @@
+" sudo pacman -S tree-sitter-cli
+
 autocmd BufNewFile,BufRead *.http setfiletype http
 autocmd BufNewFile,BufRead *.rest setfiletype http
 
