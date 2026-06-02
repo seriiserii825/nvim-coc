@@ -1,6 +1,7 @@
+" install dependencies
+" call mkdp#util#install()
 
-" markdown
-nmap <leader>mp <Plug>MarkdownPreview<CR>
+nmap <leader>mp <Plug>MarkdownPreviewToggle
 " nmap <leader>ms :CocCommand markdown-preview-enhanced.syncPreview<CR>
 " set to 1, nvim will open the preview window after entering the markdown buffer
 " default: 0
