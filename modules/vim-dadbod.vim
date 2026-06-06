@@ -12,7 +12,6 @@ let g:db_ui_save_location = '~/.local/share/nvim/db_ui'
 
 " Подключения к базам данных
 let g:dbs = [
-  \ { 'name': 'teashop_local', 'url': 'postgresql://postgres:serii1981@localhost:5433/teashop' },
   \ { 'name': 'tea-stream-local', 'url': 'postgresql://root:123456@localhost:5433/teastream' },
   \ ]
 
@@ -21,3 +20,5 @@ nnoremap <leader>db :DBUIToggle<CR>
 nnoremap <leader>df :DBUIFindBuffer<CR>
 nnoremap <leader>dr :DBUIRenameBuffer<CR>
 nnoremap <leader>dq :DBUILastQueryInfo<CR>
+
+" \ { 'name': 'teashop_local', 'url': 'postgresql://postgres:serii1981@localhost:5433/teashop' },
