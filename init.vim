@@ -40,6 +40,7 @@ source $HOME/.config/nvim/modules/macross-dir/bash-macros.vim
 source $HOME/.config/nvim/modules/vim-dadbod.vim
 
 "Coc
+source $HOME/.config/nvim/modules/copy-file-line.vim
 source $HOME/.config/nvim/modules/coc.vim
 source $HOME/.config/nvim/modules/coc-explorer.vim
 source $HOME/.config/nvim/modules/coc-css.vim
