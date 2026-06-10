@@ -5,6 +5,11 @@ snippet vdo "video tag" b
 </video>
 endsnippet
 
+snippet domp "dompurify v-html"
+import DOMPurify from 'dompurify';
+const safe$1 = DOMPurify.sanitize($2);
+endsnippet
+
 snippet tal "text align left" i
 text-align: left;
 endsnippet
