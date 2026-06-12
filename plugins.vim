@@ -21,6 +21,7 @@ Plug 'mistweaverco/kulala.nvim'
 " Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 " Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }
 Plug 'AlexvZyl/nordic.nvim'
+Plug 'wellle/targets.vim'
 " Plug 'navarasu/onedark.nvim'
 " Plug 'loctvl842/monokai-pro.nvim'
 " Plug 'phanviet/vim-monokai-pro'
