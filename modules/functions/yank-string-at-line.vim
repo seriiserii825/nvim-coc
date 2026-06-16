@@ -18,10 +18,15 @@ function! YankStringAtLine(count)
     endif
   endif
 
-  let l:save_pos = getpos('.')
-  execute l:target
-  normal! zv"iyi"
-  call setpos('.', l:save_pos)
+  let l:line = getline(l:target)
+  let l:class = matchstr(l:line, 'class="\zs[^"]*\ze"')
+
+  if l:class != ''
+    let @i = l:class
+  else
+    echo '' | echohl ErrorMsg | echo 'No class attribute found' | echohl None
+  endif
+
   set relativenumber
 endfunction
 
