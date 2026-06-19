@@ -5,6 +5,12 @@ snippet vdo "video tag" b
 </video>
 endsnippet
 
+snippet loadwh "loading width hegith" b
+loading="lazy"
+width="$1"
+height="$2" 
+endsnippet
+
 snippet domp "dompurify v-html"
 import DOMPurify from 'dompurify';
 const safe$1 = DOMPurify.sanitize($2);
