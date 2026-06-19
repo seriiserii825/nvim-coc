@@ -19,5 +19,8 @@ let g:airline_right_sep = ''
 " Always show tabs
 set showtabline=2
 
+" Hide the line/col/percent ruler section — it eats space and truncates the filename
+let g:airline_section_z = ''
+
 " We don't need to see things like -- INSERT -- anymore
 set noshowmode
