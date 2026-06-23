@@ -2,6 +2,24 @@ snippet cnsl "console.log('')" i
 	console.log($1, "$1");
 endsnippet
 
+snippet ust "useState" b
+const [$1, set$2] = useState<$3>($4);
+endsnippet
+
+snippet rfc "react functional component" b
+import React from "react";
+
+interface Props {
+  $2: $3;
+}
+
+export const $1: React.FC<Props> = ({ $2 }) => {
+  return (
+	$4
+  );
+};
+endsnippet
+
 snippet cnst "console.table" i
 	console.table($1);
 endsnippet
