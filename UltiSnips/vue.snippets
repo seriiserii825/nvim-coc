@@ -1,7 +1,7 @@
 extends css, scss
 snippet vdo "video tag" b
 <video class="page-intro__bg" muted loop autoplay playsinline>
-  <source src="<?php echo $video . '?ngsw-bypass=true'; ?>" type="video/mp4" />
+  <source :src="`${$1video}?ngsw-bypass=true`" type="video/mp4" />
 </video>
 endsnippet
 
@@ -98,9 +98,9 @@ snippet dv "block tag i__field [content]" b
 </${1/(\w+).*/$1/}>
 endsnippet
 
-snippet dvv "block tag i__field echo $var" b
+snippet dvv "block tag i__field {{ var }}" b
 <${1:div} class="`!v eval('getreg("i")')`__$2">
-	<?php echo $$2; ?>
+	{{ $2 }}
 </${1/(\w+).*/$1/}>
 endsnippet
 
@@ -112,16 +112,16 @@ snippet icv "tag i__field extra-class [content]" b
 <${1:div} class="`!v eval('getreg("i")')`__$2 $4">$3</${1/(\w+).*/$1/}>
 endsnippet
 
-snippet iv "tag i__field echo $var" b
-<${1:div} class="`!v eval('getreg("i")')`__$2"><?php echo $$2; ?></${1/(\w+).*/$1/}>
+snippet iv "tag i__field {{ var }}" b
+<${1:div} class="`!v eval('getreg("i")')`__$2">{{ $2 }}</${1/(\w+).*/$1/}>
 endsnippet
 
-snippet ivv "tag i__field field echo $var" b
-<${1:div} class="`!v eval('getreg("i")')`__$2 $3"><?php echo $$2; ?></${1/(\w+).*/$1/}>
+snippet ivv "tag i__field field {{ var }}" b
+<${1:div} class="`!v eval('getreg("i")')`__$2 $3">{{ $2 }}</${1/(\w+).*/$1/}>
 endsnippet
 
 snippet im "img with class" b
-<img src="<?php echo $3['url'];?>" class="$1__$2"  alt="<?php echo $3['alt']; ?>"/>
+<img :src="$3.url" class="$1__$2" :alt="$3.alt" />
 endsnippet
 
 snippet ctr "container" b
