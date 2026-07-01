@@ -23,6 +23,7 @@ let g:coc_global_extensions=[
       \'coc-stylelint',
       \'coc-snippets',
       \'coc-tsserver',
+      \'coc-angular',
       \'coc-sh',
       \'coc-markdownlint',
       \'coc-emmet',
