@@ -109,3 +109,11 @@ nnoremap <silent> <leader>co <C-w>p
 nmap <leader>io :call <SID>do_code_action('source.organizeImports')<CR>
 nmap <leader>im :call <SID>do_code_action('source.addMissingImports')<CR>
 nmap <leader>id :call <SID>do_code_action('source.removeUnused')<CR>
+
+" Neovim's built-in filetype detection tags Angular templates (files with
+" @if/@for/*ngIf/etc.) as `htmlangular`, but coc-angular's LSP documentSelector
+" only matches `html`, so it never attaches. Fold into the compound filetype
+" `html.htmlangular` so coc-angular sees "html" while `htmlangular` stays
+" available for treesitter/syntax. https://github.com/iamcco/coc-angular/issues/78
+autocmd FileType htmlangular
+      \ if &filetype !=# 'html.htmlangular' | set filetype=html.htmlangular | endif
