@@ -72,3 +72,19 @@ PHP/WordPress/Laravel, Vue, TypeScript/JavaScript, Python, SCSS — reflected in
 - To reload config: `<leader>sn` sources init.vim, `<leader>sf` sources current file
 - Lua config blocks are used inline (heredoc style `lua << EOF`) within .vim files for plugins that require Lua (bufferline, gitsigns, flash.nvim, yazi, colorizer)
 - FZF custom commands: `:Files` (file picker with preview), `:Rg` (ripgrep), `:RG` (interactive ripgrep with live reload), `:GGrep` (git grep)
+
+## Troubleshooting: "Works on one machine, not another"
+
+This repo only carries **declarative config** (`init.vim`, `modules/*.vim`, `coc-settings.json`). It does NOT carry, and `git pull` alone will NOT sync:
+- Installed CoC extensions (live in `~/.config/coc/extensions/`, not this repo)
+- Installed vim-plug plugins (live in `~/.config/nvim/autoload/plugged/`)
+- Per-project `node_modules` (e.g. `@angular/language-service`, `typescript`) that language servers like coc-angular/coc-tsserver/volar delegate to
+- Node.js version on the machine
+
+When a CoC/LSP feature (e.g. coc-angular) works on one machine but not another on the same commit, check in this order:
+1. `:source $MYVIMRC` or restart nvim after pulling — confirms the new config is actually loaded.
+2. `:CocList extensions` — is the extension installed and active (no ✗/error)? If missing, run `:CocInstall <ext>` or `:CocUpdate` (declaring it in `g:coc_global_extensions` doesn't force-install on an existing CoC setup).
+3. `:CocInfo` and `:CocCommand workspace.showOutput` (pick the relevant language server channel) — look for startup errors.
+4. For TS/Angular/Vue: does the *project itself* (not this dotfiles repo) have `npm install` run, with the language server package present in its local `node_modules`?
+5. `node -v` — compare Node version across machines; LSP extensions often require a recent minimum.
+6. `:set filetype?` on the affected buffer — confirm filetype-detection autocmds (e.g. the `htmlangular` → `html.htmlangular` one in `modules/coc.vim`) actually fired as expected.
