@@ -88,3 +88,42 @@ When a CoC/LSP feature (e.g. coc-angular) works on one machine but not another o
 4. For TS/Angular/Vue: does the *project itself* (not this dotfiles repo) have `npm install` run, with the language server package present in its local `node_modules`?
 5. `node -v` — compare Node version across machines; LSP extensions often require a recent minimum.
 6. `:set filetype?` on the affected buffer — confirm filetype-detection autocmds (e.g. the `htmlangular` → `html.htmlangular` one in `modules/coc.vim`) actually fired as expected.
+7. If step 3's Angular Language Service output channel shows `@angular/core could not be found for project ... ('@angular/core' could not be found)` or `No config file for <template>.html` even though `@angular/core` is genuinely installed — see the dedicated section below, this is a version-skew bug in coc-angular itself, not a config problem.
+
+### coc-angular: template completion silently fails on modern Angular projects (17.0.2 vs Angular 18+/21)
+
+**Symptom**: `:CocInfo` shows the Angular language server reaches `running` state, but member-access completion in templates (`item.` inside `{{ }}` / property bindings) never shows Angular results — only unrelated sources (UltiSnips/html snippets) pop up. `:CocCommand workspace.showOutput` → `Angular Language Service` repeats:
+```
+Disabling language service for .../tsconfig.app.json because project is not an Angular project ('@angular/core' could not be found).
+No config file for .../some.component.html
+```
+
+**Root cause**: `coc-angular` (npm latest is `17.0.2`, matches upstream `vscode-ng-language-service` v17, not updated since ~Nov 2023) bundles its own **pinned** copies of `@angular/language-service` and `@angular/language-server` under `~/.config/coc/extensions/node_modules/coc-angular/node_modules/@angular/`. It ignores the project's own `@angular/language-service` entirely (by design, per the extension's README).
+
+`@angular/language-server@17.0.2`'s project-detection heuristic (`isExternalAngularCore` in its compiled `index.js`) is a hardcoded suffix check:
+```js
+function isExternalAngularCore(path) {
+  return path.endsWith("@angular/core/core.d.ts") || path.endsWith("@angular/core/index.d.ts");
+}
+```
+Angular 18+ ships `@angular/core`'s type entry at `@angular/core/types/core.d.ts` (chunked exports layout) — that path never matches the old suffix check, so the server concludes "this isn't an Angular project" and disables itself for every `.html` template, even though the project is completely valid (`tsc` compiles it fine).
+
+Separately, the *bundled* `typescript` inside `coc-angular` is `5.2.2`, which can't parse `"module": "preserve"` in `tsconfig.json` (a TS 5.4+ feature that Angular CLI now scaffolds by default) — this must also be overridden or the root `tsconfig.json` fails to parse before you even get to the `@angular/core` check.
+
+**Fix** (redo after every `:CocUpdate coc-angular`, since that reinstalls its `node_modules` and wipes this):
+```bash
+cd ~/.config/coc/extensions/node_modules/coc-angular/node_modules
+npm install @angular/language-server@latest --legacy-peer-deps
+```
+This pulls a matching, non-broken `@angular/language-service` as its dependency too (fixes the regex: newer `isExternalAngularCore` is `/@angular\/core\/.+\.d\.ts$/`, no longer suffix-pinned). `--legacy-peer-deps` is required because `coc-angular`'s own `package.json` pins a peer on `coc.nvim` that conflicts with unrelated `@types/node` versions — harmless to ignore here since this is a vendored extension dir, not a real workspace.
+
+Also add a per-project `coc-settings.json` (NOT the global one in this repo — this is project-specific) so coc-angular's tsserver uses the *project's own* modern TypeScript instead of the bundled 5.2.2:
+```jsonc
+// <angular-project>/.vim/coc-settings.json
+{
+  "typescript.tsdk": "/absolute/path/to/<angular-project>/node_modules/typescript/lib"
+}
+```
+Must be an **absolute** path — a relative one (`node_modules/typescript/lib`) is not resolved against the workspace root reliably.
+
+**Verify**: `:CocRestart`, reopen the `.html` file, `:CocCommand workspace.showOutput` → Angular Language Service should show `Using @angular/language-service v2x.x.x` with no `could not be found` / `No config file` errors, and `item.` inside a template should list the interpolated object's real members.
