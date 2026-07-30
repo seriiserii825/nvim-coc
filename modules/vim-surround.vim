@@ -51,7 +51,11 @@ nnoremap <silent> dh :<C-u>execute 'Dash ' . v:count1<CR>
 nnoremap <leader>rt :call RenameCurrentTag()<CR>
 
 " Change current surrounding tag to <section>
-nnoremap <silent> <leader>rS :call feedkeys("cstsection\<CR>", 'nt')<CR>
+function! s:RenameTagToSection() abort
+  call feedkeys("cst<section\<CR>", 'xt')
+endfunction
+
+nnoremap <silent> <leader>rs :call <SID>RenameTagToSection()<CR>
 
 function! RenameCurrentTag()
     let new_tag = input('New tag name: ')

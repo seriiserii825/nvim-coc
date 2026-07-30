@@ -23,7 +23,7 @@ source $HOME/.config/nvim/modules/functions/yank-string-at-line.vim
 
 
 "Server
-source $HOME/.config/nvim/modules/kulala.vim " unfold
+" source $HOME/.config/nvim/modules/kulala.vim " unfold (disabled, unused)
 
 "Map
 source $HOME/.config/nvim/keys/map-nvim.vim

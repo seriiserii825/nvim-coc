@@ -48,6 +48,8 @@ nmap <leader>bo :only<CR>
 nmap <leader>z :wq<CR>
 
 
+nnoremap <silent> <leader>bp :BufferLinePick<CR>
+
 nnoremap <leader>1 :BufferLineGoToBuffer 1<CR>
 nnoremap <leader>2 :BufferLineGoToBuffer 2<CR>
 nnoremap <leader>3 :BufferLineGoToBuffer 3<CR>
