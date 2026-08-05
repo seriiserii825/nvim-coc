@@ -12,7 +12,7 @@ wk.setup({
 wk.add({
   { "<leader>x",  group = "cleanup" },
   { "<leader>xr", desc = "remove empty lines" },
-  { "<leader>xl", desc = "remove leading whitespace" },
+  { "<leader>xl", desc = "remove all spaces in line" },
 })
 EOF
 
