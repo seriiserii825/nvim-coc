@@ -45,6 +45,7 @@ map <leader>ms :%s/`\(.*\)`/```\r\1\r```/g<CR>
 
 nmap <silent> <Leader>xr :g/^\s*$/d<CR>
 nmap <silent> <leader>xl :s/[ \	]//g<CR>
+nmap <silent> <leader>xp :s/[ \	]\{2,}/ /g<CR>
 
 "rename word
 vnoremap <leader>rn "zy:s/<C-r>z/

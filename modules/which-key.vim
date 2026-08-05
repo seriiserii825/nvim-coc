@@ -13,6 +13,7 @@ wk.add({
   { "<leader>x",  group = "cleanup" },
   { "<leader>xr", desc = "remove empty lines" },
   { "<leader>xl", desc = "remove all spaces in line" },
+  { "<leader>xp", desc = "squeeze multiple spaces to one" },
 })
 EOF
 
