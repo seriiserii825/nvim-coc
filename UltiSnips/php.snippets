@@ -2,6 +2,24 @@ snippet php "<?php ?>" ib
 <?php $1 ?>
 endsnippet
 
+snippet wpn "wp nav menu" ib
+<?php
+wp_nav_menu( array(
+    'theme_location' => '$1',
+    'container'      => false,
+    'menu_class'     => '$2',
+) );
+?>
+endsnippet
+
+snippet fri "foreach items" ib
+<?php foreach($items as $item): ?>
+<?php 
+$1	
+?>	
+<?php endforeach; ?>
+endsnippet
+
 snippet v "<?php echo $1 ?>" i
 <?php echo $1; ?>
 endsnippet
