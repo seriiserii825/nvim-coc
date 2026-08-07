@@ -1,6 +1,12 @@
 snippet php "<?php ?>" ib
 <?php $1 ?>
 endsnippet
+snippet pic "picture" b
+<picture>
+  <source srcset="$2" media="(min-width: $1)" />
+  <img src="$3" alt="MDN" />
+</picture>
+endsnippet
 
 snippet wpn "wp nav menu" ib
 <?php
