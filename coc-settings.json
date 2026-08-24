@@ -45,6 +45,7 @@
     "vue": "html",
     "markdown": "html"
   },
+  "emmet.priority": 100,
   "pyright.inlayHints.functionReturnTypes": false,
   "pyright.inlayHints.variableTypes": false,
   "pyright.inlayHints.parameterTypes": false,
