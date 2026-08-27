@@ -70,6 +70,17 @@ snippet gr "grid custom"
 	flex: 0 0 calc($2% - var(--margin));
 }
 endsnippet
+
+snippet grl "grid last item" b
+&:last-of-type {
+	@media screen and (max-width: $1px) {
+		grid-column: 1 / -1;
+		width: calc(50% - $2px); /* учитываем половину gap */
+		justify-self: center;
+	}
+}
+endsnippet
+
 snippet flc "flex calc"
 flex: 0 0 calc(100% / $1 - $2);
 endsnippet
