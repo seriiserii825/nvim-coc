@@ -95,3 +95,10 @@ nnoremap <C-l> <C-w>l
 
 " Map <leader>af to add the word under the cursor to the folder dictionary
 nmap <leader>df :CocCommand cSpell.addWordToDictionary<Space>folder<CR>
+
+" Remove Neovim's built-in 'in'/'an' (x/o mode) node-selection defaults —
+" they shadow targets.vim's in(/in"/an'/etc. sequences (see vim/_core/defaults.lua)
+silent! xunmap in
+silent! ounmap in
+silent! xunmap an
+silent! ounmap an
