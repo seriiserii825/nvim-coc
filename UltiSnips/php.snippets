@@ -113,7 +113,13 @@ snippet tb "target='_blank'" i
 target="_blank" rel="noopener noreferrer"
 endsnippet
 
-snippet dv "block tag i__field [content]" b
+snippet dv "div with tag and 2 class name" b
+<${1:div} class="`!v eval('getreg("i")')`__$2">
+	$3
+</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet dvt "div with tag as class name" b
 <${1:div} class="`!v eval('getreg("i")')`__$1">
 	$2
 </${1/(\w+).*/$1/}>
