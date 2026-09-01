@@ -33,6 +33,23 @@ let g:fzf_colors =
 command! -bang -nargs=? -complete=dir Files
     \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
 
+" Files matching current buffer's basename (without extension), excluding the current file itself
+function! s:FilesSameName(split) abort
+  let l:query = expand('%:t:r')
+  let l:current = expand('%')
+  let l:source = $FZF_DEFAULT_COMMAND
+  if !empty(l:current)
+    let l:source .= ' | grep -vF ' . shellescape(l:current)
+  endif
+  if a:split
+    vs
+  endif
+  call fzf#vim#files('', fzf#vim#with_preview({'source': l:source, 'options': ['--layout=reverse', '--info=inline', '--query', l:query]}), 0)
+endfunction
+
+command! -bang FilesSameName call s:FilesSameName(0)
+command! -bang FilesSameNameSplit call s:FilesSameName(1)
+
 
 " Get text in files with Rg
 command! -bang -nargs=* Rg
