@@ -1,5 +1,5 @@
 " h2 html to scss at position in scss
-let @a='^f"lvf_hc&veyu€üLpa {'
+let @k='^f"lvf_hc&veyu€üLpa {'
 
 " js log
 let @c='^wvt yoconsole.log()i""hpla, pla;'
@@ -12,9 +12,6 @@ let @f='gg=G'
 
 " js log json stringify
 let @j='^wvt yoconsole.log9)€kb€kb€kb();hiJSON.stringify()hpa, null, 4'
-
-" postamn variables clear
-let @k="^xf'lhxvf'c: Dj^@a"
 
 " li
 let @l='I<li>jjA</li>jjj'
