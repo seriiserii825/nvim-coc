@@ -104,11 +104,11 @@ silent! xunmap an
 silent! ounmap an
 
 " Scroll without reaching for Ctrl (frees ';', which repeats f/t/F/T — unused here)
-nnoremap ;u <C-u>
-nnoremap ;d <C-d>
-nnoremap ;f <C-f>
-nnoremap ;b <C-b>
-xnoremap ;u <C-u>
-xnoremap ;d <C-d>
-xnoremap ;f <C-f>
-xnoremap ;b <C-b>
+nnoremap zu <C-u>
+nnoremap zd <C-d>
+nnoremap zf <C-f>
+nnoremap zb <C-b>
+xnoremap zu <C-u>
+xnoremap zd <C-d>
+xnoremap zf <C-f>
+xnoremap zb <C-b>
