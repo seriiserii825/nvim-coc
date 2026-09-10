@@ -13,6 +13,7 @@ let g:db_ui_save_location = '~/.local/share/nvim/db_ui'
 " Подключения к базам данных
 let g:dbs = [
   \ { 'name': 'tea-stream-local', 'url': 'postgresql://root:123456@localhost:5433/teastream' },
+  \ { 'name': 'tea-shop', 'url': 'postgresql://postgres:postgres@localhost:5434/teashop' },
   \ ]
 
 " Горячие клавиши
