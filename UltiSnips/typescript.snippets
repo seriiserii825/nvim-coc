@@ -2,6 +2,24 @@ snippet cnsl "console.log('')" i
 	console.log($1, "$1");
 endsnippet
 
+snippet oneToMany "one to many typeorm" b
+@OneToMany(() => ${1:OrderItem}, (${2:orderItem}) => ${2:orderItem}.${4:orderId}, {
+	cascade: true,
+})
+${3:order_items}: Relation<${1:OrderItem}[]>;
+endsnippet
+
+snippet manyToOne "many to one typeorm" b
+@ManyToOne(() => ${1:Order}, (${2:order}) => ${2:order}.${4:order_items}, {
+	onDelete: 'CASCADE',
+})
+@JoinColumn({ name: '${3:orderId}' })
+${2:order}: Relation<${1:Order}>;
+
+@Column()
+${3:orderId}: string;
+endsnippet
+
 snippet cnst "console.table" i
 	console.table($1);
 endsnippet
