@@ -50,6 +50,26 @@ endfunction
 command! -bang FilesSameName call s:FilesSameName(0)
 command! -bang FilesSameNameSplit call s:FilesSameName(1)
 
+" Files matching current buffer's basename up to the first dot, excluding the
+" current file itself. For Angular-style multi-dot names (color.entity.ts,
+" color.server.ts) this groups files that FilesSameName's :t:r (last dot)
+" would treat as unrelated.
+function! s:FilesSameBaseName(split) abort
+  let l:query = split(expand('%:t'), '\.')[0]
+  let l:current = expand('%')
+  let l:source = $FZF_DEFAULT_COMMAND
+  if !empty(l:current)
+    let l:source .= ' | grep -vF ' . shellescape(l:current)
+  endif
+  if a:split
+    vs
+  endif
+  call fzf#vim#files('', fzf#vim#with_preview({'source': l:source, 'options': ['--layout=reverse', '--info=inline', '--query', l:query]}), 0)
+endfunction
+
+command! -bang FilesSameBaseName call s:FilesSameBaseName(0)
+command! -bang FilesSameBaseNameSplit call s:FilesSameBaseName(1)
+
 
 " Get text in files with Rg
 command! -bang -nargs=* Rg

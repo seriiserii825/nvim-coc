@@ -14,6 +14,8 @@ nmap <silent> <expr> <leader>fw ":Files <cr>" . (exists("g:floaterm_instance") ?
 
 nmap <leader>fn :FilesSameName<CR>
 nmap <leader>fz :FilesSameNameSplit<CR>
+nmap <leader>fu :FilesSameBaseName<CR>
+nmap <leader>fy :FilesSameBaseNameSplit<CR>
 
 nmap <Leader>fg :RG <C-r><C-w><CR>
 nmap <Leader>rg :RG<CR>
