@@ -12,8 +12,8 @@ nmap <leader>fb :Buffers<CR>
 
 nmap <silent> <expr> <leader>fw ":Files <cr>" . (exists("g:floaterm_instance") ? substitute(expand('<cword>'), "^'", "", "") : expand('<cword>'))
 
-nmap <leader>fn :FilesSameName<CR>
-nmap <leader>fz :FilesSameNameSplit<CR>
+" nmap <leader>fn :FilesSameName<CR>
+" nmap <leader>fz :FilesSameNameSplit<CR>
 nmap <leader>fu :FilesSameBaseName<CR>
 nmap <leader>fy :FilesSameBaseNameSplit<CR>
 
