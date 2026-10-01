@@ -92,6 +92,8 @@ When a CoC/LSP feature (e.g. coc-angular) works on one machine but not another o
 
 ### coc-angular: template completion silently fails on modern Angular projects (17.0.2 vs Angular 18+/21)
 
+> Short setup checklist (global patch + per-project `.vim/coc-settings.json` + verification): see `ANGULAR.md`.
+
 **Symptom**: `:CocInfo` shows the Angular language server reaches `running` state, but member-access completion in templates (`item.` inside `{{ }}` / property bindings) never shows Angular results — only unrelated sources (UltiSnips/html snippets) pop up. `:CocCommand workspace.showOutput` → `Angular Language Service` repeats:
 ```
 Disabling language service for .../tsconfig.app.json because project is not an Angular project ('@angular/core' could not be found).
