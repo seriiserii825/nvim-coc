@@ -47,6 +47,18 @@ grep -m1 '"version"' ~/.config/coc/extensions/node_modules/coc-angular/node_modu
    - не должно быть `'@angular/core' could not be found` и `No config file for ...html`.
 3. В шаблоне набрать `product().` / `item.` внутри `{{ }}` — должны появиться реальные поля.
 
+## Inlay hints в шаблонах
+
+Новый `@angular/language-server` (22.x) по умолчанию рисует inlay hints прямо в тексте шаблона (`[hero: IHero]`, `as latestProducts: {...}`). coc-angular 17 не знает про настройки `angular.inlayHints.*`, поэтому они выключены на стороне coc в глобальном `coc-settings.json`:
+
+```json
+"[html][htmlangular][html.htmlangular]": {
+  "inlayHint.enable": false
+}
+```
+
+Если хинты снова нужны — убрать этот блок (или временно `:CocCommand document.toggleInlayHint`).
+
 ## Если всё ещё не работает
 
 - `:CocList extensions` — coc-angular установлен и активен.

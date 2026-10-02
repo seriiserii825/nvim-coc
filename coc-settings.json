@@ -48,6 +48,9 @@
   "pyright.inlayHints.functionReturnTypes": false,
   "pyright.inlayHints.variableTypes": false,
   "pyright.inlayHints.parameterTypes": false,
+  "[html][htmlangular][html.htmlangular]": {
+    "inlayHint.enable": false
+  },
   "diagnostic.checkCurrentLine": false,
   "html-css-support.enabledLanguages": [
     "html",
