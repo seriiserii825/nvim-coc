@@ -70,8 +70,9 @@ nnoremap [n :set relativenumber!<CR>
 nnoremap gp `[v`]
 " Reset highlight
 nnoremap <leader>nh :nohl<CR>
-" Fuzzy search normal-mode keymaps (fzf.vim), executes the chosen one
-nnoremap <silent> <leader>m :Maps<CR>
+" Fuzzy search normal-mode keymaps (custom-maps.vim), executes the chosen one.
+" Shows `desc` as its own column, unlike fzf.vim's built-in :Maps.
+nnoremap <silent> <leader>m :KeyMaps<CR>
 " Use alt + hjkl to resize windows
 nnoremap <C-Down> :resize -2<CR>
 nnoremap <C-Up> :resize +2<CR>

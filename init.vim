@@ -59,6 +59,7 @@ source $HOME/.config/nvim/modules/lazygit.vim
 
 "Editor
 source $HOME/.config/nvim/modules/fzf.vim
+source $HOME/.config/nvim/modules/custom-maps.vim
 source $HOME/.config/nvim/modules/multiple-cursors.vim
 " source $HOME/.config/nvim/modules/rainbow.vim
 source $HOME/.config/nvim/modules/indent-guides.vim
