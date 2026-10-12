@@ -4,6 +4,23 @@ let g:floaterm_height = 0.96
 
 let g:floaterm_keymap_toggle = '<C-;>'
 
+" <C-p>: separate terminal opened in the active file's dir (project.nvim chdirs to root).
+" Next toggles reuse it until it exits.
+function! s:FloatermToggleHere() abort
+  if floaterm#terminal#get_bufnr('here') == -1
+    let l:dir = expand('%:p:h')
+    if &buftype !=# '' || !isdirectory(l:dir)
+      let l:dir = getcwd()
+    endif
+    execute 'FloatermNew --name=here --cwd=' . fnameescape(l:dir)
+  else
+    FloatermToggle here
+  endif
+endfunction
+
+nnoremap <silent> <C-p> :call <SID>FloatermToggleHere()<CR>
+tnoremap <silent> <C-p> <C-\><C-n>:call <SID>FloatermToggleHere()<CR>
+
 " Files
 nmap <leader>ff :Files<CR>
 nmap <leader>fs :vs <bar> :Files<CR>
