@@ -1,7 +1,42 @@
-snippet main "main" b
+snippet mn "main" b
 package main
+
+import "fmt"
 
 func main() {
 $1
 }
 endsnippet
+
+snippet er "error check" b
+if err != nil {
+	fmt.Println("Error:", err)
+	return
+}
+endsnippet
+
+snippet strInt "str to int" b
+$1, err := strconv.Atoi($2)
+if err != nil {
+	fmt.Println("Error:", err)
+	return
+}
+endsnippet
+
+snippet strFloat "str to float" b
+$1, err := strconv.ParseFloat($2, 64)
+if err != nil {
+	fmt.Println("Error:", err)
+	return
+}
+endsnippet
+
+snippet intFloat "int to float" b
+$1 := float64($2) 
+endsnippet
+
+snippet floatString "float to string" b
+$1 := strconv.FormatFloat($2, 'f', 2, 64)
+endsnippet
+
+
