@@ -1,10 +1,14 @@
+# ==========================================
+# MAIN
+# ==========================================
+
 snippet mn "main" b
 package main
 
 import "fmt"
 
 func main() {
-$1
+	$1
 }
 endsnippet
 
@@ -15,7 +19,12 @@ if err != nil {
 }
 endsnippet
 
-snippet strInt "str to int" b
+
+# ==========================================
+# STRING -> NUMBER
+# ==========================================
+
+snippet strInt "string to int" b
 $1, err := strconv.Atoi($2)
 if err != nil {
 	fmt.Println("Error:", err)
@@ -23,7 +32,7 @@ if err != nil {
 }
 endsnippet
 
-snippet strFloat "str to float" b
+snippet strFloat "string to float64" b
 $1, err := strconv.ParseFloat($2, 64)
 if err != nil {
 	fmt.Println("Error:", err)
@@ -31,12 +40,108 @@ if err != nil {
 }
 endsnippet
 
-snippet intFloat "int to float" b
-$1 := float64($2) 
+
+# ==========================================
+# NUMBER -> STRING
+# ==========================================
+
+snippet intStr "int to string" b
+$1 := strconv.Itoa($2)
 endsnippet
 
-snippet floatString "float to string" b
+snippet floatStr "float64 to string" b
 $1 := strconv.FormatFloat($2, 'f', 2, 64)
 endsnippet
 
 
+# ==========================================
+# NUMBER -> NUMBER
+# ==========================================
+
+snippet intFloat "int to float64" b
+$1 := float64($2)
+endsnippet
+
+snippet floatInt "float64 to int" b
+$1 := int($2)
+endsnippet
+
+snippet float32 "float64 to float32" b
+$1 := float32($2)
+endsnippet
+
+snippet float64 "float32 to float64" b
+$1 := float64($2)
+endsnippet
+
+snippet int64 "int to int64" b
+$1 := int64($2)
+endsnippet
+
+snippet int32 "int to int32" b
+$1 := int32($2)
+endsnippet
+
+
+# ==========================================
+# BOOLEAN CONVERSIONS
+# ==========================================
+
+snippet strBool "string to bool" b
+$1, err := strconv.ParseBool($2)
+if err != nil {
+	fmt.Println("Error:", err)
+	return
+}
+endsnippet
+
+snippet boolStr "bool to string" b
+$1 := strconv.FormatBool($2)
+endsnippet
+
+snippet intBool "int to bool" b
+$1 := $2 != 0
+endsnippet
+
+
+# ==========================================
+# STRING FORMATTING
+# ==========================================
+
+snippet sprintf "fmt.Sprintf" b
+$1 := fmt.Sprintf("$2", $3)
+endsnippet
+
+snippet printf "fmt.Printf" b
+fmt.Printf("$1\n", $2)
+endsnippet
+
+snippet sprint "value to string" b
+$1 := fmt.Sprintf("%v", $2)
+endsnippet
+
+
+# ==========================================
+# FLOAT FORMATTING
+# ==========================================
+
+snippet float2 "float with 2 decimals" b
+fmt.Printf("%.2f\n", $1)
+endsnippet
+
+snippet float3 "float with 3 decimals" b
+fmt.Printf("%.3f\n", $1)
+endsnippet
+
+snippet percent "print percentage" b
+fmt.Printf("$1: %.2f%%\n", $2)
+endsnippet
+
+
+# ==========================================
+# TYPE INSPECTION
+# ==========================================
+
+snippet type "print variable type" b
+fmt.Printf("%T\n", $1)
+endsnippet
