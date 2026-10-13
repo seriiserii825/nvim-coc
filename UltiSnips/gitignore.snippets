@@ -110,3 +110,47 @@ Thumbs.db
 
 .vscode
 endsnippet
+
+snippet go_gitignore "Go .gitignore" b
+**/tmp/
+# Go binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Build directories
+/bin/
+/build/
+/dist/
+
+# Air temporary files
+**/tmp/
+
+# Coverage
+coverage/
+coverage.out
+*.coverprofile
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+endsnippet
