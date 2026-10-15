@@ -60,6 +60,18 @@ nnoremap <silent><space>ci  :<C-u>CocList diagnostics<cr>
 "
 nmap <leader>cr :CocRestart<CR><CR>
 nmap <leader>kd :CocDiagnostics<CR><CR>
+" Закрыть окно CocList / диагностики (quickfix, loclist, CocList) не переходя в него
+function! CloseCocList() abort
+  for l:winid in nvim_list_wins()
+    let l:bufnr = nvim_win_get_buf(l:winid)
+    let l:ft = getbufvar(l:bufnr, '&filetype')
+    let l:bt = getbufvar(l:bufnr, '&buftype')
+    if l:ft ==# 'list' || l:ft ==# 'qf' || l:bt ==# 'quickfix'
+      call nvim_win_close(l:winid, v:true)
+    endif
+  endfor
+endfunction
+nmap <leader>kc :call CloseCocList()<CR>
 nmap <M-l> <Plug>(coc-format)
 vnoremap <leader>ct "zy:CocSearch <C-r>z/
 " vnoremap <leader>rn "zy:s/<C-r>z/
