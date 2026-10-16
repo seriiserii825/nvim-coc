@@ -108,16 +108,16 @@ endsnippet
 # STRING FORMATTING
 # ==========================================
 
-snippet sprintf "fmt.Sprintf" b
+snippet prs "fmt.Sprintf" b
 $1 := fmt.Sprintf("$2", $3)
 endsnippet
 
-snippet printf "fmt.Printf" b
+snippet prf "fmt.Printf" b
 fmt.Printf("$1\n", $2)
 endsnippet
 
-snippet sprint "value to string" b
-$1 := fmt.Sprintf("%v", $2)
+snippet prl "print line" b
+fmt.Println("$1", $2)
 endsnippet
 
 
