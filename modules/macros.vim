@@ -26,7 +26,7 @@ let @n='^f_vf"h"ayGkko&"apa{'
 let @p='I<p>jjA</p>jj^llllj'
 
 " copy class from html to scss
-let @s='^/__ nhve"ay€üLGi&=@a {'
+let @s='^/__ nhve"ay€üLGO&=@a {O'
 
 " h3
 let @t='I<h3>jjA</h3>jj^llllj'
