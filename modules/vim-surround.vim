@@ -48,6 +48,10 @@ nnoremap <silent> mc :<C-u>call <SID>SurroundWith('c', v:count1)<CR>
 command! -nargs=1 Dash exec line('.') . ',' . (line('.') + <args>) . 'normal! I- '
 nnoremap <silent> dh :<C-u>execute 'Dash ' . v:count1<CR>
 
+" Markdown list: prefix N lines (or selection) with "- ", keeps indent, skips blank lines
+nnoremap <silent> ml :<C-u>execute 'silent keeppatterns .,+' . (v:count1 - 1) . 's/^\(\s*\)\(\S\)/\1- \2/e'<CR>
+xnoremap <silent> ml :<C-u>silent keeppatterns '<,'>s/^\(\s*\)\(\S\)/\1- \2/e<CR>
+
 nnoremap <leader>rt :call RenameCurrentTag()<CR>
 
 " Change current surrounding tag to <section>
