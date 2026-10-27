@@ -16,9 +16,9 @@ function! CopyLinesAbsolute()
   elseif len(l:parts) == 3
     let l:start = max([1, str2nr(l:parts[0])])
     let l:end = min([line('$'), str2nr(l:parts[1])])
-    let l:dest = max([0, min([line('$'), str2nr(l:parts[2])])])
+    let l:dest = trim(l:parts[2]) == '.' ? line('.') : max([0, min([line('$'), str2nr(l:parts[2])])])
   else
-    echo "Invalid format. Use: 4,44 (one line) or 4,8,44 (range)"
+    echo "Invalid format. Use: 4,44 (one line), 4,8,44 (range) or 4,8,. (range under cursor)"
     set relativenumber
     return
   endif
