@@ -217,8 +217,16 @@ snippet trfy "trfy"
 transform: translateY(-50%);
 endsnippet
 
+snippet trfyn "trfyn number"
+transform: translateY($1);
+endsnippet
+
 snippet trfx "trfx"
 transform: translateX(-50%);
+endsnippet
+
+snippet trfxn "trfxn"
+transform: translateX($1);
 endsnippet
 
 snippet trfsc "trfsc"
@@ -267,6 +275,12 @@ endsnippet
 
 snippet dfc "dfc"
 display: flex;
+justify-content: center;
+align-items: center;
+endsnippet
+
+snippet difc "difc"
+display: inline-flex;
 justify-content: center;
 align-items: center;
 endsnippet
