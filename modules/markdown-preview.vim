@@ -99,10 +99,10 @@ let g:mkdp_filetypes = ['markdown']
 " use a custom markdown style must be absolute path
 " like '/Users/username/markdown.css' or expand('~/markdown.css')
 " let g:mkdp_markdown_css = '/home/serii/xubuntu/markdown-styles/github-markdown-dark.css'
-let g:mkdp_markdown_css = '/home/serii/xubuntu/markdown-styles/github-markdown.css'
+" let g:mkdp_markdown_css = '/home/serii/xubuntu/markdown-styles/github-markdown.css'
 " let g:mkdp_markdown_css = '/home/serii/Downloads/cdnjs.cloudflare.com_ajax_libs_Primer_15.0.0_markdown.css'
 
 " use a custom highlight style must absolute path
 " like '/Users/username/highlight.css' or expand('~/highlight.css')
-let g:mkdp_highlight_css = '/home/serii/xubuntu/markdown-styles/hljs-github.min.css'
+" let g:mkdp_highlight_css = '/home/serii/xubuntu/markdown-styles/hljs-github.min.css'
 " let g:mkdp_highlight_css = '/home/serii/xubuntu/markdown-styles/pilcrow.css'
