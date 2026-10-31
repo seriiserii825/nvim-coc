@@ -91,6 +91,7 @@
     "Todos",
     "Typebox",
     "acfwpcli",
+    "altuofianco",
     "bludelego",
     "capsys",
     "chdir",
@@ -147,7 +148,12 @@
     { "languageId": "scss", "dictionaries": ["fonts", "css"] }
   ],
   "markdownlint.config": {
-    "MD029": false
+    "MD029": false,
+    "MD013": { "line_length": 80 }
+  },
+  "[markdown]": {
+    "prettier.proseWrap": "always",
+    "prettier.printWidth": 80
   },
   "tsserver.maxTsServerMemory": 512,
   "eslint.autoFixOnSave": true,
