@@ -151,10 +151,6 @@
     "MD029": false,
     "MD013": { "line_length": 80 }
   },
-  "[markdown]": {
-    "prettier.proseWrap": "always",
-    "prettier.printWidth": 80
-  },
   "tsserver.maxTsServerMemory": 512,
   "eslint.autoFixOnSave": true,
   "eslint.probe": ["javascript", "typescript", "vue"],
