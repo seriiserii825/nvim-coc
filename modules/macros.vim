@@ -11,7 +11,7 @@ let @d='/const propsvf=xx nhG'
 let @f='gg=G'
 
 " js log json stringify
-let @j='^wvt yoconsole.log9)€kb€kb€kb();hiJSON.stringify()hpa, null, 4'
+let @j='0A,yyp'
 
 " li
 let @l='I<li>jjA</li>jjj'
