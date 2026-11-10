@@ -2,6 +2,18 @@
 # MAIN
 # ==========================================
 
+snippet fnmet "func handler api" b
+func (h *HttpHandlers) Handle$1(w http.ResponseWriter, r *http.Request) {
+$2
+}
+endsnippet
+
+snippet fnroute "func handler api" b
+func $1(w http.ResponseWriter, r *http.Request) {
+$2
+}
+endsnippet
+
 snippet prls "print ln s"
 fmt.Println("$1")
 endsnippet
