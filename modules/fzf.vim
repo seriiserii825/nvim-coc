@@ -97,3 +97,15 @@ command! -bang -nargs=* GGrep
   \   'git grep --line-number '.shellescape(<q-args>), 0,
   \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
 
+
+" fzf.vim вешает `BufDelete * silent! call remove(g:fzf#vim#buffers, ...)`.
+" Внутри :try `silent!` не глушит ошибку — она становится исключением.
+" vim-dadbod делает `setlocal nobuflisted` на dbout-буфере внутри try (BufDelete
+" срабатывает), буфера ещё нет в словаре → E716 → запрос молча обрывается,
+" висит "[DBUI] Executing query..." и окно результата не открывается.
+" Переопределяем автокоманду безопасной версией (после загрузки plugin/fzf.vim).
+autocmd VimEnter * ++once
+      \ augroup fzf_buffers |
+      \   autocmd! BufDelete |
+      \   autocmd BufDelete * if exists('g:fzf#vim#buffers') | call filter(g:fzf#vim#buffers, 'v:key !=# expand("<abuf>")') | endif |
+      \ augroup END

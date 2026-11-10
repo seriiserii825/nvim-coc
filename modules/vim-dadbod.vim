@@ -12,7 +12,7 @@ let g:db_ui_save_location = getcwd() . '/saved-queries'
 
 " Подключения к базам данных
 let g:dbs = [
-  \ { 'name': 'todos', 'url': 'postgresql://postgres:postgres@localhost:5434/todos' },
+  \ { 'name': 'todos', 'url': 'postgres://postgres:postgres@localhost:5434/todo' },
   \ { 'name': 'tea-stream-local', 'url': 'postgresql://root:123456@localhost:5433/teastream' },
   \ { 'name': 'tea-shop', 'url': 'postgresql://postgres:postgres@localhost:5434/teashop' },
   \ ]
