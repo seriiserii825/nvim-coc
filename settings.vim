@@ -19,7 +19,6 @@ let g:loaded_ruby_provider = 0
 
 set termguicolors
 
-hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 " set spellfile=~/.config/nvim/spell/en.utf-8.add
 
 let g:sneak#label = 1

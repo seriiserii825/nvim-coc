@@ -22,4 +22,14 @@ set termguicolors
 " colorscheme monokai-pro
 " colorscheme monokai_pro
 " colorscheme catppuccin
+lua << EOF
+require('nordic').setup({
+  cursorline = {
+    theme = 'light',   -- светлее, чем 'dark'
+    blend = 0.5,       -- меньше значение = заметнее линия (по умолчанию 0.85)
+    bold = false,
+    bold_number = true,
+  },
+})
+EOF
 colorscheme nordic
