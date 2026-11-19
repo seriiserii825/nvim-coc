@@ -39,6 +39,7 @@ source $HOME/.config/nvim/modules/macross-dir/bash-macros.vim
 
 
 source $HOME/.config/nvim/modules/vim-dadbod.vim
+source $HOME/.config/nvim/modules/sql-format.vim
 
 "Coc
 source $HOME/.config/nvim/modules/copy-file-line.vim
