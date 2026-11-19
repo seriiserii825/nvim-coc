@@ -263,6 +263,8 @@ command! SqlUpper lua SqlAlign.upper(0)
 
 augroup SqlAlignOnSave
   autocmd!
-  autocmd BufWritePre *.sql if g:sql_upper_on_save | execute 'lua SqlAlign.upper(0)' | endif
-  autocmd BufWritePre *.sql if g:sql_align_on_save | execute 'lua SqlAlign.align(0)' | endif
+  " Match by filetype, not by *.sql name: vim-dadbod-ui query buffers live in
+  " /tmp/nvim.*/<db>-query-<date> (no extension) and only get filetype=sql.
+  autocmd BufWritePre * if &filetype ==# 'sql' && g:sql_upper_on_save | execute 'lua SqlAlign.upper(0)' | endif
+  autocmd BufWritePre * if &filetype ==# 'sql' && g:sql_align_on_save | execute 'lua SqlAlign.align(0)' | endif
 augroup END
