@@ -39,8 +39,19 @@ function! s:ToggleDBUI() abort
   DBUIToggle
 endfunction
 
+" Закрыть только окно(а) с результатом запроса (dbout), сайдбар DBUI не трогаем.
+" Работает из любого окна, не только из самого dbout.
+function! s:CloseDBOut() abort
+  for l:win in reverse(range(1, winnr('$')))
+    if getbufvar(winbufnr(l:win), '&filetype') ==# 'dbout'
+      execute l:win . 'wincmd c'
+    endif
+  endfor
+endfunction
+
 " Горячие клавиши
 nnoremap <leader>db :call <SID>ToggleDBUI()<CR>
+nnoremap <silent> <leader>dc :call <SID>CloseDBOut()<CR>
 nnoremap <leader>df :DBUIFindBuffer<CR>
 nnoremap <leader>dr :DBUIRenameBuffer<CR>
 nnoremap <leader>dq :DBUILastQueryInfo<CR>
