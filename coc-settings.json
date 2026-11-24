@@ -155,7 +155,7 @@
     "MD029": false,
     "MD013": { "line_length": 120 }
   },
-  "tsserver.maxTsServerMemory": 512,
+  "tsserver.maxTsServerMemory": 4096,
   "eslint.autoFixOnSave": true,
   "eslint.probe": ["javascript", "typescript", "vue"],
   "eslint.validate": ["javascript", "typescript", "vue"],
