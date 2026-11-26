@@ -1,6 +1,9 @@
 " h2 html to scss at position in scss
 let @k='^f"lvf_hc&veyu€üLpa {'
 
+" copy in markdown 
+let @b='0v/```kl$y'
+
 " js log
 let @c='^wvt yoconsole.log()i""hpla, pla;'
 
