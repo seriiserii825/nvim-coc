@@ -3,8 +3,8 @@ let @k='^f"lvf_hc&veyu€üLpa {'
 
 " copy code block in markdown (cursor inside block)
 let @b='?```jV/```ky'
-" square brackets check in markdown
-let @a='/[lrx'
+" check next empty checkbox [ ] in markdown
+let @a='/\[ \]lrx'
 
 " js log
 let @c='^wvt yoconsole.log()i""hpla, pla;'
