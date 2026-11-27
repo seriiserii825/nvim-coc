@@ -1,8 +1,8 @@
 " h2 html to scss at position in scss
 let @k='^f"lvf_hc&veyu€üLpa {'
 
-" copy in markdown 
-let @b='0v/```kl$y'
+" copy code block in markdown (cursor inside block)
+let @b='?```jV/```ky'
 " square brackets check in markdown
 let @a='/[lrx'
 
