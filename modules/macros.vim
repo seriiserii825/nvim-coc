@@ -3,6 +3,7 @@ let @k='^f"lvf_hc&veyu€üLpa {'
 
 " copy in markdown 
 let @b='0v/```kl$y'
+" square brackets check in markdown
 let @a='/[lrx'
 
 " js log
